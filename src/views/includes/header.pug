@@ -1,18 +1,25 @@
 header.header
   .container
-    .phone-info +38 (044) 097 - 43 - 23
-    ul.header-list
-      li
-        a(href='#') О бренде
-      li
-        a(href='#') Оплата и Доставка
-      li
-        a(href='#') Возврат и Обмен
-      li
-        a(href='#') Luna Club
-      li
-        a(href='#') Контакты
-      li
-        a(href='#') Акции
-    form(action='#')
-      input(type='search', placeholder='Search')
+    .header-item
+      .phone-info +38 (044) 097 - 43 - 23
+      ul.header-list
+        li
+          a(href='#') О бренде
+        li
+          a(href='#') Оплата и Доставка
+        li
+          a(href='#') Возврат и Обмен
+        li
+          a(href='#') Luna Club
+        li
+          a(href='#') Контакты
+        li
+          a(href='#') Акции
+      .header-links
+        form(action='#')
+          input(type='search')
+        a(href='#').user-info
+          +sprite('icon', 'user-ico')
+        .dropdown-item
+          a(href='#').dropdown-toggle
+            +sprite('lang-ico', 'lang-ru')

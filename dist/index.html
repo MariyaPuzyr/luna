@@ -11,22 +11,33 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="phone-info">+38 (044) 097 - 43 - 23</div>
-        <ul class="header-list">
-          <li><a href="#">О бренде</a></li>
-          <li><a href="#">Оплата и Доставка</a></li>
-          <li><a href="#">Возврат и Обмен</a></li>
-          <li><a href="#">Luna Club</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li><a href="#">Акции</a></li>
-        </ul>
-        <form action="#">
-          <input type="search" placeholder="Search">
-        </form>
+        <div class="header-item">
+          <div class="phone-info">+38 (044) 097 - 43 - 23</div>
+          <ul class="header-list">
+            <li><a href="#">О бренде</a></li>
+            <li><a href="#">Оплата и Доставка</a></li>
+            <li><a href="#">Возврат и Обмен</a></li>
+            <li><a href="#">Luna Club</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Акции</a></li>
+          </ul>
+          <div class="header-links">
+            <form action="#">
+              <input type="search">
+            </form><a class="user-info" href="#">
+              <svg class="icon">
+                <use xlink:href="./img/svg/symbol/sprite.svg#user-ico"></use>
+              </svg></a>
+            <div class="dropdown-item"><a class="dropdown-toggle" href="#">
+                <svg class="lang-ico">
+                  <use xlink:href="./img/svg/symbol/sprite.svg#lang-ru"></use>
+                </svg></a></div>
+          </div>
+        </div>
       </div>
     </header>
     <div class="nav">
-      <div class="container"><a class="logo" href="#"><img src="./img/svg/logo"></a>
+      <div class="container"><a class="logo" href="#"><img src="./img/svg/logo.svg"></a>
         <ul class="nav-list">
           <li><a class="active" href="#">Все коллекции</a></li>
           <li><a href="#">Бюсты</a></li>
