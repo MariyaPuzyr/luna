@@ -1,90 +1,18 @@
 header.header
-  a(href='/').logo
-    img(src='./img/svg/logo.svg' alt='')
-    span exal.money
-  .header-menu
-    ul.nav(role='tablist')
+  .container
+    .phone-info +38 (044) 097 - 43 - 23
+    ul.header-list
       li
-        a#contacts-tab.header-menu__link(data-toggle='tab', href='#contacts', role='tab', aria-controls='contacts', aria-selected='true')
-          .icons.menu-info
-          .notification 2
+        a(href='#') О бренде
       li
-        a#my-operations-tab.header-menu__link(data-toggle='tab', href='#my-operations', role='tab', aria-controls='my-operations', aria-selected='false')
-          .icons.menu-icons
+        a(href='#') Оплата и Доставка
       li
-        a#accounts-list-tab.header-menu__link(data-toggle='tab', href='#accounts-list', role='tab', aria-controls='accounts-list', aria-selected='false')
-          .icons.menu-payments
+        a(href='#') Возврат и Обмен
       li
-        a#user-info-tab.header-menu__link(data-toggle='tab', href='#user-info', role='tab', aria-controls='user-info', aria-selected='false')
-          .icons.menu-settings-info
+        a(href='#') Luna Club
       li
-        a#links-tab.header-menu__link(data-toggle='tab', href='#links', role='tab', aria-controls='links', aria-selected='false')
-          .icons.menu-icons-burger
-          .notification 2
-    #nav-tabContent.tab-content
-      #contacts.tab-pane.fade(role='tabpanel', aria-labelledby='contacts-tab')
-        h2 Контакты
-        #contacts-info.accordion
-          .card
-            #headingOne.card-header.collapsed(data-toggle='collapse', data-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
-              span Мессенджеры
-            #collapseOne.collapse(aria-labelledby='headingOne', data-parent='#contacts-info')
-              include ../components/messengers
-          .card
-            #headingTwo.card-header.collapsed(data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
-              span Форма обратной связи
-            #collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#contacts-info')
-              include ../components/contact-form
-          .card
-            #headingThree.card-header.collapsed(data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
-              span Адрес и реквизиты
-            #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#contacts-info')
-              include ../components/contact-address
-      #my-operations.tab-pane.fade(role='tabpanel', aria-labelledby='my-operations-tab')
-        .menu-height
-          include ../sections/my-operations
-      #accounts-list.tab-pane.fade(role='tabpanel', aria-labelledby='accounts-list-tab')
-        .menu-height
-          include ../sections/currency-bill
-      #user-info.tab-pane.fade(role='tabpanel', aria-labelledby='user-info-tab')
-        .menu-height
-          .user-info
-            span Привет, artmoney
-            .discount Накопительная скидка – 10%
-          ul.links-list
-            li
-              a(href='#' data-link='personal-info.html').load-page Личная информация
-            li
-              a(href='#' data-link='login-account.html').load-page Настройки безопасности
-            li
-              a(href='#') Выйти
-          .partners-info.mt-auto
-            .partners-info__title Партнерская ссылка:
-            form(action='')
-              .partners-info__copy
-                input(type='text' disabled='disabled' value='Exall.money/thanksazaza').form-control
-                button.copy-btn
-              .partners-info__description получайте 10-30% от прибыли с переводов.
-                a(href='#') Подробнее
-      #links.tab-pane.fade(role='tabpanel', aria-labelledby='links-tab')
-        .menu-height
-          ul.links-list
-            li
-              a(href='#') Обмен
-            li
-              a(href='#' data-link='currency-reserves.html').load-page Резервы валют
-            li
-              a(href='#' data-link='news.html').load-page Новости
-            li
-              a(href='#') О сервисе
-            li
-              a(href='#') Партнерская программа
-          .partners-info.mt-auto
-            .partners-info__title Партнерская ссылка:
-            form(action='')
-              .partners-info__copy
-                input(type='text' disabled='disabled' value='Exall.money/thanksazaza').form-control
-                button.copy-btn
-              .partners-info__description получайте 10-30% от прибыли с переводов.
-                a(href='#') Подробнее
-      //.content-inner
+        a(href='#') Контакты
+      li
+        a(href='#') Акции
+    form(action='#')
+      input(type='search', placeholder='Search')
