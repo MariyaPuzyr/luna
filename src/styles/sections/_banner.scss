@@ -1,0 +1,26 @@
+.banner {
+  &-items {
+    .large-banner {
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+  }
+  &-row {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  &-left,&-right {
+    height: 400px;
+    background-size: cover;
+  }
+  &-left {
+    flex: 0 0 calc(67% - 20px);
+    max-width: calc(67% - 20px);
+    margin-right: 20px;
+  }
+  &-right {
+    flex: 0 0 33%;
+    max-width: 33%;
+    margin-bottom: 20px;
+  }
+}

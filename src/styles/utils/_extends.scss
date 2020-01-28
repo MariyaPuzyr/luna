@@ -2,8 +2,16 @@
   max-width: 1360px;
   margin: auto;
   padding: 0 15px;
+  &-fluid {
+    max-width: 1360px;
+    margin: auto;
+  }
 }
 .d-flex {
   display: flex;
   flex-flow: row wrap;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
