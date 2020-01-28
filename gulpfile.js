@@ -1,5 +1,5 @@
 "use strict";
-
+const concat = require('gulp-concat');
 global.$ = {
   path: {
     task: require('./gulp/path/tasks.js')
@@ -12,7 +12,15 @@ global.$ = {
 $.path.task.forEach(function (taskPath) {
   require(taskPath)();
 });
+$.gulp.task('main-libs', function () {
+  return $.gulp.src([
+    './node_modules/jquery/dist/jquery.min.js',
+    './node_modules/slick-carousel/slick/slick.min.js'
+  ])
+      .pipe(concat('main-libs.min.js'))
+      .pipe($.gulp.dest('./dist/js/'))
 
+});
 $.gulp.task('dev', $.gulp.series(
     'clean',
     $.gulp.parallel(
@@ -24,13 +32,5 @@ $.gulp.task('dev', $.gulp.series(
         'svg'
     )
 ));
-
-// $.gulp.task('default', $.gulp.series(
-//     'dev',
-//     $.gulp.parallel(
-//         'watch',
-//         'serve-new'
-//     )
-// ));
 
 $.gulp.task('default', $.gulp.series('dev', 'watch', 'serve-new'));
