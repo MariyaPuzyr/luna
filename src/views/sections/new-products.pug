@@ -1,12 +1,13 @@
 section.new-products
   .container
-    .title НОВИНКИ
+    .title
+      span НОВИНКИ
     .slider.single-item
       div
         .product-item
-          .products-top
-            img(src='./img/product-1.png')
-            ul.products-top__color
+          .product-top
+            img(src='./img/product-1.png').img-fluid
+            ul.product-top__color
               li
                 a(href='#').color.color-white
               li
@@ -19,7 +20,7 @@ section.new-products
                 a(href='#').color.color-swirl
               li
                 a(href='#').color.color-monarch
-            a(href='#').products-top__quick-view Быстрый просмотр
+            a(href='#').product-top__quick-view Быстрый просмотр
           .product-body
             a(href='#').product-name__link FLOX BASIC
             p.product-name__description Бюстгальтеры - Мягкая чашка черный
@@ -27,14 +28,358 @@ section.new-products
               .product-price_new 700 ₴
               .product-price_old 900 ₴
             ul.product-size
+              li
+                a(href='#').no-size 70
+              li
+                a(href='#') 80
+                ul.dropdown-product
+                  li
+                    a(href='#') A
+                  li
+                    a(href='#') B
+                  li
+                    a(href='#') C
+                  li
+                    a(href='#').no-size D
+                  li
+                    a(href='#').no-size E
+                  li
+                    a(href='#').no-size F
+              li
+                a(href='#') 90
+                ul.dropdown-product
+                  li
+                    a(href='#') A
+                  li
+                    a(href='#') B
+                  li
+                    a(href='#') C
+                  li
+                    a(href='#').no-size D
+                  li
+                    a(href='#').no-size E
+                  li
+                    a(href='#').no-size F
 
+              li
+                a(href='#').no-size 100
+              li
+                a(href='#').no-size 120
+              li
+                a(href='#').no-size 130
       div
-        h3 2
+        .product-item
+          .product-top
+            img(src='./img/product-2.png').img-fluid
+            ul.product-top__color
+              li
+                a(href='#').color.color-white
+              li
+                a(href='#').color.color-matterhorn
+              li
+                a(href='#').color.color-bridal-heath
+              li
+                a(href='#').color.color-metallic-copper
+              li
+                a(href='#').color.color-swirl
+              li
+                a(href='#').color.color-monarch
+            a(href='#').product-top__quick-view Быстрый просмотр
+          .product-body
+            a(href='#').product-name__link FLOX BASIC
+            p.product-name__description Бюстгальтеры - Мягкая чашка черный
+            .product-price__item
+              .product-price_new 700 ₴
+              .product-price_old 900 ₴
+            ul.product-size
+              li
+                a(href='#').no-size 70
+              li
+                a(href='#') 80
+                ul.dropdown-product
+                  li
+                    a(href='#') A
+                  li
+                    a(href='#') B
+                  li
+                    a(href='#') C
+                  li
+                    a(href='#').no-size D
+                  li
+                    a(href='#').no-size E
+                  li
+                    a(href='#').no-size F
+              li
+                a(href='#') 90
+                ul.dropdown-product
+                  li
+                    a(href='#') A
+                  li
+                    a(href='#') B
+                  li
+                    a(href='#') C
+                  li
+                    a(href='#').no-size D
+                  li
+                    a(href='#').no-size E
+                  li
+                    a(href='#').no-size F
+              li
+                a(href='#').no-size 100
+              li
+                a(href='#').no-size 120
+              li
+                a(href='#').no-size 130
       div
-        h3 3
+        .product-item
+          .product-top
+            .new-position New
+            img(src='./img/product-3.png').img-fluid
+            ul.product-top__color
+              li
+                a(href='#').color.color-white
+              li
+                a(href='#').color.color-matterhorn
+              li
+                a(href='#').color.color-bridal-heath
+              li
+                a(href='#').color.color-metallic-copper
+              li
+                a(href='#').color.color-swirl
+              li
+                a(href='#').color.color-monarch
+            a(href='#').product-top__quick-view Быстрый просмотр
+          .product-body
+            a(href='#').product-name__link FLOX BASIC
+            p.product-name__description Бюстгальтеры - Мягкая чашка черный
+            .product-price__item
+              .product-price_new 700 ₴
+              .product-price_old 900 ₴
+            ul.product-size
+              li
+                a(href='#').no-size 70
+              li
+                a(href='#') 80
+                ul.dropdown-product
+                  li
+                    a(href='#') A
+                  li
+                    a(href='#') B
+                  li
+                    a(href='#') C
+                  li
+                    a(href='#').no-size D
+                  li
+                    a(href='#').no-size E
+                  li
+                    a(href='#').no-size F
+              li
+                a(href='#') 90
+                ul.dropdown-product
+                  li
+                    a(href='#') A
+                  li
+                    a(href='#') B
+                  li
+                    a(href='#') C
+                  li
+                    a(href='#').no-size D
+                  li
+                    a(href='#').no-size E
+                  li
+                    a(href='#').no-size F
+              li
+                a(href='#').no-size 100
+              li
+                a(href='#').no-size 120
+              li
+                a(href='#').no-size 130
       div
-        h3 4
+        .product-item
+          .product-top
+            img(src='./img/product-4.png').img-fluid
+            ul.product-top__color
+              li
+                a(href='#').color.color-white
+              li
+                a(href='#').color.color-matterhorn
+              li
+                a(href='#').color.color-bridal-heath
+              li
+                a(href='#').color.color-metallic-copper
+              li
+                a(href='#').color.color-swirl
+              li
+                a(href='#').color.color-monarch
+            a(href='#').product-top__quick-view Быстрый просмотр
+          .product-body
+            a(href='#').product-name__link FLOX BASIC
+            p.product-name__description Бюстгальтеры - Мягкая чашка черный
+            .product-price__item
+              .product-price_new 700 ₴
+              .product-price_old 900 ₴
+            ul.product-size
+              li
+                a(href='#').no-size 70
+              li
+                a(href='#') 80
+                ul.dropdown-product
+                  li
+                    a(href='#') A
+                  li
+                    a(href='#') B
+                  li
+                    a(href='#') C
+                  li
+                    a(href='#').no-size D
+                  li
+                    a(href='#').no-size E
+                  li
+                    a(href='#').no-size F
+              li
+                a(href='#') 90
+                ul.dropdown-product
+                  li
+                    a(href='#') A
+                  li
+                    a(href='#') B
+                  li
+                    a(href='#') C
+                  li
+                    a(href='#').no-size D
+                  li
+                    a(href='#').no-size E
+                  li
+                    a(href='#').no-size F
+              li
+                a(href='#').no-size 100
+              li
+                a(href='#').no-size 120
+              li
+                a(href='#').no-size 130
       div
-        h3 5
+        .product-item
+          .product-top
+            img(src='./img/product-4.png').img-fluid
+            ul.product-top__color
+              li
+                a(href='#').color.color-white
+              li
+                a(href='#').color.color-matterhorn
+              li
+                a(href='#').color.color-bridal-heath
+              li
+                a(href='#').color.color-metallic-copper
+              li
+                a(href='#').color.color-swirl
+              li
+                a(href='#').color.color-monarch
+            a(href='#').product-top__quick-view Быстрый просмотр
+          .product-body
+            a(href='#').product-name__link FLOX BASIC
+            p.product-name__description Бюстгальтеры - Мягкая чашка черный
+            .product-price__item
+              .product-price_new 700 ₴
+              .product-price_old 900 ₴
+            ul.product-size
+              li
+                a(href='#').no-size 70
+              li
+                a(href='#') 80
+                ul.dropdown-product
+                  li
+                    a(href='#') A
+                  li
+                    a(href='#') B
+                  li
+                    a(href='#') C
+                  li
+                    a(href='#').no-size D
+                  li
+                    a(href='#').no-size E
+                  li
+                    a(href='#').no-size F
+              li
+                a(href='#') 90
+                ul.dropdown-product
+                  li
+                    a(href='#') A
+                  li
+                    a(href='#') B
+                  li
+                    a(href='#') C
+                  li
+                    a(href='#').no-size D
+                  li
+                    a(href='#').no-size E
+                  li
+                    a(href='#').no-size F
+              li
+                a(href='#').no-size 100
+              li
+                a(href='#').no-size 120
+              li
+                a(href='#').no-size 130
       div
-        h3 6
+        .product-item
+          .product-top
+            img(src='./img/product-2.png').img-fluid
+            ul.product-top__color
+              li
+                a(href='#').color.color-white
+              li
+                a(href='#').color.color-matterhorn
+              li
+                a(href='#').color.color-bridal-heath
+              li
+                a(href='#').color.color-metallic-copper
+              li
+                a(href='#').color.color-swirl
+              li
+                a(href='#').color.color-monarch
+            a(href='#').product-top__quick-view Быстрый просмотр
+          .product-body
+            a(href='#').product-name__link FLOX BASIC
+            p.product-name__description Бюстгальтеры - Мягкая чашка черный
+            .product-price__item
+              .product-price_new 700 ₴
+              .product-price_old 900 ₴
+            ul.product-size
+              li
+                a(href='#').no-size 70
+              li
+                a(href='#') 80
+                ul.dropdown-product
+                  li
+                    a(href='#') A
+                  li
+                    a(href='#') B
+                  li
+                    a(href='#') C
+                  li
+                    a(href='#').no-size D
+                  li
+                    a(href='#').no-size E
+                  li
+                    a(href='#').no-size F
+              li
+                a(href='#') 90
+                ul.dropdown-product
+                  li
+                    a(href='#') A
+                  li
+                    a(href='#') B
+                  li
+                    a(href='#') C
+                  li
+                    a(href='#').no-size D
+                  li
+                    a(href='#').no-size E
+                  li
+                    a(href='#').no-size F
+              li
+                a(href='#').no-size 100
+              li
+                a(href='#').no-size 120
+              li
+                a(href='#').no-size 130
