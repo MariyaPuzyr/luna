@@ -1,0 +1,52 @@
+extends ../extends/layout
+block variables
+  - var title = "exal.money"
+
+block content
+  .currency-reserves#content
+    .d-flex.align-items-center.mb-2.position-relative
+      a.back-link(href='#')
+      h2.sidebar-title Личная информация
+    form(action='#').personal-info
+      p Используется при заполнении заявок
+      .form-group
+        input(type='text', required='' disabled='disabled' value='azaza').form-control
+        span.form-underline
+        label Логин:
+      .form-group
+        input(type='text', required='' disabled='disabled' value='azaza@mail.ru').form-control
+        span.form-underline
+        label Email:
+      .form-group
+        input(type='text', required='').form-control
+        span.form-underline
+        label Имя:
+      .form-group
+        input(type='text', required='').form-control
+        span.form-underline
+        label Фамилия:
+      .form-group
+        input(type='text', required='').form-control
+        span.form-underline
+        label Отчество:
+      .form-group-items
+        label Паспорт:
+        .d-flex
+          .form-group
+            input(type='text', required='').form-control
+            span.form-underline
+            label серия
+          .form-group
+            input(type='text', required='').form-control
+            span.form-underline
+            label номер
+      .form-group
+        input(type='text', required='').form-control
+        span.form-underline
+        label Номер:
+      .form-group
+        input(type='text', required='').form-control
+        span.form-underline
+        label Skype:
+      .form-group
+        button.send-btn Сохранить

@@ -1,0 +1,17 @@
+.contact-form
+  p.description Вопросы, предложения и пожелания.
+  form(action='')
+    .form-group
+      input(type='text', required='').form-control
+      span.form-underline
+      label Email:
+    .form-group
+      input(type='text', required='').form-control
+      span.form-underline
+      label Имя:
+    .form-group
+      textarea#message.form-control(rows='2' name="message" required='')
+      span.form-underline
+      label(for='message') Сообщение:
+    .form-group
+      button(type='submit').send-btn Отправить

@@ -1,0 +1,33 @@
+extends ../extends/layout
+block variables
+  - var title = "exal.money"
+
+block content
+  .currency-reserves#content
+    .d-flex.align-items-center.mb-2.position-relative
+      a.back-link(href='#')
+      h2.sidebar-title Новости
+
+    .news-list
+      .news-list__item.meganews.new(data-toggle="modal" data-target="#news")
+        .news-list__item--date 17 мая 2017
+        .news-list__item--link(data-toggle="modal" data-target="#news") Добавили переводы в Райффайзен банк.
+      .news-list__item.new(data-toggle="modal" data-target="#news")
+        .news-list__item--date 16 мая 2017
+        .news-list__item--link(data-toggle="modal" data-target="#news") Открылись Skype и Telegram аккаунты. Операторы работают круглосуточно и без выходных.
+      .news-list__item.new(data-toggle="modal" data-target="#news")
+        .news-list__item--date 16 мая 2017
+        .news-list__item--link(data-toggle="modal" data-target="#news") Новое направление - Сбербанк.
+      .news-list__item.new.action(data-toggle="modal" data-target="#news")
+        .news-list__item--date 17 мая 2017
+        .news-list__item--link(data-toggle="modal" data-target="#news") Акция! Умножаем партнерский процент в декабре на 2!
+      .news-list__item(data-toggle="modal" data-target="#news")
+        .news-list__item--date 17 мая 2017
+        .news-list__item--link(data-toggle="modal" data-target="#news") Существенно увеличили резервы Бикойнов, Qiwi, Advanced Cash.
+      .news-list__item.action(data-toggle="modal" data-target="#news")
+        .news-list__item--date 17 мая 2017
+        .news-list__item--link(data-toggle="modal" data-target="#news") Делаем 10% скидку на обмен за 2х привлеченных активных пользователей!
+      .news-list__item(data-toggle="modal" data-target="#news")
+        .news-list__item--date 17 мая 2017
+        .news-list__item--link(data-toggle="modal" data-target="#news") Открылось новое направление Альфабанк. Узнать детали.
+

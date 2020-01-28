@@ -1,0 +1,112 @@
+extends ../extends/layout
+block variables
+  - var title = "exal.money"
+
+block content
+  .currency-reserves#content
+    .d-flex.align-items-center.mb-2.position-relative
+      a.back-link(href='#')
+      h2.sidebar-title Резервы валют
+    form(action='')
+      .form-group
+        input(type='search', required='').form-control
+        span.form-underline
+        label Поиск по названию валюты
+        button.search-btn
+    .currency-reserves__list
+      .currency-reserves__item
+        img(src='./img/svg/qiwi.svg').currency-reserves__ico
+        .currency-reserves__info
+          | Qiwi
+          span 10 345 456
+        .currency-reserves__tarif Rub
+      .currency-reserves__item
+        img(src='./img/svg/bitcoin.svg').currency-reserves__ico
+        .currency-reserves__info
+          | Bitcoin
+          span 0,234546
+        .currency-reserves__tarif Btc
+      .currency-reserves__item
+        img(src='./img/svg/btc-e-code.svg').currency-reserves__ico
+        .currency-reserves__info
+          | Btc-e code
+          span 5 234 234
+        .currency-reserves__tarif Rub
+      .currency-reserves__item
+        img(src='./img/svg/btc-e-code.svg').currency-reserves__ico
+        .currency-reserves__info
+          | Btc-e code
+          span 23 345
+        .currency-reserves__tarif Usd
+      .currency-reserves__item
+        img(src='./img/svg/ethereum.svg').currency-reserves__ico
+        .currency-reserves__info
+          | Ethereum
+          span 23,34553
+        .currency-reserves__tarif Eth
+      .currency-reserves__item
+        img(src='./img/svg/litecoin.svg').currency-reserves__ico
+        .currency-reserves__info
+          | LiteCoin
+          span 23,45623
+        .currency-reserves__tarif Ltc
+      .currency-reserves__item
+        img(src='./img/svg/advanced-cash.svg').currency-reserves__ico
+        .currency-reserves__info
+          | Advanced Cash
+          span 45 345 234
+        .currency-reserves__tarif Rub
+      .currency-reserves__item
+        img(src='./img/svg/advanced-cash.svg').currency-reserves__ico
+        .currency-reserves__info
+          | Advanced Cash
+          span 23 345
+        .currency-reserves__tarif Usd
+      .currency-reserves__item
+        img(src='./img/svg/qiwi.svg').currency-reserves__ico
+        .currency-reserves__info
+          | Qiwi
+          span 10 345 456
+        .currency-reserves__tarif Rub
+      .currency-reserves__item
+        img(src='./img/svg/bitcoin.svg').currency-reserves__ico
+        .currency-reserves__info
+          | Bitcoin
+          span 0,234546
+        .currency-reserves__tarif Btc
+      .currency-reserves__item
+        img(src='./img/svg/btc-e-code.svg').currency-reserves__ico
+        .currency-reserves__info
+          | Btc-e code
+          span 5 234 234
+        .currency-reserves__tarif Rub
+      .currency-reserves__item
+        img(src='./img/svg/btc-e-code.svg').currency-reserves__ico
+        .currency-reserves__info
+          | Btc-e code
+          span 23 345
+        .currency-reserves__tarif Usd
+      .currency-reserves__item
+        img(src='./img/svg/ethereum.svg').currency-reserves__ico
+        .currency-reserves__info
+          | Ethereum
+          span 23,34553
+        .currency-reserves__tarif Eth
+      .currency-reserves__item
+        img(src='./img/svg/litecoin.svg').currency-reserves__ico
+        .currency-reserves__info
+          | LiteCoin
+          span 23,45623
+        .currency-reserves__tarif Ltc
+      .currency-reserves__item
+        img(src='./img/svg/advanced-cash.svg').currency-reserves__ico
+        .currency-reserves__info
+          | Advanced Cash
+          span 45 345 234
+        .currency-reserves__tarif Rub
+      .currency-reserves__item
+        img(src='./img/svg/advanced-cash.svg').currency-reserves__ico
+        .currency-reserves__info
+          | Advanced Cash
+          span 23 345
+        .currency-reserves__tarif Usd
