@@ -1,0 +1,29 @@
+.footer {
+  background: $color_dark;
+  color: $color_white;
+  &-items {
+    padding: 95px 40px 130px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  &-menu {
+    column-count: 2;
+    column-width: 250px;
+    a {
+      color: $color_white;
+      font: normal 17px/20px $font;
+      margin: 9px 0;
+      display: inline-table;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      transition: .3s;
+      &:hover {
+        color: #dbb7a6;
+      }
+    }
+  }
+  &-newsletter__form {
+    display: flex;
+    flex-direction: column;
+  }
+}

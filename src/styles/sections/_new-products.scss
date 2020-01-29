@@ -56,7 +56,17 @@
   .product {
     &-item {
       margin: 0 20px;
-      padding-bottom: 20px;
+      &:hover {
+        .product-top {
+          border-color: #DBB7A6;
+        }
+        .product-top__quick-view,
+        .product-top__color, .product-size,
+        .dropdown-product {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
     }
     &-top {
       border: 2px solid #E0E0E0;
@@ -64,14 +74,6 @@
       height: 365px;
       transition: .3s;
       cursor: pointer;
-      &:hover {
-        border-color: #DBB7A6;
-        .product-top__quick-view,
-        .product-top__color {
-          opacity: 1;
-          visibility: visible;
-        }
-      }
       &__color {
         position: absolute;
         right: 0;
@@ -190,6 +192,9 @@
       display: flex;
       flex-flow: row wrap;
       position: relative;
+      transition: .3s;
+      opacity: 0;
+      visibility: hidden;
       a {
         font: normal 14px/16px $font-regular;
         color: $color_dark;
@@ -198,14 +203,27 @@
         margin-right: 5px;
         display: block;
       }
-      .no-size {
-        color: #bdbdbd;
-      }
+    }
+    &-body {
       .dropdown-product {
         display: flex;
-        position: absolute;
-        left: 0;
-        bottom: -20px;
+        transition: .3s;
+        opacity: 0;
+        visibility: hidden;
+        a {
+          font: normal 14px/16px $font-regular;
+          color: $color_dark;
+          letter-spacing: -0.05em;
+          text-decoration: none;
+          margin-right: 5px;
+          display: block;
+          &.no-size {
+            color: #bdbdbd;
+          }
+        }
+      }
+      .no-size {
+        color: #bdbdbd;
       }
     }
   }
