@@ -29,7 +29,8 @@ $.gulp.task('dev', $.gulp.series(
         'styles:dev',
         'img:dev',
         'js:dev',
-        'svg'
+        'svg',
+        'main-libs'
     )
 ));
 
