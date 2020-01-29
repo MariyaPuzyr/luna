@@ -4,7 +4,7 @@ let plumber = require('gulp-plumber'),
 
 module.exports = function () {
   $.gulp.task('pug', () => {
-    return $.gulp.src('./src/views/index.pug')
+    return $.gulp.src(['./src/views/index.pug', './src/views/pages/*.pug'])
         .pipe(plumber())
         .pipe(pug({
           pretty: true
