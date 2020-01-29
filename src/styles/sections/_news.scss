@@ -58,6 +58,7 @@
       font: normal 14px/16px $font-regular;
       color: #dbb7a6;
       cursor: pointer;
+      display: table;
       transition: .3s;
       &:hover {
         text-decoration: none;
