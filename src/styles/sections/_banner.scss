@@ -1,15 +1,13 @@
-.banner {
-  &-items {
-    .large-banner {
-      margin-top: 30px;
-      margin-bottom: 20px;
-    }
+.main-promo {
+  &__large {
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
   &-row {
     display: flex;
     flex-flow: row wrap;
   }
-  &-left,&-right {
+  &-left, &-right {
     height: 400px;
     background-size: cover;
   }
