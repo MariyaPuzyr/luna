@@ -6,6 +6,11 @@
     font: normal 14px/16px $font;
     letter-spacing: .02em;
     margin-right: 56px;
+    transition: .3s;
+    text-decoration: none;
+    &:hover {
+      color: #dbb7a6;
+    }
   }
   &-item {
     display: flex;
@@ -56,11 +61,16 @@
     }
     .user-info {
       margin: 0 10px;
+      transition: .3s;
+      &:hover svg {
+        fill: #DBB7A6;
+      }
     }
     .icon {
       width: 14px;
       height: 14px;
       fill: #BFBFBF;
+      transition: .3s;
     }
     .dropdown-item {
       margin-right: 15px;

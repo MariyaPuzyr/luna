@@ -46,27 +46,25 @@
       border-bottom-color: #DBB7A6;
     }
   }
-  .header-wish {
+  .header-wish__link {
     position: relative;
-    &__link {
-      &-counter {
-        position: absolute;
-        top: -3px;
-        right: -5px;
-        background: #ef2669;
-        color: $color_white;
-        font-family: $font-bold;
-        border-radius: 50%;
-        font-size: 10px;
-        padding: 2px 4px;
-        line-height: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      &:hover svg {
-        fill: #DBB7A6;
-      }
+    &-counter {
+      position: absolute;
+      top: -3px;
+      right: -5px;
+      background: #ef2669;
+      color: $color_white;
+      font-family: $font-bold;
+      border-radius: 50%;
+      font-size: 10px;
+      padding: 2px 4px;
+      line-height: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &:hover svg {
+      fill: #DBB7A6;
     }
   }
   .header-cart {
