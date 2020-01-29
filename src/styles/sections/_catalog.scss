@@ -9,6 +9,13 @@
       display: flex;
       flex-flow: row wrap;
       margin: 0 -20px;
+      .product-top {
+        height: auto;
+      }
     }
+  }
+  &-offer {
+    border: 2px solid #DBB7A6;
+    margin: 0 20px auto;
   }
 }
