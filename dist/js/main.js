@@ -34,19 +34,19 @@ $(document).ready(function () {
       var e = $('[data-id="' + $(this).data("link") + '"]');
       if (0 != e.length) if ($(this).hasClass("close")) $(this).css("opacity", 0), e.removeClass("open"), e.stop().animate({
         "max-height": 81
-      }, 500, "linear", function () {
+      }, 100, "linear", function () {
         $(t).stop().animate({
           opacity: 1
-        }, 500), $(t).removeClass("close");
+        }, 100), $(t).removeClass("close");
       }), $(this).text($(this).data("temp"));else {
         $(this).css("opacity", 0), e.addClass("open");
         var n = e.children().eq(0).outerHeight();
         e.stop().animate({
           "max-height": n
-        }, 500, "linear", function () {
+        }, 100, "linear", function () {
           $(t).stop().animate({
             opacity: 1
-          }, 500), $(t).addClass("close");
+          }, 100), $(t).addClass("close");
         }), $(this).text() === "Скрыть" ? $(this).text("Показать больше...") : $(this).text("Скрыть");
       }
     }
@@ -62,9 +62,7 @@ $(document).ready(function () {
       $(".catalog-price--from").val(ui.values[0]);
       $(".catalog-price--to").val(ui.values[1]);
     }
-  }); // $(".catalog-price--from").change(function () { var value = $(this).val(); $("#slider").slider("values", 0, value);});
-  // $(".catalog-price--to").change(function () { var value = $(this).val(); $("#slider").slider("values", 1, value);});
-
+  });
   $(".catalog-price--from").val($("#catalog-price").slider("values", 0));
   $(".catalog-price--to").val($("#catalog-price").slider("values", 1));
 });

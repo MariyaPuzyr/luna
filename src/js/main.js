@@ -36,10 +36,10 @@ $(document).ready(function () {
               e.removeClass("open"),
               e.stop().animate({
                 "max-height": 81
-              }, 500, "linear", function () {
+              }, 100, "linear", function () {
                 $(t).stop().animate({
                   opacity: 1
-                }, 500),
+                }, 100),
                     $(t).removeClass("close");
               }),
               $(this).text($(this).data("temp"));
@@ -49,10 +49,10 @@ $(document).ready(function () {
           var n = e.children().eq(0).outerHeight();
           e.stop().animate({
             "max-height": n
-          }, 500, "linear", function () {
+          }, 100, "linear", function () {
             $(t).stop().animate({
               opacity: 1
-            }, 500),
+            }, 100),
                 $(t).addClass("close");
           }),
               ($(this).text() === "Скрыть") ? $(this).text("Показать больше...") : $(this).text("Скрыть");
@@ -71,8 +71,6 @@ $(document).ready(function () {
       $(".catalog-price--to").val(ui.values[1]);
     }
   });
-  // $(".catalog-price--from").change(function () { var value = $(this).val(); $("#slider").slider("values", 0, value);});
-  // $(".catalog-price--to").change(function () { var value = $(this).val(); $("#slider").slider("values", 1, value);});
   $(".catalog-price--from").val($("#catalog-price").slider("values", 0));
   $(".catalog-price--to").val($("#catalog-price").slider("values", 1));
 });
