@@ -1,6 +1,6 @@
 .news {
   padding-top: 95px;
-  padding-bottom: 110px;
+  padding-bottom: 75px;
   &-image {
     width: 100%;
   }
@@ -35,6 +35,27 @@
       letter-spacing: 0.05em;
       text-decoration: none;
       display: inline-flex;
+      transition: .3s;
+      &:hover {
+        background: #dbb7a6;
+      }
+    }
+  }
+  .offer-description {
+    p {
+      margin-top: 70px;
+      margin-bottom: 5px;
+      font: normal 14px/16px $font;
+      color: $color_dark;
+    }
+    &__link {
+      text-decoration: underline;
+      font: normal 14px/16px $font-regular;
+      color: #dbb7a6;
+      transition: .3s;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }
