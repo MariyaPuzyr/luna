@@ -1,0 +1,14 @@
+.catalog {
+  display: flex;
+  &-items {
+    &__body {
+      display: flex;
+      flex-direction: column;
+    }
+    &__catalog {
+      display: flex;
+      flex-flow: row wrap;
+      margin: 0 -20px;
+    }
+  }
+}
