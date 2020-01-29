@@ -1,7 +1,64 @@
-.catalog-filters {
-  width: 240px;
-  margin-right: 20px;
-  &__reset {
-
+.catalog-filter {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #C4C4C4;
+  &s {
+    width: 320px;
+    padding-right: 40px;
+    padding-left: 40px;
+    flex: 0 0 auto;
+    &__reset {
+      display: flex;
+      align-items: center;
+      color: #828282;
+      font: normal 20px/23px $font;
+      letter-spacing: 0.05em;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #C4C4C4;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: .3s;
+      &:hover {
+        color: #dbb7a6;
+        svg {
+          fill: #dbb7a6;
+        }
+      }
+      .close {
+        width: 18px;
+        height: 18px;
+        fill: #BDBDBD;
+        transition: .3s;
+        margin-left: auto;
+        &:hover {
+          fill: #dbb7a6;
+        }
+      }
+    }
+    &__title {
+      font: normal 30px/35px $font-regular;
+      letter-spacing: 0.1em;
+      color: $color_dark;
+    }
+  }
+  &--title {
+    font: normal 20px/23px $font-regular;
+    color: $color_dark;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    cursor: pointer;
+    &::after {
+      content: '';
+      width: 8px;
+      height: 8px;
+      mask: url("../img/svg/arrow.svg") no-repeat center;
+      mask-size: cover;
+      background: $color_dark;
+      transition: .3s;
+      flex: 0 0 auto;
+      transform: rotate(90deg);
+    }
   }
 }

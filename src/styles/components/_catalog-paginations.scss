@@ -1,0 +1,41 @@
+.catalog-items {
+  &__pagination {
+    display: inline-flex;
+    .page-link {
+      font: normal 20px/23px $font-bold;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 5px;
+      border-radius: 50%;
+      text-decoration: none;
+      color: $color_dark;
+      &.active {
+        color: $color_white;
+        background: #dbb7a6;
+      }
+    }
+    .page-prev, .page-next {
+      &::after {
+        content: '';
+        mask: url('../img/svg/arrow.svg') no-repeat center;
+        width: 9px;
+        height: 9px;
+        background: $color_dark;
+        mask-size: cover;
+      }
+    }
+    .disabled {
+      opacity: .2;
+    }
+    .page-next::after {
+      transform: rotate(180deg);
+    }
+  }
+  &__nav {
+    display: inline-flex;
+    margin: auto;
+  }
+}
