@@ -59,3 +59,13 @@
       .catalog-filter__position
         input#powder(type='checkbox' name='color')
         label(for='powder') Пудровий
+  .catalog-filter
+    .catalog-filter--title Цена
+    .catalog-price__top
+      .catalog-price__top-item от
+        input.catalog-price--from(type='text' readonly='')
+        | грн
+      .catalog-price__top-item до
+        input.catalog-price--to(type='text' readonly='')
+        | грн
+    #catalog-price

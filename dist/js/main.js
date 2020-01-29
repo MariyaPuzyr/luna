@@ -53,14 +53,18 @@ $(document).ready(function () {
   });
   /* range slider */
 
-  $("#slider-range").slider({
+  $("#catalog-price").slider({
     range: true,
     min: 0,
-    max: 500,
+    max: 5000,
     values: [46, 1522],
     slide: function slide(event, ui) {
-      $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+      $(".catalog-price--from").val(ui.values[0]);
+      $(".catalog-price--to").val(ui.values[1]);
     }
-  });
-  $("#amount").val("$" + $("#slider-range").slider("values", 0) + " - $" + $("#slider-range").slider("values", 1));
+  }); // $(".catalog-price--from").change(function () { var value = $(this).val(); $("#slider").slider("values", 0, value);});
+  // $(".catalog-price--to").change(function () { var value = $(this).val(); $("#slider").slider("values", 1, value);});
+
+  $(".catalog-price--from").val($("#catalog-price").slider("values", 0));
+  $(".catalog-price--to").val($("#catalog-price").slider("values", 1));
 });
