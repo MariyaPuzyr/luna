@@ -37,7 +37,7 @@
     </header>
     <div class="nav">
       <div class="container">
-        <div class="nav-items"><a class="logo" href="#"><img src="./img/svg/logo.svg"></a>
+        <div class="nav-items"><a class="logo" href="index.html"><img src="./img/svg/logo.svg"></a>
           <ul class="nav-list">
             <li><a class="active" href="catalog.html">Все коллекции</a></li>
             <li><a href="catalog.html">Бюсты</a></li>
@@ -58,224 +58,562 @@
         </div>
       </div>
     </div>
-    <div class="catalog">
-      <div class="catalog-filters">
-        <div class="catalog-filters__title">Бюсты</div>
-        <div class="catalog-filters__reset">Сбросить фильтр
-          <svg class="close">
-            <use xlink:href="./img/svg/symbol/sprite.svg#close-ico"></use>
-          </svg>
-        </div>
-        <div class="catalog-filter">
-          <div class="catalog-filter--title">Все модели</div>
-          <div class="catalog-filter__list">
-            <div class="catalog-filter__position">
-              <input id="vanilla" type="checkbox" name="models">
-              <label for="vanilla">Vanilla</label>
-            </div>
-            <div class="catalog-filter__position">
-              <input id="lirio" type="checkbox" name="models">
-              <label for="lirio">Lirio</label>
-            </div>
-            <div class="catalog-filter__position">
-              <input id="viola" type="checkbox" name="models">
-              <label for="viola">Viola</label>
-            </div>
-            <div class="catalog-filter__position">
-              <input id="flox" type="checkbox" name="models">
-              <label for="flox">Flox</label>
-            </div>
-            <div class="catalog-filter__position">
-              <input id="fresia" type="checkbox" name="models">
-              <label for="fresia">Fresia</label>
-            </div>
-            <div class="catalog-filter__position">
-              <input id="azalea" type="checkbox" name="models">
-              <label for="azalea">Azalea</label>
-            </div>
-            <div class="catalog-filter__position">
-              <input id="astro" type="checkbox" name="models">
-              <label for="astro">Astro</label>
-            </div>
-            <div class="catalog-filter__position">
-              <input id="calla" type="checkbox" name="models">
-              <label for="calla">Calla</label>
-            </div>
-            <div class="catalog-filter__position">
-              <input id="magnolia" type="checkbox" name="models">
-              <label for="magnolia">Magnolia</label>
+    <div class="container-fluid">
+      <div class="catalog">
+        <div class="catalog-filters">
+          <div class="catalog-filters__title">Бюсты</div>
+          <div class="catalog-filters__reset">Сбросить фильтр
+            <svg class="close">
+              <use xlink:href="./img/svg/symbol/sprite.svg#close-ico"></use>
+            </svg>
+          </div>
+          <div class="catalog-filter">
+            <div class="catalog-filter--title">Все модели</div>
+            <div class="catalog-filter__list">
+              <div class="catalog-filter__position">
+                <input id="vanilla" type="checkbox" name="models">
+                <label for="vanilla">Vanilla</label>
+              </div>
+              <div class="catalog-filter__position">
+                <input id="lirio" type="checkbox" name="models">
+                <label for="lirio">Lirio</label>
+              </div>
+              <div class="catalog-filter__position">
+                <input id="viola" type="checkbox" name="models">
+                <label for="viola">Viola</label>
+              </div>
+              <div class="catalog-filter__position">
+                <input id="flox" type="checkbox" name="models">
+                <label for="flox">Flox</label>
+              </div>
+              <div class="catalog-filter__position">
+                <input id="fresia" type="checkbox" name="models">
+                <label for="fresia">Fresia</label>
+              </div>
+              <div class="catalog-filter__position">
+                <input id="azalea" type="checkbox" name="models">
+                <label for="azalea">Azalea</label>
+              </div>
+              <div class="catalog-filter__position">
+                <input id="astro" type="checkbox" name="models">
+                <label for="astro">Astro</label>
+              </div>
+              <div class="catalog-filter__position">
+                <input id="calla" type="checkbox" name="models">
+                <label for="calla">Calla</label>
+              </div>
+              <div class="catalog-filter__position">
+                <input id="magnolia" type="checkbox" name="models">
+                <label for="magnolia">Magnolia</label>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="catalog-filter">
-          <div class="catalog-filter--title">Цвет</div>
-          <div class="catalog-filter__list">
-            <div class="catalog-filter__position">
-              <input id="black" type="checkbox" name="color">
-              <label for="black">Чорний</label>
-            </div>
-            <div class="catalog-filter__position">
-              <input id="chocolate" type="checkbox" name="color">
-              <label for="chocolate">Шоколад</label>
-            </div>
-            <div class="catalog-filter__position">
-              <input id="bordeaux" type="checkbox" name="color">
-              <label for="bordeaux">Бордо</label>
-            </div>
-            <div class="catalog-filter__position">
-              <input id="blue" type="checkbox" name="color">
-              <label for="blue">Синій</label>
-            </div>
-            <div class="catalog-filter__position">
-              <input id="white" type="checkbox" name="color">
-              <label for="white">Білий</label>
-            </div>
-            <div class="catalog-filter__position">
-              <input id="pearl" type="checkbox" name="color">
-              <label for="pearl">Перлиний</label>
-            </div>
-            <div class="catalog-filter__position">
-              <input id="beige" type="checkbox" name="color">
-              <label for="beige">Бежевий</label>
-            </div>
-            <div class="catalog-filter__position">
-              <input id="powder" type="checkbox" name="color">
-              <label for="powder">Пудровий</label>
-            </div>
-          </div>
-        </div>
-        <div class="catalog-filter">
-          <div class="catalog-filter--title">Цена</div>
-          <div class="catalog-price__top">
-            <div class="catalog-price__top-item">от
-              <input class="catalog-price--from" type="text" readonly="">грн
-            </div>
-            <div class="catalog-price__top-item">до
-              <input class="catalog-price--to" type="text" readonly="">грн
+          <div class="catalog-filter">
+            <div class="catalog-filter--title">Цвет</div>
+            <div class="catalog-filter__list">
+              <div class="catalog-filter__position">
+                <input id="black" type="checkbox" name="color">
+                <label for="black">Чорний</label>
+              </div>
+              <div class="catalog-filter__position">
+                <input id="chocolate" type="checkbox" name="color">
+                <label for="chocolate">Шоколад</label>
+              </div>
+              <div class="catalog-filter__position">
+                <input id="bordeaux" type="checkbox" name="color">
+                <label for="bordeaux">Бордо</label>
+              </div>
+              <div class="catalog-filter__position">
+                <input id="blue" type="checkbox" name="color">
+                <label for="blue">Синій</label>
+              </div>
+              <div class="catalog-filter__position">
+                <input id="white" type="checkbox" name="color">
+                <label for="white">Білий</label>
+              </div>
+              <div class="catalog-filter__position">
+                <input id="pearl" type="checkbox" name="color">
+                <label for="pearl">Перлиний</label>
+              </div>
+              <div class="catalog-filter__position">
+                <input id="beige" type="checkbox" name="color">
+                <label for="beige">Бежевий</label>
+              </div>
+              <div class="catalog-filter__position">
+                <input id="powder" type="checkbox" name="color">
+                <label for="powder">Пудровий</label>
+              </div>
             </div>
           </div>
-          <div id="catalog-price"></div>
-        </div>
-        <div class="catalog-filter">
-          <div class="catalog-filter--title">Размеры</div>
-          <div class="catalog-filter_size-list">
-            <div class="catalog-filter_size">
-              <input id="s-70" type="checkbox" name="size">
-              <label for="s-70">70</label>
+          <div class="catalog-filter">
+            <div class="catalog-filter--title">Цена</div>
+            <div class="catalog-price__top">
+              <div class="catalog-price__top-item">от
+                <input class="catalog-price--from" type="text" readonly="">грн
+              </div>
+              <div class="catalog-price__top-item">до
+                <input class="catalog-price--to" type="text" readonly="">грн
+              </div>
             </div>
-            <div class="catalog-filter_size">
-              <input id="s-75" type="checkbox" name="size">
-              <label for="s-75">75</label>
+            <div id="catalog-price"></div>
+          </div>
+          <div class="catalog-filter">
+            <div class="catalog-filter--title">Размеры</div>
+            <div class="catalog-filter_size-list">
+              <div class="catalog-filter_size">
+                <input id="s-70" type="checkbox" name="size">
+                <label for="s-70">70</label>
+              </div>
+              <div class="catalog-filter_size">
+                <input id="s-75" type="checkbox" name="size">
+                <label for="s-75">75</label>
+              </div>
+              <div class="catalog-filter_size">
+                <input id="s-80" type="checkbox" name="size">
+                <label for="s-80">80</label>
+              </div>
+              <div class="catalog-filter_size">
+                <input id="s-85" type="checkbox" name="size">
+                <label for="s-85">85</label>
+              </div>
             </div>
-            <div class="catalog-filter_size">
-              <input id="s-80" type="checkbox" name="size">
-              <label for="s-80">80</label>
+            <div class="catalog-filter_size-list">
+              <div class="catalog-filter_size">
+                <input id="a" type="checkbox" name="size">
+                <label for="a">A</label>
+              </div>
+              <div class="catalog-filter_size">
+                <input id="b" type="checkbox" name="size">
+                <label for="b">B</label>
+              </div>
+              <div class="catalog-filter_size">
+                <input id="c" type="checkbox" name="size">
+                <label for="c">C</label>
+              </div>
+              <div class="catalog-filter_size">
+                <input id="d" type="checkbox" name="size">
+                <label for="d">D</label>
+              </div>
+              <div class="catalog-filter_size">
+                <input id="e" type="checkbox" name="size">
+                <label for="e">E</label>
+              </div>
             </div>
-            <div class="catalog-filter_size">
-              <input id="s-85" type="checkbox" name="size">
-              <label for="s-85">85</label>
+            <div class="catalog-filter_size-list">
+              <div class="catalog-filter_size">
+                <input id="s" type="checkbox" name="size">
+                <label for="s">S</label>
+              </div>
+              <div class="catalog-filter_size">
+                <input id="m" type="checkbox" name="size">
+                <label for="m">M</label>
+              </div>
+              <div class="catalog-filter_size">
+                <input id="l" type="checkbox" name="size">
+                <label for="l">L</label>
+              </div>
+              <div class="catalog-filter_size">
+                <input id="xl" type="checkbox" name="size">
+                <label for="xl">XL</label>
+              </div>
+              <div class="catalog-filter_size">
+                <input id="xxl" type="checkbox" name="size">
+                <label for="xxl">XXL</label>
+              </div>
             </div>
           </div>
-          <div class="catalog-filter_size-list">
-            <div class="catalog-filter_size">
-              <input id="a" type="checkbox" name="size">
-              <label for="a">A</label>
-            </div>
-            <div class="catalog-filter_size">
-              <input id="b" type="checkbox" name="size">
-              <label for="b">B</label>
-            </div>
-            <div class="catalog-filter_size">
-              <input id="c" type="checkbox" name="size">
-              <label for="c">C</label>
-            </div>
-            <div class="catalog-filter_size">
-              <input id="d" type="checkbox" name="size">
-              <label for="d">D</label>
-            </div>
-            <div class="catalog-filter_size">
-              <input id="e" type="checkbox" name="size">
-              <label for="e">E</label>
-            </div>
-          </div>
-          <div class="catalog-filter_size-list">
-            <div class="catalog-filter_size">
-              <input id="s" type="checkbox" name="size">
-              <label for="s">S</label>
-            </div>
-            <div class="catalog-filter_size">
-              <input id="m" type="checkbox" name="size">
-              <label for="m">M</label>
-            </div>
-            <div class="catalog-filter_size">
-              <input id="l" type="checkbox" name="size">
-              <label for="l">L</label>
-            </div>
-            <div class="catalog-filter_size">
-              <input id="xl" type="checkbox" name="size">
-              <label for="xl">XL</label>
-            </div>
-            <div class="catalog-filter_size">
-              <input id="xxl" type="checkbox" name="size">
-              <label for="xxl">XXL</label>
+          <div class="catalog-filter">
+            <div class="catalog-filter--title">Модели</div>
+            <div class="catalog-filter__list">
+              <div class="catalog-filter__position">
+                <input id="balconet" type="checkbox" name="models">
+                <label for="balconet">Балконет</label>
+              </div>
+              <div class="catalog-filter__position">
+                <input id="triangular" type="checkbox" name="models">
+                <label for="triangular">Трикутна чашка</label>
+              </div>
+              <div class="catalog-filter__position">
+                <input id="classic" type="checkbox" name="models">
+                <label for="classic">Класична чашка</label>
+              </div>
+              <div class="catalog-filter__position">
+                <input id="smooth" type="checkbox" name="models">
+                <label for="smooth">Гладка чашка (?)</label>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="catalog-filter">
-          <div class="catalog-filter--title">Модели</div>
-          <div class="catalog-filter__list">
-            <div class="catalog-filter__position">
-              <input id="balconet" type="checkbox" name="models">
-              <label for="balconet">Балконет</label>
-            </div>
-            <div class="catalog-filter__position">
-              <input id="triangular" type="checkbox" name="models">
-              <label for="triangular">Трикутна чашка</label>
-            </div>
-            <div class="catalog-filter__position">
-              <input id="classic" type="checkbox" name="models">
-              <label for="classic">Класична чашка</label>
-            </div>
-            <div class="catalog-filter__position">
-              <input id="smooth" type="checkbox" name="models">
-              <label for="smooth">Гладка чашка (?)</label>
+          <div class="catalog-filter">
+            <div class="catalog-filter--title">Косточки</div>
+            <div class="catalog-filter__list">
+              <div class="catalog-filter__position">
+                <input id="balconet" type="checkbox" name="models">
+                <label for="balconet">С косточками</label>
+              </div>
+              <div class="catalog-filter__position">
+                <input id="triangular" type="checkbox" name="models">
+                <label for="triangular">Без косточек</label>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="catalog-filter">
-          <div class="catalog-filter--title">Косточки</div>
-          <div class="catalog-filter__list">
-            <div class="catalog-filter__position">
-              <input id="balconet" type="checkbox" name="models">
-              <label for="balconet">С косточками</label>
-            </div>
-            <div class="catalog-filter__position">
-              <input id="triangular" type="checkbox" name="models">
-              <label for="triangular">Без косточек</label>
-            </div>
+          <div class="catalog-filters__reset">Сбросить фильтр
+            <svg class="close">
+              <use xlink:href="./img/svg/symbol/sprite.svg#close-ico"></use>
+            </svg>
           </div>
         </div>
-        <div class="catalog-filters__reset">Сбросить фильтр
-          <svg class="close">
-            <use xlink:href="./img/svg/symbol/sprite.svg#close-ico"></use>
-          </svg>
-        </div>
-      </div>
-      <div class="catalog-items">
-        <div class="catalog-items__top">
-          <div class="catalog-breadcrumbs">
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Головна</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Бюсты</li>
-              </ol>
+        <div class="catalog-items">
+          <div class="catalog-items__top">
+            <div class="catalog-breadcrumbs">
+              <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Головна</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Бюсты</li>
+                </ul>
+              </nav>
+            </div>
+            <div class="catalog-settings"><a class="nav-link dropdown-toggle" href="#">Популярные</a>
+              <div class="dropdown-menu"><a class="dropdown-item" href="#">Популярные</a><a class="dropdown-item" href="#">Популярные</a><a class="dropdown-item" href="#">Популярные</a></div>
+            </div>
+          </div>
+          <div class="catalog-items__body">
+            <div class="catalog-items__catalog">
+              <div class="product-item">
+                <div class="product-top">
+                  <div class="new-position">New</div><img class="img-fluid" src="./img/product-3.png"/>
+                  <ul class="product-top__color">
+                    <li><a class="color color-white" href="#"></a></li>
+                    <li><a class="color color-matterhorn" href="#"></a></li>
+                    <li><a class="color color-bridal-heath" href="#"></a></li>
+                    <li><a class="color color-metallic-copper" href="#"></a></li>
+                    <li><a class="color color-swirl" href="#"></a></li>
+                    <li><a class="color color-monarch" href="#"></a></li>
+                  </ul><a class="product-top__quick-view" href="#">Быстрый просмотр</a>
+                </div>
+                <div class="product-body"><a class="product-name__link" href="#">FLOX BASIC</a>
+                  <p class="product-name__description">Бюстгальтеры - Мягкая чашка черный</p>
+                  <div class="product-price__item">
+                    <div class="product-price_new">700 ₴</div>
+                    <div class="product-price_old">900 ₴</div>
+                  </div>
+                  <ul class="product-size">
+                    <li><a class="no-size" href="#">70</a></li>
+                    <li><a href="#">80</a></li>
+                    <li><a href="#">90</a></li>
+                    <li><a class="no-size" href="#">100</a></li>
+                    <li><a class="no-size" href="#">120</a></li>
+                    <li><a class="no-size" href="#">130</a></li>
+                  </ul>
+                  <ul class="dropdown-product">
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a class="no-size" href="#">D</a></li>
+                    <li><a class="no-size" href="#">E</a></li>
+                    <li><a class="no-size" href="#">F</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-top">
+                  <div class="new-position">New</div><img class="img-fluid" src="./img/product-3.png"/>
+                  <ul class="product-top__color">
+                    <li><a class="color color-white" href="#"></a></li>
+                    <li><a class="color color-matterhorn" href="#"></a></li>
+                    <li><a class="color color-bridal-heath" href="#"></a></li>
+                    <li><a class="color color-metallic-copper" href="#"></a></li>
+                    <li><a class="color color-swirl" href="#"></a></li>
+                    <li><a class="color color-monarch" href="#"></a></li>
+                  </ul><a class="product-top__quick-view" href="#">Быстрый просмотр</a>
+                </div>
+                <div class="product-body"><a class="product-name__link" href="#">FLOX BASIC</a>
+                  <p class="product-name__description">Бюстгальтеры - Мягкая чашка черный</p>
+                  <div class="product-price__item">
+                    <div class="product-price_new">700 ₴</div>
+                    <div class="product-price_old">900 ₴</div>
+                  </div>
+                  <ul class="product-size">
+                    <li><a class="no-size" href="#">70</a></li>
+                    <li><a href="#">80</a></li>
+                    <li><a href="#">90</a></li>
+                    <li><a class="no-size" href="#">100</a></li>
+                    <li><a class="no-size" href="#">120</a></li>
+                    <li><a class="no-size" href="#">130</a></li>
+                  </ul>
+                  <ul class="dropdown-product">
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a class="no-size" href="#">D</a></li>
+                    <li><a class="no-size" href="#">E</a></li>
+                    <li><a class="no-size" href="#">F</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-top"><img class="img-fluid" src="./img/product-1.png"/>
+                  <ul class="product-top__color">
+                    <li><a class="color color-white" href="#"></a></li>
+                    <li><a class="color color-matterhorn" href="#"></a></li>
+                    <li><a class="color color-bridal-heath" href="#"></a></li>
+                    <li><a class="color color-metallic-copper" href="#"></a></li>
+                    <li><a class="color color-swirl" href="#"></a></li>
+                    <li><a class="color color-monarch" href="#"></a></li>
+                  </ul><a class="product-top__quick-view" href="#">Быстрый просмотр</a>
+                </div>
+                <div class="product-body"><a class="product-name__link" href="#">FLOX BASIC</a>
+                  <p class="product-name__description">Бюстгальтеры - Мягкая чашка черный</p>
+                  <div class="product-price__item">
+                    <div class="product-price_new">700 ₴</div>
+                    <div class="product-price_old">900 ₴</div>
+                  </div>
+                  <ul class="product-size">
+                    <li><a class="no-size" href="#">70</a></li>
+                    <li><a href="#">80</a></li>
+                    <li><a href="#">90</a></li>
+                    <li><a class="no-size" href="#">100</a></li>
+                    <li><a class="no-size" href="#">120</a></li>
+                    <li><a class="no-size" href="#">130</a></li>
+                  </ul>
+                  <ul class="dropdown-product">
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a class="no-size" href="#">D</a></li>
+                    <li><a class="no-size" href="#">E</a></li>
+                    <li><a class="no-size" href="#">F</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-top"><img class="img-fluid" src="./img/product-1.png"/>
+                  <ul class="product-top__color">
+                    <li><a class="color color-white" href="#"></a></li>
+                    <li><a class="color color-matterhorn" href="#"></a></li>
+                    <li><a class="color color-bridal-heath" href="#"></a></li>
+                    <li><a class="color color-metallic-copper" href="#"></a></li>
+                    <li><a class="color color-swirl" href="#"></a></li>
+                    <li><a class="color color-monarch" href="#"></a></li>
+                  </ul><a class="product-top__quick-view" href="#">Быстрый просмотр</a>
+                </div>
+                <div class="product-body"><a class="product-name__link" href="#">FLOX BASIC</a>
+                  <p class="product-name__description">Бюстгальтеры - Мягкая чашка черный</p>
+                  <div class="product-price__item">
+                    <div class="product-price_new">700 ₴</div>
+                    <div class="product-price_old">900 ₴</div>
+                  </div>
+                  <ul class="product-size">
+                    <li><a class="no-size" href="#">70</a></li>
+                    <li><a href="#">80</a></li>
+                    <li><a href="#">90</a></li>
+                    <li><a class="no-size" href="#">100</a></li>
+                    <li><a class="no-size" href="#">120</a></li>
+                    <li><a class="no-size" href="#">130</a></li>
+                  </ul>
+                  <ul class="dropdown-product">
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a class="no-size" href="#">D</a></li>
+                    <li><a class="no-size" href="#">E</a></li>
+                    <li><a class="no-size" href="#">F</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog-offer"><img src="./img/catalog-offer.jpg"></div>
+              <div class="product-item">
+                <div class="product-top"><img class="img-fluid" src="./img/product-1.png"/>
+                  <ul class="product-top__color">
+                    <li><a class="color color-white" href="#"></a></li>
+                    <li><a class="color color-matterhorn" href="#"></a></li>
+                    <li><a class="color color-bridal-heath" href="#"></a></li>
+                    <li><a class="color color-metallic-copper" href="#"></a></li>
+                    <li><a class="color color-swirl" href="#"></a></li>
+                    <li><a class="color color-monarch" href="#"></a></li>
+                  </ul><a class="product-top__quick-view" href="#">Быстрый просмотр</a>
+                </div>
+                <div class="product-body"><a class="product-name__link" href="#">FLOX BASIC</a>
+                  <p class="product-name__description">Бюстгальтеры - Мягкая чашка черный</p>
+                  <div class="product-price__item">
+                    <div class="product-price_new">700 ₴</div>
+                    <div class="product-price_old">900 ₴</div>
+                  </div>
+                  <ul class="product-size">
+                    <li><a class="no-size" href="#">70</a></li>
+                    <li><a href="#">80</a></li>
+                    <li><a href="#">90</a></li>
+                    <li><a class="no-size" href="#">100</a></li>
+                    <li><a class="no-size" href="#">120</a></li>
+                    <li><a class="no-size" href="#">130</a></li>
+                  </ul>
+                  <ul class="dropdown-product">
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a class="no-size" href="#">D</a></li>
+                    <li><a class="no-size" href="#">E</a></li>
+                    <li><a class="no-size" href="#">F</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-top"><img class="img-fluid" src="./img/product-1.png"/>
+                  <ul class="product-top__color">
+                    <li><a class="color color-white" href="#"></a></li>
+                    <li><a class="color color-matterhorn" href="#"></a></li>
+                    <li><a class="color color-bridal-heath" href="#"></a></li>
+                    <li><a class="color color-metallic-copper" href="#"></a></li>
+                    <li><a class="color color-swirl" href="#"></a></li>
+                    <li><a class="color color-monarch" href="#"></a></li>
+                  </ul><a class="product-top__quick-view" href="#">Быстрый просмотр</a>
+                </div>
+                <div class="product-body"><a class="product-name__link" href="#">FLOX BASIC</a>
+                  <p class="product-name__description">Бюстгальтеры - Мягкая чашка черный</p>
+                  <div class="product-price__item">
+                    <div class="product-price_new">700 ₴</div>
+                    <div class="product-price_old">900 ₴</div>
+                  </div>
+                  <ul class="product-size">
+                    <li><a class="no-size" href="#">70</a></li>
+                    <li><a href="#">80</a></li>
+                    <li><a href="#">90</a></li>
+                    <li><a class="no-size" href="#">100</a></li>
+                    <li><a class="no-size" href="#">120</a></li>
+                    <li><a class="no-size" href="#">130</a></li>
+                  </ul>
+                  <ul class="dropdown-product">
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a class="no-size" href="#">D</a></li>
+                    <li><a class="no-size" href="#">E</a></li>
+                    <li><a class="no-size" href="#">F</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-top"><img class="img-fluid" src="./img/product-1.png"/>
+                  <ul class="product-top__color">
+                    <li><a class="color color-white" href="#"></a></li>
+                    <li><a class="color color-matterhorn" href="#"></a></li>
+                    <li><a class="color color-bridal-heath" href="#"></a></li>
+                    <li><a class="color color-metallic-copper" href="#"></a></li>
+                    <li><a class="color color-swirl" href="#"></a></li>
+                    <li><a class="color color-monarch" href="#"></a></li>
+                  </ul><a class="product-top__quick-view" href="#">Быстрый просмотр</a>
+                </div>
+                <div class="product-body"><a class="product-name__link" href="#">FLOX BASIC</a>
+                  <p class="product-name__description">Бюстгальтеры - Мягкая чашка черный</p>
+                  <div class="product-price__item">
+                    <div class="product-price_new">700 ₴</div>
+                    <div class="product-price_old">900 ₴</div>
+                  </div>
+                  <ul class="product-size">
+                    <li><a class="no-size" href="#">70</a></li>
+                    <li><a href="#">80</a></li>
+                    <li><a href="#">90</a></li>
+                    <li><a class="no-size" href="#">100</a></li>
+                    <li><a class="no-size" href="#">120</a></li>
+                    <li><a class="no-size" href="#">130</a></li>
+                  </ul>
+                  <ul class="dropdown-product">
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a class="no-size" href="#">D</a></li>
+                    <li><a class="no-size" href="#">E</a></li>
+                    <li><a class="no-size" href="#">F</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-top"><img class="img-fluid" src="./img/product-1.png"/>
+                  <ul class="product-top__color">
+                    <li><a class="color color-white" href="#"></a></li>
+                    <li><a class="color color-matterhorn" href="#"></a></li>
+                    <li><a class="color color-bridal-heath" href="#"></a></li>
+                    <li><a class="color color-metallic-copper" href="#"></a></li>
+                    <li><a class="color color-swirl" href="#"></a></li>
+                    <li><a class="color color-monarch" href="#"></a></li>
+                  </ul><a class="product-top__quick-view" href="#">Быстрый просмотр</a>
+                </div>
+                <div class="product-body"><a class="product-name__link" href="#">FLOX BASIC</a>
+                  <p class="product-name__description">Бюстгальтеры - Мягкая чашка черный</p>
+                  <div class="product-price__item">
+                    <div class="product-price_new">700 ₴</div>
+                    <div class="product-price_old">900 ₴</div>
+                  </div>
+                  <ul class="product-size">
+                    <li><a class="no-size" href="#">70</a></li>
+                    <li><a href="#">80</a></li>
+                    <li><a href="#">90</a></li>
+                    <li><a class="no-size" href="#">100</a></li>
+                    <li><a class="no-size" href="#">120</a></li>
+                    <li><a class="no-size" href="#">130</a></li>
+                  </ul>
+                  <ul class="dropdown-product">
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a class="no-size" href="#">D</a></li>
+                    <li><a class="no-size" href="#">E</a></li>
+                    <li><a class="no-size" href="#">F</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-top"><img class="img-fluid" src="./img/product-1.png"/>
+                  <ul class="product-top__color">
+                    <li><a class="color color-white" href="#"></a></li>
+                    <li><a class="color color-matterhorn" href="#"></a></li>
+                    <li><a class="color color-bridal-heath" href="#"></a></li>
+                    <li><a class="color color-metallic-copper" href="#"></a></li>
+                    <li><a class="color color-swirl" href="#"></a></li>
+                    <li><a class="color color-monarch" href="#"></a></li>
+                  </ul><a class="product-top__quick-view" href="#">Быстрый просмотр</a>
+                </div>
+                <div class="product-body"><a class="product-name__link" href="#">FLOX BASIC</a>
+                  <p class="product-name__description">Бюстгальтеры - Мягкая чашка черный</p>
+                  <div class="product-price__item">
+                    <div class="product-price_new">700 ₴</div>
+                    <div class="product-price_old">900 ₴</div>
+                  </div>
+                  <ul class="product-size">
+                    <li><a class="no-size" href="#">70</a></li>
+                    <li><a href="#">80</a></li>
+                    <li><a href="#">90</a></li>
+                    <li><a class="no-size" href="#">100</a></li>
+                    <li><a class="no-size" href="#">120</a></li>
+                    <li><a class="no-size" href="#">130</a></li>
+                  </ul>
+                  <ul class="dropdown-product">
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a class="no-size" href="#">D</a></li>
+                    <li><a class="no-size" href="#">E</a></li>
+                    <li><a class="no-size" href="#">F</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <nav class="catalog-items__nav">
+              <ul class="catalog-items__pagination">
+                <li class="page-item disabled"><a class="page-link page-prev" href="#" tabindex="-1" aria-disabled="true"></a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link page-next" href="#"></a></li>
+              </ul>
             </nav>
           </div>
-          <div class="catalog-dropdown"><a class="nav-link dropdown-toggle" href="#">Популярные</a>
-            <div class="dropdown-menu"><a class="dropdown-item" href="#">Популярные</a><a class="dropdown-item" href="#">Популярные</a><a class="dropdown-item" href="#">Популярные</a></div>
+          <div class="offer-description">
+            <div class="offer-description__text" data-id="readMoreText1">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin fermentum leo vel orci porta non pulvinar. Neque volutpat ac tincidunt vitae semper quis lectus. Lacinia at quis risus sed vulputate odio ut enim. Ac turpis egestas sed tempus urna et pharetra pharetra. Consequat mauris nunc congue nisi vitae suscipit tellus. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. In vitae turpis massa sed elementum. Aliquam etiam erat velit scelerisque in. Felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Et netus et malesuada fames ac turpis. At risus viverra adipiscing at in tellus. Eu facilisis sed odio morbi quis. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Sit amet volutpat consequat mauris nunc. Nec nam aliquam sem et. Consectetur a erat nam at lectus urna duis convallis convallis. Adipiscing bibendum est ultricies integer quis auctor elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin fermentum leo vel orci porta non pulvinar. Neque volutpat ac tincidunt vitae semper quis lectus. Lacinia at quis risus sed vulputate odio ut enim. Ac turpis egestas sed tempus urna et pharetra pharetra. Consequat mauris nunc congue nisi vitae suscipit tellus. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. In vitae turpis massa sed elementum. Aliquam etiam erat velit scelerisque in. Felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Et netus et malesuada fames ac turpis. At risus viverra adipiscing at in tellus. Eu facilisis sed odio morbi quis. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Sit amet volutpat consequat mauris nunc. Nec nam aliquam sem et. Consectetur a erat nam at lectus urna duis convallis convallis. Adipiscing bibendum est ultricies integer quis auctor elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin fermentum leo vel orci porta non pulvinar. Neque volutpat ac tincidunt vitae semper quis lectus. Lacinia at quis risus sed vulputate odio ut enim. Ac turpis egestas sed tempus urna et pharetra pharetra. Consequat mauris nunc congue nisi vitae suscipit tellus. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. In vitae turpis massa sed elementum. Aliquam etiam erat velit scelerisque in. Felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Et netus et malesuada fames ac turpis. At risus viverra adipiscing at in tellus. Eu facilisis sed odio morbi quis. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Sit amet volutpat consequat mauris nunc. Nec nam aliquam sem et. Consectetur a erat nam at lectus urna duis convallis convallis. Adipiscing bibendum est ultricies integer quis auctor elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin fermentum leo vel orci porta non pulvinar. Neque volutpat ac tincidunt vitae semper quis lectus. Lacinia at quis risus sed vulputate odio ut enim. Ac turpis egestas sed tempus urna et pharetra pharetra. Consequat mauris nunc congue nisi vitae suscipit tellus. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. In vitae turpis massa sed elementum. Aliquam etiam erat velit scelerisque in. Felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Et netus et malesuada fames ac turpis. At risus viverra adipiscing at in tellus. Eu facilisis sed odio morbi quis. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Sit amet volutpat consequat mauris nunc. Nec nam aliquam sem et. Consectetur a erat nam at lectus urna duis convallis convallis. Adipiscing bibendum est ultricies integer quis auctor elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin</p>
+            </div>
+            <div class="offer-description__link" data-link="readMoreText1" data-closetitle="Скрыть">Показать больше...</div>
           </div>
         </div>
-        <div class="catalog-items__body"></div>
       </div>
     </div>
     <footer class="footer">
@@ -305,7 +643,7 @@
               <div class="footer-address__info">м.Київ, вул.Луговая 7</div><a class="footer-address__info" href="mailto:lnfo@site.com">lnfo@site.com</a><a class="footer-address__info" href="tel:+380440974323">+38 044 097 43 23</a>
             </div>
           </div>
-          <div class="footer-links"><a class="footer-logo" href="#">
+          <div class="footer-links"><a class="footer-logo" href="index.html">
               <svg class="logo">
                 <use xlink:href="./img/svg/symbol/sprite.svg#logo"></use>
               </svg></a>

@@ -3,3 +3,106 @@
 mixin sprite(name, id)
   svg(class=name)
     use(xlink:href=path + id)
+
+mixin catalog-position
+  .product-item
+    .product-top
+      img(src='./img/product-1.png').img-fluid
+      ul.product-top__color
+        li
+          a(href='#').color.color-white
+        li
+          a(href='#').color.color-matterhorn
+        li
+          a(href='#').color.color-bridal-heath
+        li
+          a(href='#').color.color-metallic-copper
+        li
+          a(href='#').color.color-swirl
+        li
+          a(href='#').color.color-monarch
+      a(href='#').product-top__quick-view Быстрый просмотр
+    .product-body
+      a(href='#').product-name__link FLOX BASIC
+      p.product-name__description Бюстгальтеры - Мягкая чашка черный
+      .product-price__item
+        .product-price_new 700 ₴
+        .product-price_old 900 ₴
+      ul.product-size
+        li
+          a(href='#').no-size 70
+        li
+          a(href='#') 80
+        li
+          a(href='#') 90
+        li
+          a(href='#').no-size 100
+        li
+          a(href='#').no-size 120
+        li
+          a(href='#').no-size 130
+      ul.dropdown-product
+        li
+          a(href='#') A
+        li
+          a(href='#') B
+        li
+          a(href='#') C
+        li
+          a(href='#').no-size D
+        li
+          a(href='#').no-size E
+        li
+          a(href='#').no-size F
+
+mixin catalog-position__new
+  .product-item
+    .product-top
+      .new-position New
+      img(src='./img/product-3.png').img-fluid
+      ul.product-top__color
+        li
+          a(href='#').color.color-white
+        li
+          a(href='#').color.color-matterhorn
+        li
+          a(href='#').color.color-bridal-heath
+        li
+          a(href='#').color.color-metallic-copper
+        li
+          a(href='#').color.color-swirl
+        li
+          a(href='#').color.color-monarch
+      a(href='#').product-top__quick-view Быстрый просмотр
+    .product-body
+      a(href='#').product-name__link FLOX BASIC
+      p.product-name__description Бюстгальтеры - Мягкая чашка черный
+      .product-price__item
+        .product-price_new 700 ₴
+        .product-price_old 900 ₴
+      ul.product-size
+        li
+          a(href='#').no-size 70
+        li
+          a(href='#') 80
+        li
+          a(href='#') 90
+        li
+          a(href='#').no-size 100
+        li
+          a(href='#').no-size 120
+        li
+          a(href='#').no-size 130
+      ul.dropdown-product
+        li
+          a(href='#') A
+        li
+          a(href='#') B
+        li
+          a(href='#') C
+        li
+          a(href='#').no-size D
+        li
+          a(href='#').no-size E
+        li
+          a(href='#').no-size F
