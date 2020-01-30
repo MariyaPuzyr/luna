@@ -3,6 +3,49 @@
   &-info {
     width: 100%;
     padding-top: 85px;
+    padding-right: 105px;
     border-right: 1px solid #DADADA;
+    color: $color_dark;
+    h3 {
+      margin-top: 0;
+      font: normal 30px/35px $font;
+      margin-bottom: 15px;
+    }
+    .form-item {
+      border-bottom: 1px solid #DADADA;
+      padding-bottom: 15px;
+      margin-bottom: 25px;
+    }
+    .form-row {
+      display: flex;
+      margin: 0 -10px;
+    }
+    .form-group {
+      width: 100%;
+      margin: 0 10px 20px;
+      position: relative;
+    }
+    .form-control {
+      width: 100%;
+      font: normal 16px/19px $font;
+      color: $color_dark;
+      padding: 14px 10px;
+      border: 1px solid #828282;
+      transition: .3s;
+      &:hover, &:focus {
+        border-color: #dbb7a6;
+        outline: none;
+      }
+      &::placeholder {
+        color: #999696;
+      }
+    }
+    .help-text {
+      position: absolute;
+      font: normal 12px/14px $font;
+      color: #999696;
+      left: 0;
+      bottom: -20px;
+    }
   }
 }

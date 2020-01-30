@@ -7,6 +7,9 @@
 
   .tab-panel {
     display: none;
+    &s {
+      margin-top: 10px;
+    }
   }
 
   > input {
