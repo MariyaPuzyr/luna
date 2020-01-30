@@ -1,6 +1,7 @@
 .thanks-for-order {
-  max-width: 492px;
+  max-width: 572px;
   width: 100%;
+  padding: 0 40px;
   margin: 85px auto;
   h2 {
     text-align: center;
@@ -9,23 +10,23 @@
     margin-top: 0;
     margin-bottom: 75px;
   }
-  .finish-order-list__info {
-    margin-top: 40px;
-    &-item {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      font: normal 20px/23px $font-regular;
-      margin-bottom: 5px;
-      letter-spacing: .02em;
-      .price {
-        font-family: $font-bold;
-      }
+}
+.finish-order-list__info {
+  margin-top: 40px;
+  &-item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    font: normal 20px/23px $font-regular;
+    margin-bottom: 5px;
+    letter-spacing: .02em;
+    .price {
+      font-family: $font-bold;
     }
-    .cart-total-cost {
-      border-top: 1px solid #E7E7E7;
-      margin-top: 25px;
-      padding-top: 10px;
-    }
+  }
+  .cart-total-cost {
+    border-top: 1px solid #E7E7E7;
+    margin-top: 25px;
+    padding-top: 10px;
   }
 }
