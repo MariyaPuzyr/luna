@@ -20,11 +20,9 @@
         li
           a(href='#') News
       a(href='#').offers Здесь будет оффер
-      .header-wish
-        a(href='#').header-wish__link
-          +sprite('icon', 'like-ico')
-          span.header-wish__link-counter 2
-      .header-cart
-        a(href='#').header-wish__link
-          +sprite('icon-cart', 'cart-ico')
-          span.header-wish__link-counter 2
+      a(href='#').header-wish__link.header-wish
+        +sprite('icon', 'like-ico')
+        span.header-wish__link-counter 2
+      a(href='#').header-wish__link.header-cart
+        +sprite('icon-cart', 'cart-ico')
+        span.header-wish__link-counter 2

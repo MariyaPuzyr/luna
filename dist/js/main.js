@@ -65,4 +65,5 @@ $(document).ready(function () {
   });
   $(".catalog-price--from").val($("#catalog-price").slider("values", 0));
   $(".catalog-price--to").val($("#catalog-price").slider("values", 1));
+  /* show shop cart */
 });

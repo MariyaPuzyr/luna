@@ -106,3 +106,26 @@ mixin catalog-position__new
           a(href='#').no-size E
         li
           a(href='#').no-size F
+
+mixin shop-position
+  .cart-item__position
+    button.cart-item__delete(type='button')
+      +sprite('close', 'close-ico')
+    .cart-item__position--img
+      img(src='./img/catalog-img.jpg')
+    .cart-item__position--info
+      .position-name Flox basic
+      .position-article АРТ: 555828
+      .position-counter
+        span.minus -
+        input(type='text', value='1')
+        span.plus +
+      .position-info
+        .position-info__iten
+          .position-color Цвет:
+            .position-color__item.black
+          .position-size Размер:
+            span 80A
+        .position-info__iten
+          .product-price_old 900 ₴
+          .product-price_new 700 ₴

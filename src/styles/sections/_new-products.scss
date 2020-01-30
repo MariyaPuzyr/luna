@@ -178,7 +178,7 @@
       position: relative;
       font: normal 22px/26px $font;
       color: #BDBDBD;
-      display: flex;
+      display: inline-flex;
       align-items: center;
       &::after {
         content: '';

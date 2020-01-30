@@ -46,15 +46,13 @@
             <li><a href="catalog.html">Топы</a></li>
             <li><a href="catalog.html"><b>Sale -30%</b></a></li>
             <li><a href="#">News</a></li>
-          </ul><a class="offers" href="#">Здесь будет оффер</a>
-          <div class="header-wish"><a class="header-wish__link" href="#">
-              <svg class="icon">
-                <use xlink:href="./img/svg/symbol/sprite.svg#like-ico"></use>
-              </svg><span class="header-wish__link-counter">2</span></a></div>
-          <div class="header-cart"><a class="header-wish__link" href="#">
-              <svg class="icon-cart">
-                <use xlink:href="./img/svg/symbol/sprite.svg#cart-ico"></use>
-              </svg><span class="header-wish__link-counter">2</span></a></div>
+          </ul><a class="offers" href="#">Здесь будет оффер</a><a class="header-wish__link header-wish" href="#">
+            <svg class="icon">
+              <use xlink:href="./img/svg/symbol/sprite.svg#like-ico"></use>
+            </svg><span class="header-wish__link-counter">2</span></a><a class="header-wish__link header-cart" href="#">
+            <svg class="icon-cart">
+              <use xlink:href="./img/svg/symbol/sprite.svg#cart-ico"></use>
+            </svg><span class="header-wish__link-counter">2</span></a>
         </div>
       </div>
     </div>
@@ -371,6 +369,103 @@
         </div>
       </div>
     </footer>
+    <div class="cart">
+      <div class="cart-overlay"></div>
+      <div class="cart-item">
+        <div class="cart-top">
+          <div class="cart-top__title">МОЯ КОРЗИНА</div>
+          <div class="cart-top__continue-shop">ПРОДОЛЖИТЬ ПОКУПКИ</div>
+        </div>
+        <div class="cart-body">
+          <div class="cart-item__position">
+            <button class="cart-item__delete" type="button">
+              <svg class="close">
+                <use xlink:href="./img/svg/symbol/sprite.svg#close-ico"></use>
+              </svg>
+            </button>
+            <div class="cart-item__position--img"><img src="./img/catalog-img.jpg"/></div>
+            <div class="cart-item__position--info">
+              <div class="position-name">Flox basic</div>
+              <div class="position-article">АРТ: 555828</div>
+              <div class="position-counter"><span class="minus">-</span>
+                <input type="text" value="1"/><span class="plus">+</span>
+              </div>
+              <div class="position-info">
+                <div class="position-info__iten">
+                  <div class="position-color">Цвет:
+                    <div class="position-color__item black"></div>
+                  </div>
+                  <div class="position-size">Размер:<span>80A</span></div>
+                </div>
+                <div class="position-info__iten">
+                  <div class="product-price_old">900 ₴</div>
+                  <div class="product-price_new">700 ₴</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-item__position">
+            <button class="cart-item__delete" type="button">
+              <svg class="close">
+                <use xlink:href="./img/svg/symbol/sprite.svg#close-ico"></use>
+              </svg>
+            </button>
+            <div class="cart-item__position--img"><img src="./img/catalog-img.jpg"/></div>
+            <div class="cart-item__position--info">
+              <div class="position-name">Flox basic</div>
+              <div class="position-article">АРТ: 555828</div>
+              <div class="position-counter"><span class="minus">-</span>
+                <input type="text" value="1"/><span class="plus">+</span>
+              </div>
+              <div class="position-info">
+                <div class="position-info__iten">
+                  <div class="position-color">Цвет:
+                    <div class="position-color__item black"></div>
+                  </div>
+                  <div class="position-size">Размер:<span>80A</span></div>
+                </div>
+                <div class="position-info__iten">
+                  <div class="product-price_old">900 ₴</div>
+                  <div class="product-price_new">700 ₴</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-item__position">
+            <button class="cart-item__delete" type="button">
+              <svg class="close">
+                <use xlink:href="./img/svg/symbol/sprite.svg#close-ico"></use>
+              </svg>
+            </button>
+            <div class="cart-item__position--img"><img src="./img/catalog-img.jpg"/></div>
+            <div class="cart-item__position--info">
+              <div class="position-name">Flox basic</div>
+              <div class="position-article">АРТ: 555828</div>
+              <div class="position-counter"><span class="minus">-</span>
+                <input type="text" value="1"/><span class="plus">+</span>
+              </div>
+              <div class="position-info">
+                <div class="position-info__iten">
+                  <div class="position-color">Цвет:
+                    <div class="position-color__item black"></div>
+                  </div>
+                  <div class="position-size">Размер:<span>80A</span></div>
+                </div>
+                <div class="position-info__iten">
+                  <div class="product-price_old">900 ₴</div>
+                  <div class="product-price_new">700 ₴</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-bottom">
+          <div class="cart-total-cost"><span>Общая стоимость:</span>
+            <div class="cart-total-cost__price">700 ₴</div>
+          </div><a class="cart-check-button" href="#">ЗАКАЗАТЬ</a>
+        </div>
+      </div>
+    </div>
     <script src="./js/main-libs.min.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/main.js"></script>
