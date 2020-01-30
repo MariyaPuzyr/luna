@@ -3,10 +3,10 @@
     img(src='./img/svg/logo.svg')
   .tabset
     input#tab1(type='radio', name='tabset', aria-controls='new-customer', checked='')
-    label(for='tab1').separate
+    label(for='tab1').tab-header.separate
       span Я новый клиент
     input#tab2(type='radio', name='tabset', aria-controls='regular-customer')
-    label(for='tab2')
+    label(for='tab2').tab-header
       span Я постоянный клиент
     .tab-panels
       section#new-customer.tab-panel
@@ -51,29 +51,30 @@
 
           .form-item
             h3 Оплата
-            .form-row
+            .form-row.form-check
               .form-payment
-                input#cash(type='radio')
+                input#cash(type='radio' name='payment').form-payment__check
                 label(for='cash') Наличными при получении
               .form-payment
-                input#card(type='radio')
+                input#card(type='radio' name='payment').form-payment__check
                 label(for='card') Оплата на карту
               .form-payment
-                input#liq-pay(type='radio')
+                input#liq-pay(type='radio' name='payment').form-payment__check
                 label(for='liq-pay') LiqPay
               .form-payment
-                input#google-pay(type='radio')
+                input#google-pay(type='radio' name='payment').form-payment__check
                 label(for='google-pay') Google Pay
               .form-payment
-                input#apple-pay(type='radio')
+                input#apple-pay(type='radio' name='payment').form-payment__check
                 label(for='apple-pay') Apple Pay
               .form-payment
-                input#easy-pay(type='radio')
+                input#easy-pay(type='radio' name='payment').form-payment__check
                 label(for='easy-pay') EasyPay
           .form-row
             .confidence
-              input#confidence(type='checkbox')
+              input#confidence(type='checkbox').form-payment__check
               label(for='confidence') Не перезванивайте мне, я уверен (-на) в заказе
+              button(type='submit').get-order ПОДТВЕРДИТЬ ЗАКАЗ
       section#regular-customer.tab-panel
         h2 6B. regular-customer
         p

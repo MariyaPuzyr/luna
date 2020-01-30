@@ -1,5 +1,8 @@
 .checkout {
   display: flex;
+  .thanks-for-order h2 {
+    margin: 0;
+  }
   &-info {
     width: 100%;
     padding-top: 85px;

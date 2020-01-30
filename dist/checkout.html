@@ -13,9 +13,9 @@
       <div class="checkout-info"><a href="index.html"><img src="./img/svg/logo.svg"></a>
         <div class="tabset">
           <input id="tab1" type="radio" name="tabset" aria-controls="new-customer" checked="">
-          <label class="separate" for="tab1"><span>Я новый клиент</span></label>
+          <label class="tab-header separate" for="tab1"><span>Я новый клиент</span></label>
           <input id="tab2" type="radio" name="tabset" aria-controls="regular-customer">
-          <label for="tab2"><span>Я постоянный клиент</span></label>
+          <label class="tab-header" for="tab2"><span>Я постоянный клиент</span></label>
           <div class="tab-panels">
             <section class="tab-panel" id="new-customer">
               <form action="#">
@@ -75,37 +75,38 @@
                 </div>
                 <div class="form-item">
                   <h3>Оплата</h3>
-                  <div class="form-row">
+                  <div class="form-row form-check">
                     <div class="form-payment">
-                      <input id="cash" type="radio">
+                      <input class="form-payment__check" id="cash" type="radio" name="payment">
                       <label for="cash">Наличными при получении</label>
                     </div>
                     <div class="form-payment">
-                      <input id="card" type="radio">
+                      <input class="form-payment__check" id="card" type="radio" name="payment">
                       <label for="card">Оплата на карту</label>
                     </div>
                     <div class="form-payment">
-                      <input id="liq-pay" type="radio">
+                      <input class="form-payment__check" id="liq-pay" type="radio" name="payment">
                       <label for="liq-pay">LiqPay</label>
                     </div>
                     <div class="form-payment">
-                      <input id="google-pay" type="radio">
+                      <input class="form-payment__check" id="google-pay" type="radio" name="payment">
                       <label for="google-pay">Google Pay</label>
                     </div>
                     <div class="form-payment">
-                      <input id="apple-pay" type="radio">
+                      <input class="form-payment__check" id="apple-pay" type="radio" name="payment">
                       <label for="apple-pay">Apple Pay</label>
                     </div>
                     <div class="form-payment">
-                      <input id="easy-pay" type="radio">
+                      <input class="form-payment__check" id="easy-pay" type="radio" name="payment">
                       <label for="easy-pay">EasyPay</label>
                     </div>
                   </div>
                 </div>
                 <div class="form-row">
                   <div class="confidence">
-                    <input id="confidence" type="checkbox">
+                    <input class="form-payment__check" id="confidence" type="checkbox">
                     <label for="confidence">Не перезванивайте мне, я уверен (-на) в заказе</label>
+                    <button class="get-order" type="submit">ПОДТВЕРДИТЬ ЗАКАЗ</button>
                   </div>
                 </div>
               </form>

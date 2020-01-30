@@ -17,7 +17,7 @@
       display: block;
     }
   }
-  label {
+  .tab-header {
     position: relative;
     font: normal 16px/19px $font;
     color: $color_dark;
@@ -33,7 +33,7 @@
     margin: 0 0 0 5px;
   }
   input {
-    &:checked + label {
+    &:checked + .tab-header {
       font-family: $font-bold;
     }
   }
