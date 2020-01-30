@@ -110,4 +110,10 @@ $(document).ready(function () {
     });
   }
   /* shop cart counter end */
+
+  /*show dropdown list*/
+  $('.dropdown-list').click(function () {
+    $(this).toggleClass('open');
+  });
+  /*show dropdown list end */
 });

@@ -25,12 +25,12 @@
     span {
       text-decoration: underline;
     }
-    &:nth-child(2)::after {
-      content: '/';
-      font: normal 16px/19px $font;
-      color: $color_dark;
-      margin: 0 0 0 5px;
-    }
+  }
+  .separate::after {
+    content: '/';
+    font: normal 16px/19px $font;
+    color: $color_dark;
+    margin: 0 0 0 5px;
   }
   input {
     &:checked + label {
