@@ -127,4 +127,23 @@ $(document).ready(function () {
   }
   /* dropdown catalog filterend */
 
+  /* page product slider */
+
+
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: false,
+    arrows: true,
+    vertical: true
+  });
+  /* page product slider end*/
 });
