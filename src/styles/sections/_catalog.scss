@@ -16,6 +16,10 @@
         max-width: 334px;
         margin: 0 0 auto;
         flex: 0 0 33.333333%;
+        &:hover .product-add-favorites {
+          opacity: 1;
+          visibility: visible;
+        }
       }
       .product-top {
         height: auto;
@@ -38,6 +42,9 @@
           justify-content: center;
         }
       }
+      .product-name__link {
+        margin-top: 25px;
+      }
       .product-body {
         padding-bottom: 25px;
       }
@@ -56,6 +63,8 @@
   top: 3px;
   transition: .3s;
   fill: #838383;
+  opacity: 0;
+  visibility: hidden;
   .icon {
     width: 27px;
     height: 24px;
