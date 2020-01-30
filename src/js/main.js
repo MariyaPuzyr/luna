@@ -65,7 +65,7 @@ $(document).ready(function () {
     range: true,
     min: 0,
     max: 5000,
-    values: [ 46, 1522 ],
+    values: [46, 1522],
     slide: function (event, ui) {
       $(".catalog-price--from").val(ui.values[0]);
       $(".catalog-price--to").val(ui.values[1]);
@@ -76,4 +76,19 @@ $(document).ready(function () {
 
   /* show shop cart */
 
+  /* shop cart counter */
+  $('.minus').click(function () {
+    var $input = $(this).parent().find('input');
+    var count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
+  });
+  $('.plus').click(function () {
+    var $input = $(this).parent().find('input');
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
+  });
 });

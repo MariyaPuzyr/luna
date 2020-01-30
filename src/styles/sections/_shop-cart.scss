@@ -25,9 +25,43 @@
     padding: 35px 40px 40px;
     &__position {
       display: flex;
-      flex-direction: column;
       border-bottom: 1px solid #E7E7E7;
       padding: 10px 0;
+      position: relative;
+      &--img {
+        width: 133px;
+        height: 175px;
+        flex-shrink: 0;
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+      &--info {
+        padding-left: 25px;
+        color: $color_dark;
+      }
+    }
+    &__delete {
+      border: none;
+      background: transparent;
+      position: absolute;
+      top: 10px;
+      right: 0;
+      padding: 0;
+      transition: .3s;
+      &:focus {
+        outline: none;
+      }
+      &:hover .close {
+        fill: #dbb7a6;
+      }
+      .close {
+        width: 13px;
+        height: 13px;
+        fill: #828282;
+        transition: .3s;
+      }
     }
   }
   &-top {
@@ -57,6 +91,38 @@
       cursor: pointer;
       &:hover {
         background: #dbb7a6;
+      }
+    }
+  }
+  .position {
+    &-name {
+      font: normal 20px/23px $font-regular;
+      letter-spacing: .02em;
+    }
+    &-article {
+      font: normal 16px/19px $font;
+      color: rgba($color_dark, .5);
+    }
+    &-counter {
+      display: inline-flex;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      width: 85px;
+      padding: 9px 10px;
+      border: 1px solid #828282;
+      input[type="text"] {
+        border: none;
+        text-align: center;
+        width: 100%;
+      }
+      span {
+        font: normal 24px/20px $font-regular;
+        color: #828282;
+        cursor: pointer;
+        transition: .3s;
+        &:hover {
+          color: #dbb7a6;
+        }
       }
     }
   }
