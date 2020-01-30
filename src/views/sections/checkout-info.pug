@@ -76,10 +76,68 @@
               label(for='confidence') Не перезванивайте мне, я уверен (-на) в заказе
               button(type='submit').get-order ПОДТВЕРДИТЬ ЗАКАЗ
       section#regular-customer.tab-panel
-        h2 6B. regular-customer
-        p
-          strong Overall Impression:
-          |   An elegant, malty German amber lager with a balanced, complementary beechwood smoke character. Toasty-rich malt in aroma and flavor, restrained bitterness, low to high smoke flavor, clean fermentation profile, and an attenuated finish are characteristic.
-        p
-          strong History:
-          |  A historical specialty of the city of Bamberg, in the Franconian region of Bavaria in Germany. Beechwood-smoked malt is used to make a Märzen-style amber lager. The smoke character of the malt varies by maltster; some breweries produce their own smoked malt (rauchmalz).
+        form(action='#')
+          .form-item
+            h3 Контакты
+            .form-row
+              .form-group
+                input(type='text' placeholder='Имя' value='Имя').form-control
+              .form-group
+                input(type='text' placeholder='Телефон' value='Телефон').form-control
+            .form-row
+              .form-group
+                input(type='text' placeholder='Фамилия' value='Фамилия').form-control
+              .form-group
+                input(type='text' placeholder='E-mail' value='test@test.com').form-control
+                small.help-text Подтверждение заказа прийдет на почту
+          .form-item
+            h3 Доставка
+            .form-row
+              .form-group
+                .dropdown-list
+                  .dropdown-title Способ доставки
+                  .dropdown-select-list
+                    .dropdown-select-list__item Способ доставки
+                    .dropdown-select-list__item Способ доставки
+                    .dropdown-select-list__item Способ доставки
+                    .dropdown-select-list__item Способ доставки
+              .form-group
+                input(type='text' placeholder='Город доставки').form-control
+            .form-row
+              .form-group
+                .dropdown-list
+                  .dropdown-title Номер отделения
+                  .dropdown-select-list
+                    .dropdown-select-list__item Номер отделения
+                    .dropdown-select-list__item Номер отделения
+                    .dropdown-select-list__item Номер отделения
+                    .dropdown-select-list__item Номер отделения
+              .form-group
+                input(type='text' placeholder='Адрес (при курьерской доставки)').form-control
+
+          .form-item
+            h3 Оплата
+            .form-row.form-check
+              .form-payment
+                input#cash(type='radio' name='payment').form-payment__check
+                label(for='cash') Наличными при получении
+              .form-payment
+                input#card(type='radio' name='payment').form-payment__check
+                label(for='card') Оплата на карту
+              .form-payment
+                input#liq-pay(type='radio' name='payment').form-payment__check
+                label(for='liq-pay') LiqPay
+              .form-payment
+                input#google-pay(type='radio' name='payment').form-payment__check
+                label(for='google-pay') Google Pay
+              .form-payment
+                input#apple-pay(type='radio' name='payment').form-payment__check
+                label(for='apple-pay') Apple Pay
+              .form-payment
+                input#easy-pay(type='radio' name='payment').form-payment__check
+                label(for='easy-pay') EasyPay
+          .form-row
+            .confidence
+              input#confidence(type='checkbox').form-payment__check
+              label(for='confidence') Не перезванивайте мне, я уверен (-на) в заказе
+              button(type='submit').get-order ПОДТВЕРДИТЬ ЗАКАЗ
