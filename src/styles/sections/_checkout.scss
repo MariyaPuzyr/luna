@@ -28,15 +28,18 @@
     }
   }
 }
+
 .form-row {
   display: flex;
   margin: 0 -10px;
 }
+
 .form-group {
   width: 100%;
   margin: 0 10px 20px;
   position: relative;
 }
+
 .form-control {
   width: 100%;
   font: normal 16px/19px $font;
@@ -52,14 +55,17 @@
     color: #999696;
   }
 }
+
 .dropdown {
   &-list {
-    border: 1px solid #828282;
-    &:hover {
+    position: relative;
+    &:hover .dropdown-title{
       border-color: #dbb7a6;
     }
     &.open {
-      border-color: #dbb7a6;
+      .dropdown-title {
+        border-color: #dbb7a6;
+      }
       .dropdown-select-list {
         display: block;
         border-color: #dbb7a6;
@@ -77,6 +83,8 @@
     font: normal 16px/19px $font;
     color: #999696;
     cursor: pointer;
+    border: 1px solid #828282;
+    position: relative;
     &::after {
       content: '';
       mask: url('../img/svg/arrow.svg') no-repeat center;

@@ -1,0 +1,22 @@
+.catalog-breadcrumbs {
+  display: flex;
+  align-items: baseline;
+  .breadcrumb-item {
+    font: normal 16px/19px $font;
+    color: #828282;
+    a {
+      color: #828282;
+      text-decoration: none;
+      transition: .3s;
+      &:hover {
+        color: #dbb7a6;
+      }
+    }
+    & + .breadcrumb-item::before {
+      display: inline-block;
+      margin: 0 5px;
+      color: #6c757d;
+      content: "/";
+    }
+  }
+}
