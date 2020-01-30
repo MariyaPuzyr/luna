@@ -111,10 +111,10 @@ mixin shop-position
   .cart-item__position
     button.cart-item__delete(type='button')
       +sprite('close', 'close-ico')
-    .cart-item__position--img
+    a(href='#').cart-item__position--img
       img(src='./img/catalog-img.jpg')
     .cart-item__position--info
-      .position-name Flox basic
+      a(href='#').position-name Flox basic
       .position-article АРТ: 555828
       .position-counter
         span.minus -

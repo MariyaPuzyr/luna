@@ -120,6 +120,12 @@
     &-name {
       font: normal 20px/23px $font-regular;
       letter-spacing: .02em;
+      color: $color_dark;
+      text-decoration: none;
+      transition: .3s;
+      &:hover {
+        color: #dbb7a6;
+      }
     }
     &-article {
       font: normal 16px/19px $font;
