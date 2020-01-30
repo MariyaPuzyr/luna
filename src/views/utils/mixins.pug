@@ -59,7 +59,7 @@ mixin catalog-position__new
   .product-item
     .product-top
       .new-position New
-      img(src='./img/catalog-img.jpg').img-fluid
+      img(src='./img/product-2.png').img-fluid
       ul.product-top__color
         li
           a(href='#').color.color-white
@@ -75,6 +75,8 @@ mixin catalog-position__new
           a(href='#').color.color-monarch
       a(href='#').product-top__quick-view Быстрый просмотр
     .product-body
+      a(href='#').product-add-favorites
+        +sprite('icon', 'like-ico')
       a(href='#').product-name__link FLOX BASIC
       p.product-name__description Бюстгальтеры - Мягкая чашка черный
       .product-price__item

@@ -210,6 +210,7 @@
     }
   }
   &-body {
+    position: relative;
     .dropdown-product {
       display: flex;
       transition: .3s;
