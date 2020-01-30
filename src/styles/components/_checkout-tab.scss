@@ -1,0 +1,37 @@
+.tabset {
+  margin-top: 25px;
+  > input[type="radio"] {
+    position: absolute;
+    left: -200vw;
+  }
+
+  .tab-panel {
+    display: none;
+  }
+
+  > input {
+    &:first-child:checked ~ .tab-panels > .tab-panel:first-child, &:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2), &:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3), &:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4), &:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5), &:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+      display: block;
+    }
+  }
+  label {
+    position: relative;
+    font: normal 16px/19px $font;
+    color: $color_dark;
+    cursor: pointer;
+    span {
+      text-decoration: underline;
+    }
+    &:nth-child(2)::after {
+      content: '/';
+      font: normal 16px/19px $font;
+      color: $color_dark;
+      margin: 0 0 0 5px;
+    }
+  }
+  input {
+    &:checked + label {
+      font-family: $font-bold;
+    }
+  }
+}

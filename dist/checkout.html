@@ -12,20 +12,106 @@
     <div class="checkout container-fluid">
       <div class="checkout-info"><a href="index.html"><img src="./img/svg/logo.svg"></a>
         <div class="tabset">
-          <!-- Tab 1-->
-          <input id="tab1" type="radio" name="tabset" aria-controls="marzen" checked="">
-          <label for="tab1">Märzen</label>
-          <!-- Tab 2-->
-          <input id="tab2" type="radio" name="tabset" aria-controls="rauchbier">
-          <label for="tab2">Rauchbier</label>
+          <input id="tab1" type="radio" name="tabset" aria-controls="new-customer" checked="">
+          <label class="separate" for="tab1"><span>Я новый клиент</span></label>
+          <input id="tab2" type="radio" name="tabset" aria-controls="regular-customer">
+          <label for="tab2"><span>Я постоянный клиент</span></label>
           <div class="tab-panels">
-            <section class="tab-panel" id="marzen">
-              <h2>6A. Märzen</h2>
-              <p><strong>Overall Impression:</strong> An elegant, malty German amber lager with a clean, rich, toasty and bready malt flavor, restrained bitterness, and a dry finish that encourages another drink. The overall malt impression is soft, elegant, and complex, with a rich aftertaste that is never cloying or heavy.</p>
-              <p><strong>History:</strong> As the name suggests, brewed as a stronger “March beer” in March and lagered in cold caves over the summer. Modern versions trace back to the lager developed by Spaten in 1841, contemporaneous to the development of Vienna lager. However, the Märzen name is much older than 1841; the early ones were dark brown, and in Austria the name implied a strength band (14 °P) rather than a style. The German amber lager version (in the Viennese style of the time) was first served at Oktoberfest in 1872, a tradition that lasted until 1990 when the golden Festbier was adopted as the standard festival beer.</p>
+            <section class="tab-panel" id="new-customer">
+              <form action="#">
+                <div class="form-item">
+                  <h3>Контакты</h3>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <input class="form-control" type="text" placeholder="Имя">
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control" type="text" placeholder="Телефон">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <input class="form-control" type="text" placeholder="Фамилия">
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control" type="text" placeholder="E-mail"><small class="help-text">Подтверждение заказа прийдет на почту</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-item">
+                  <h3>Доставка</h3>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <div class="dropdown-list">
+                        <div class="dropdown-title">Способ доставки</div>
+                        <div class="dropdown-select-list">
+                          <div class="dropdown-select-list__item">Способ доставки</div>
+                          <div class="dropdown-select-list__item">Способ доставки</div>
+                          <div class="dropdown-select-list__item">Способ доставки</div>
+                          <div class="dropdown-select-list__item">Способ доставки</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control" type="text" placeholder="Город доставки">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <div class="dropdown-list">
+                        <div class="dropdown-title">Номер отделения</div>
+                        <div class="dropdown-select-list">
+                          <div class="dropdown-select-list__item">Номер отделения</div>
+                          <div class="dropdown-select-list__item">Номер отделения</div>
+                          <div class="dropdown-select-list__item">Номер отделения</div>
+                          <div class="dropdown-select-list__item">Номер отделения</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control" type="text" placeholder="Адрес (при курьерской доставки)">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-item">
+                  <h3>Оплата</h3>
+                  <div class="form-row">
+                    <div class="form-payment">
+                      <input id="cash" type="radio">
+                      <label for="cash">Наличными при получении</label>
+                    </div>
+                    <div class="form-payment">
+                      <input id="card" type="radio">
+                      <label for="card">Оплата на карту</label>
+                    </div>
+                    <div class="form-payment">
+                      <input id="liq-pay" type="radio">
+                      <label for="liq-pay">LiqPay</label>
+                    </div>
+                    <div class="form-payment">
+                      <input id="google-pay" type="radio">
+                      <label for="google-pay">Google Pay</label>
+                    </div>
+                    <div class="form-payment">
+                      <input id="apple-pay" type="radio">
+                      <label for="apple-pay">Apple Pay</label>
+                    </div>
+                    <div class="form-payment">
+                      <input id="easy-pay" type="radio">
+                      <label for="easy-pay">EasyPay</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="confidence">
+                    <input id="confidence" type="radio">
+                    <label for="confidence">Не перезванивайте мне, я уверен (-на) в заказе</label>
+                  </div>
+                </div>
+              </form>
             </section>
-            <section class="tab-panel" id="rauchbier">
-              <h2>6B. Rauchbier</h2>
+            <section class="tab-panel" id="regular-customer">
+              <h2>6B. regular-customer</h2>
               <p><strong>Overall Impression:</strong>  An elegant, malty German amber lager with a balanced, complementary beechwood smoke character. Toasty-rich malt in aroma and flavor, restrained bitterness, low to high smoke flavor, clean fermentation profile, and an attenuated finish are characteristic.</p>
               <p><strong>History:</strong> A historical specialty of the city of Bamberg, in the Franconian region of Bavaria in Germany. Beechwood-smoked malt is used to make a Märzen-style amber lager. The smoke character of the malt varies by maltster; some breweries produce their own smoked malt (rauchmalz).</p>
             </section>
