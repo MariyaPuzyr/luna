@@ -33,6 +33,9 @@
         border: none;
         min-height: 495px;
         display: flex;
+        a:not(.color) {
+          width: 100%;
+        }
         img{
           display: flex;
         }

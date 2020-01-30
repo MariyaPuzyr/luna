@@ -116,4 +116,15 @@ $(document).ready(function () {
     $(this).toggleClass('open');
   });
   /*show dropdown list end */
+
+  /* dropdown catalog filter*/
+
+  if ($('.catalog-filter--title').length > 0) {
+    $('.catalog-filter--title').click(function () {
+      $('.catalog-filter__list').hide();
+      $(this).next('.catalog-filter__list').toggle();
+    });
+  }
+  /* dropdown catalog filterend */
+
 });
