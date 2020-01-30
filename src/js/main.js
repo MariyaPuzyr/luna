@@ -75,7 +75,15 @@ $(document).ready(function () {
   $(".catalog-price--to").val($("#catalog-price").slider("values", 1));
 
   /* show shop cart */
-
+  $('.header-cart').click(function () {
+    $('.cart').addClass('open');
+    $('body').css('overflow', 'hidden');
+  });
+  /* hide shop cart */
+  $('.cart-overlay, .cart-top__continue-shop').click(function () {
+    $('.cart').removeClass('open');
+    $('body').css('overflow', 'auto');
+  });
   /* shop cart counter */
   $('.minus').click(function () {
     var $input = $(this).parent().find('input');
