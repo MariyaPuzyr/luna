@@ -1,0 +1,27 @@
+.page-product__other-size {
+  display: flex;
+  align-items: baseline;
+  padding-left: 140px;
+  font: normal 16px/19px $font;
+  color: $color_dark;
+  margin-top: 20px;
+  ul {
+    display: flex;
+    align-items: baseline;
+  }
+  a {
+    text-decoration: none;
+    font: normal 16px/19px $font;
+    color: $color_dark;
+    letter-spacing: 0.05em;
+    margin: 0 5px;
+    transition: .3s;
+    &:hover {
+      color: #DBB7A6;
+    }
+  }
+  .status {
+    font-family: $font-bold;
+    color: #DBB7A6;
+  }
+}
