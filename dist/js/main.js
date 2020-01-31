@@ -173,4 +173,14 @@ $(document).ready(function () {
     vertical: true
   });
   /* page product slider end*/
+
+  /* single slider */
+
+  $('.product-kit__slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true
+  });
+  /* single slider end*/
 });

@@ -128,21 +128,4 @@
     resize: none;
     padding: 12px 10px;
   }
-  .leave-feedback {
-    width: 100%;
-    background: #DBB7A6;
-    border: 1px solid #DBB7A6;
-    color: $color_white;
-    font: normal 18px/21px $font;
-    letter-spacing: 0.05em;
-    padding: 16px 10px;
-    transition: .3s;
-    &:hover {
-      background: $color_white;
-      color: $color_dark;
-    }
-    &:focus {
-      outline: none;
-    }
-  }
 }
