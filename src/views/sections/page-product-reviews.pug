@@ -1,6 +1,69 @@
-.review-section
-  .review-form
-    span Оставить отзыв
-    input(type='text' placeholder='Имя').form-control
-    input(type='text' placeholder='Имя').form-control
-    input(type='text' placeholder='Имя').form-control
+.page-product-review
+  .page-product-review__items
+    h2 Отзывы
+    .page-product-review__item-body
+      .page-product-review__item
+        .page-product-review__item--top
+          .review-name Ирина Андреевна
+          .review-date 25 / 12 / 20
+        .page-product-review__item--raiting
+          .page-product-review__item--raiting-list
+            .full
+            .full
+            .full
+            .full
+            .half
+          span 4.8 / 5
+        p Proin ac ex maximus, ultrices justo eget, sodales orci.
+      .page-product-review__item
+        .page-product-review__item--top
+          .review-name Ирина Андреевна
+          .review-date 25 / 12 / 20
+        .page-product-review__item--raiting
+          .page-product-review__item--raiting-list
+            .full
+            .full
+            .full
+            .full
+            .half
+          span 4.8 / 5
+        p Proin ac ex maximus, ultrices justo eget, sodales orci. Aliquam egestas libero ac turpis pharetra, in vehicula lacus scelerisque. Vestibulum ut sem laoreet, feugiat tellus at.
+      .page-product-review__item
+        .page-product-review__item--top
+          .review-name Ирина Андреевна
+          .review-date 25 / 12 / 20
+        .page-product-review__item--raiting
+          .page-product-review__item--raiting-list
+            .full
+            .full
+            .full
+            .full
+            .half
+          span 4.8 / 5
+        p Proin ac ex maximus.
+    .page-product-review__get-more Просмотреть больше отзывов
+  .page-product-review__form
+    form(action='#')
+      .page-product-review__form--top
+        h5 Оставить отзыв
+        .page-product-review__form--check
+          .page-product-review__form--check-item
+            input#one(type='checkbox' name='size')
+            label(for='one').heart
+          .page-product-review__form--check-item
+            input#two(type='checkbox' name='size')
+            label(for='two').heart
+          .page-product-review__form--check-item
+            input#three(type='checkbox' name='size')
+            label(for='three').heart
+          .page-product-review__form--check-item
+            input#four(type='checkbox' name='size')
+            label(for='four').heart
+          .page-product-review__form--check-item
+            input#five(type='checkbox' name='size')
+            label(for='five').heart
+      .page-product-review__leave-feedback
+        input(type='text' placeholder='Имя, фамилия').form-control
+        input(type='text' placeholder='E-mail').form-control
+        textarea(placeholder='Отзыв' rows='5').form-control
+        button(type='submit').leave-feedback Оставить отзыв
