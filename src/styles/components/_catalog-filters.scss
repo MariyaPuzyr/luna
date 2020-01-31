@@ -96,6 +96,9 @@
         top: 2px;
       }
     }
+    &__check:checked + label {
+      font-family: $font-bold;
+    }
   }
   .color, .model-logo {
     width: 20px;
