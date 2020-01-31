@@ -95,14 +95,15 @@
           span Пудровий
   .catalog-filter
     .catalog-filter--title Цена
-    .catalog-price__top
-      .catalog-price__top-item от
-        input.catalog-price--from(type='text' readonly='')
-        | грн
-      .catalog-price__top-item до
-        input.catalog-price--to(type='text' readonly='')
-        | грн
-    #catalog-price
+    .catalog-filter__list
+      .catalog-price__top
+        .catalog-price__top-item от
+          input.catalog-price--from(type='text' readonly='')
+          | грн
+        #catalog-price.catalog-price
+        .catalog-price__top-item до
+          input.catalog-price--to(type='text' readonly='')
+          | грн
   .catalog-filter
     .catalog-filter--title Размеры
     .catalog-filter__list
@@ -170,10 +171,10 @@
     .catalog-filter--title Косточки
     .catalog-filter__list
       .catalog-filter__position
-        input#balconet(type='checkbox' name='models').catalog-filter__position__check
-        label(for='balconet') С косточками
+        input#pitted(type='checkbox' name='models').catalog-filter__position__check
+        label(for='pitted') С косточками
       .catalog-filter__position
-        input#triangular(type='checkbox' name='models').catalog-filter__position__check
-        label(for='triangular') Без косточек
+        input#seedless(type='checkbox' name='models').catalog-filter__position__check
+        label(for='seedless') Без косточек
   .catalog-filters__reset Сбросить фильтр
     +sprite('close', 'close-ico')

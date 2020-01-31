@@ -135,4 +135,43 @@
       align-items: baseline;
     }
   }
+  .catalog-price {
+    width: 100%;
+    background: #F2F2F2;
+    border-radius: 5px;
+    border: none;
+    height: 4px;
+    &__top {
+      display: flex;
+      align-items: center;
+      &-item {
+        display: flex;
+        flex-direction: column;
+        font: normal 14px/16px $font;
+        color: rgba($color_dark, .8);
+        letter-spacing: .05em;
+        text-align: center;
+      }
+    }
+    &--from, &--to {
+      border: none;
+      font: normal 16px/19px $font-bold;
+      color: $color_dark;
+      width: 50px;
+      text-align: center;
+    }
+    &.ui-slider-horizontal .ui-slider-range {
+      background: #DBB7A6;
+    }
+    &.ui-slider .ui-slider-handle {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #DBB7A6;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
 }

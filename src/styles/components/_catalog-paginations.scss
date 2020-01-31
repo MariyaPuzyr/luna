@@ -21,8 +21,8 @@
       &::after {
         content: '';
         mask: url('../img/svg/arrow.svg') no-repeat center;
-        width: 9px;
-        height: 9px;
+        width: 18px;
+        height: 18px;
         background: $color_dark;
         mask-size: cover;
       }
