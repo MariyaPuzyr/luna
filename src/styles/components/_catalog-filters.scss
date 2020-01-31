@@ -108,4 +108,31 @@
     background: #D9D9D9;
     border: 1px solid #CFCFCF;
   }
+  &_size {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    input {
+      position: absolute;
+      left: -9999px;
+    }
+    &:not(:checked) + label,
+    &:checked + label {
+      font: normal 16px/19px $font;
+      letter-spacing: .05em;
+      color: $color_dark;
+      cursor: pointer;
+    }
+    :checked + label {
+      color: #DBB7A6;
+      font-family: $font-bold;
+    }
+    &-list {
+      display: flex;
+      align-items: baseline;
+    }
+  }
 }
