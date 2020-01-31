@@ -1,0 +1,24 @@
+.page-product-delivery-info {
+  color: $color_dark;
+  display: flex;
+  margin-top: 90px;
+  h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font: normal 30px/35px $font;
+    text-transform: uppercase;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 65px;
+    font: normal 15px/18px $font;
+    letter-spacing: .05em;
+  }
+  &__description {
+    width: 100%;
+    margin-right: 40px;
+  }
+  &__img {
+    flex: 0 0 auto;
+  }
+}

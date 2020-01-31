@@ -27,6 +27,33 @@ $(document).ready(function () {
       }]
     });
   }
+
+  if ($('.page-product-assemble-set__slider').length > 0) {
+    $('.page-product-assemble-set__slider').slick({
+      dots: false,
+      arrow: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      responsive: [{
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3
+        }
+      }, {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2
+        }
+      }, {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1
+        }
+      }]
+    });
+  }
   /* show all text on seo */
 
 
