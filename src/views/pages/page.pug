@@ -6,30 +6,32 @@ block content
   include ../includes/header
   include ../includes/nav-list
   .container-fluid
-    .catalog-items
+    .page-product
       .catalog-items__top
         include ../components/breadcrumbs
-      .page-product
-        include ../sections/page-product-slider
-        include ../sections/page-product-other-size
-        include ../sections/page-product-description
-        include ../sections/page-product-assemble-set
-        include ../sections/page-product-reviews
-        .page-product-assemble-set
-          h2 Наша новая коллекция
-          .slider.page-product-assemble-set__slider.catalog-items__catalog
-            div
-              +catalog-position
-            div
-              +catalog-position
-            div
-              +catalog-position__new
-            div
-              +catalog-position__new
-            div
-              +catalog-position
-            div
-              +catalog-position__new
-        include ../sections/page-product-delivery-info
+      .product-about
+        .product-about__left
+          include ../sections/page-product-slider
+          include ../sections/page-product-other-size
+          include ../sections/page-product-description
+        .product-about__right
+      include ../sections/page-product-assemble-set
+      include ../sections/page-product-reviews
+      .page-product-assemble-set
+        h2 Наша новая коллекция
+        .slider.page-product-assemble-set__slider.catalog-items__catalog
+          div
+            +catalog-position
+          div
+            +catalog-position
+          div
+            +catalog-position__new
+          div
+            +catalog-position__new
+          div
+            +catalog-position
+          div
+            +catalog-position__new
+      include ../sections/page-product-delivery-info
   include ../includes/footer
   include ../sections/cart

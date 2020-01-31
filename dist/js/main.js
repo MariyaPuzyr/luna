@@ -165,11 +165,11 @@ $(document).ready(function () {
     asNavFor: '.slider-nav'
   });
   $('.slider-nav').slick({
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: '.slider-for',
     dots: false,
-    arrows: true,
+    arrows: false,
     vertical: true
   });
   /* page product slider end*/
