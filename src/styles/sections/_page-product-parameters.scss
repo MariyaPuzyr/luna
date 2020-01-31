@@ -64,12 +64,22 @@
       text-decoration: none;
       transition: .3s;
       margin-left: 25px;
+      &:hover {
+        color: $color_dark;
+        &::before {
+          background: $color_dark;
+        }
+      }
       &::before {
         content: '';
         mask: url('../img/svg/size-ico.svg') no-repeat center;
         mask-size: cover;
         background: #828282;
         margin-right: 10px;
+        flex: 0 0 auto;
+        width: 16px;
+        height: 9px;
+        transition: .3s;
       }
     }
     &__btns {
