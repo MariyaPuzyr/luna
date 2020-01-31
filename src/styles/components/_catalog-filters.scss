@@ -48,10 +48,17 @@
     justify-content: space-between;
     margin: 20px 0 0;
     cursor: pointer;
+    transition: .3s;
+    &:hover {
+      color: #dbb7a6;
+      &::after {
+        background: #dbb7a6;
+      }
+    }
     &::after {
       content: '';
-      width: 8px;
-      height: 8px;
+      width: 18px;
+      height: 18px;
       mask: url("../img/svg/arrow.svg") no-repeat center;
       mask-size: cover;
       background: $color_dark;
@@ -67,5 +74,35 @@
   .catalog-filter__position {
     width: 100%;
     padding: 0;
+    display: flex;
+    align-items: center;
+    label {
+      width: 100%;
+      display: flex;
+    }
+    &__check:not(:checked) + label,
+    &__check:checked + label {
+      &::before {
+        width: 16px;
+        height: 16px;
+        border: none;
+        background: #F2F2F2;
+        top: 2px;
+      }
+      &::after {
+        width: 16px;
+        height: 16px;
+        left: 0;
+        top: 2px;
+      }
+    }
+  }
+  .color, .model-logo {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 20px 0 0;
+    background: #D9D9D9;
+    border: 1px solid #CFCFCF;
   }
 }
