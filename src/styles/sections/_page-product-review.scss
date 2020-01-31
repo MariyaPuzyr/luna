@@ -36,12 +36,15 @@
           width: 13px;
           height: 12px;
           margin-right: 5px;
+          background: #dbb7a6;
         }
         .full {
-          background: url('../img/svg/heart.svg');
+          mask: url('../img/svg/heart.svg') no-repeat center;
+          mask-size: cover;
         }
         .half {
-          background: url('../img/svg/heart-half.svg');
+          mask: url('../img/svg/heart-half.svg') no-repeat center;
+          mask-size: cover;
         }
       }
       span {
