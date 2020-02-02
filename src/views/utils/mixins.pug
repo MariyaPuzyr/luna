@@ -7,8 +7,8 @@ mixin sprite(name, id)
 mixin catalog-position
   .product-item
     .product-top
-      a(href='page.html')
-        img(src='./img/catalog-img.jpg').img-fluid
+      a(href='page.html' style='background-image: url("./img/catalog-img.jpg")').product-picture
+        //img(src='./img/catalog-img.jpg').img-fluid
       ul.product-top__color
         li
           a(href='page.html').color.color-white
@@ -62,8 +62,8 @@ mixin catalog-position__new
   .product-item
     .product-top
       .new-position New
-      a(href='page.html')
-        img(src='./img/product-2.png').img-fluid
+      a(href='page.html' style='background-image: url("./img/product-2.png")').product-picture
+        //img(src='./img/product-2.png').img-fluid
       ul.product-top__color
         li
           a(href='page.html').color.color-white

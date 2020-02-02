@@ -66,9 +66,11 @@
   padding: 0 10px;
   width: 100%;
   .form-payment__check {
-    &:checked + label:before,
-    &:not(:checked) + label:before {
-      border-radius: 0;
+    &:checked + label,
+    &:not(:checked) + label {
+      &::before, &::after {
+        border-radius: 0;
+      }
     }
     &:checked + label {
       font-family: $font;

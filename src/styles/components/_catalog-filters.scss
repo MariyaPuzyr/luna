@@ -64,6 +64,9 @@
       background: $color_dark;
       transition: .3s;
       flex: 0 0 auto;
+      transform: rotate(-90deg);
+    }
+    &.open::after {
       transform: rotate(90deg);
     }
   }

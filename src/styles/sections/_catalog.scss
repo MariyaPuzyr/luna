@@ -36,6 +36,20 @@
         a:not(.color) {
           width: 100%;
         }
+        .product-picture {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: 495px;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          //img {
+          //  position: absolute;
+          //  max-height: 100%;
+          //  max-width: 100%;
+          //}
+        }
         img{
           display: flex;
         }

@@ -5,7 +5,24 @@ section.thanks-for-order
       .finish-order-list__body
         +finish-position
         +finish-position
-        +finish-position
+        .cart-item__position
+          a(href='#').cart-item__position--img
+            img(src='./img/catalog-img.jpg')
+          .cart-item__position--info
+            a(href='#').position-name Flox basic
+            .position-article АРТ: 555828
+            .position-counter
+              span.minus -
+              input(type='text', value='1')
+              span.plus +
+            .position-info
+              .position-info__item
+                .position.position-color Цвет:
+                  .position-color__item.black
+                .position Размер:
+                  span 80A
+              .position-info__item.text-right
+                .product-price_new 700 ₴
       .finish-order-list__info
         .finish-order-list__info-item
           span Ваша скидка:

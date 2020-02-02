@@ -89,11 +89,10 @@
       content: '';
       mask: url('../img/svg/arrow.svg') no-repeat center;
       mask-size: cover;
-      width: 11px;
-      height: 11px;
+      width: 15px;
+      height: 15px;
       transform: rotate(-90deg);
       background: #828282;
-      margin-right: 10px;
       transition: .3s;
     }
   }

@@ -201,6 +201,7 @@
     .product-price_new {
       @extend .product-price__item;
       margin: 0;
+      line-height: 1;
     }
     .product-price_old {
       margin-top: 10px;

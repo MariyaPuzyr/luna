@@ -147,8 +147,11 @@ $(document).ready(function () {
   /* dropdown catalog filter*/
   if ($('.catalog-filter--title').length > 0) {
     $('.catalog-filter--title').click(function () {
+      $('.catalog-filter--title').removeClass('open');
       $('.catalog-filter__list').hide();
-      $(this).next('.catalog-filter__list').toggle();
+      $(this).toggleClass('open');
+      $(this).next('.catalog-filter__list').slideToggle();
+      // $(this).next('.catalog-filter__list').slideUp();
     });
   }
   /* dropdown catalog filterend */
