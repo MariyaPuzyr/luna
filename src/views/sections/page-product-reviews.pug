@@ -47,21 +47,16 @@
       .page-product-review__form--top
         h5 Оставить отзыв
         .page-product-review__form--check
-          .page-product-review__form--check-item
-            input#one(type='checkbox' name='size').check-input
-            label(for='one').heart
-          .page-product-review__form--check-item
-            input#two(type='checkbox' name='size').check-input
-            label(for='two').heart
-          .page-product-review__form--check-item
-            input#three(type='checkbox' name='size').check-input
-            label(for='three').heart
-          .page-product-review__form--check-item
-            input#four(type='checkbox' name='size').check-input
-            label(for='four').heart
-          .page-product-review__form--check-item
-            input#five(type='checkbox' name='size').check-input
-            label(for='five').heart
+          input#star-5.star.star-5(type='radio', name='star')
+          label.star.star-5(for='star-5')
+          input#star-4.star.star-4(type='radio', name='star')
+          label.star.star-4(for='star-4')
+          input#star-3.star.star-3(type='radio', name='star')
+          label.star.star-3(for='star-3')
+          input#star-2.star.star-2(type='radio', name='star')
+          label.star.star-2(for='star-2')
+          input#star-1.star.star-1(type='radio', name='star')
+          label.star.star-1(for='star-1')
       .page-product-review__leave-feedback
         input(type='text' placeholder='Имя, фамилия').form-control
         input(type='text' placeholder='E-mail').form-control

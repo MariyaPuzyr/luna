@@ -172,7 +172,8 @@ $(document).ready(function () {
     asNavFor: '.slider-for',
     dots: false,
     arrows: false,
-    vertical: true
+    vertical: true,
+    focusOnSelect: true
   });
   /* page product slider end*/
 
@@ -185,4 +186,8 @@ $(document).ready(function () {
     arrows: true
   });
   /* single slider end*/
+
+  $(document).click(function (o) {
+    $(o.target).closest(".dropdown-list").length || $(".dropdown-list").removeClass("open"), o.stopPropagation();
+  });
 });

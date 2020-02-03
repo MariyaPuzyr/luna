@@ -1,6 +1,7 @@
 .page-product-review {
   display: flex;
   color: $color_dark;
+  margin-top: 20px;
   h2 {
     margin: 0;
     font: normal 30px/35px $font;
@@ -100,6 +101,26 @@
     }
     &--check {
       display: flex;
+      flex-direction: row-reverse;
+      input.star { display: none; }
+
+      label.star::before {
+        content: '';
+        width: 18px;
+        height: 16px;
+        margin-left: 5px;
+        background: #DBB7A6;
+        mask: url('../img/svg/like-ico.svg') no-repeat center;
+        mask-size: cover;
+        display: block;
+        cursor: pointer;
+      }
+
+      input.star:checked ~ label.star:before {
+        mask: url('../img/svg/heart.svg') no-repeat center;
+        mask-size: cover;
+      }
+
       &-item {
         input {
           position: absolute;

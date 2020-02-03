@@ -4,17 +4,17 @@
     font: normal 30px/35px $font-regular;
     letter-spacing: .1em;
     color: $color_dark;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 75px;
     text-align: center;
   }
   .catalog-items__catalog {
     .product-item {
-      max-width: 310px;
-      margin: 0 20px;
+      //max-width: 310px;
+      //margin: 0 20px;
     }
     .product-top {
-      min-height: 445px;
+      //min-height: 445px;
     }
   }
   &__slider {

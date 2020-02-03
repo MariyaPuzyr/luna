@@ -7,8 +7,8 @@ mixin sprite(name, id)
 mixin catalog-position
   .product-item
     .product-top
-      a(href='page.html' style='background-image: url("./img/catalog-img.jpg")').product-picture
-        //img(src='./img/catalog-img.jpg').img-fluid
+      a(href='page.html').product-picture
+        img(src='./img/catalog-img.jpg').img-fluid
       ul.product-top__color
         li
           a(href='page.html').color.color-white
@@ -24,7 +24,7 @@ mixin catalog-position
           a(href='page.html').color.color-monarch
       a(href='page.html').product-top__quick-view Быстрый просмотр
     .product-body
-      a(href='page.html').product-add-favorites
+      .product-add-favorites
         +sprite('icon', 'like-ico')
       a(href='page.html').product-name__link FLOX BASIC
       p.product-name__description Бюстгальтеры - Мягкая чашка черный
@@ -62,8 +62,8 @@ mixin catalog-position__new
   .product-item
     .product-top
       .new-position New
-      a(href='page.html' style='background-image: url("./img/product-2.png")').product-picture
-        //img(src='./img/product-2.png').img-fluid
+      a(href='page.html').product-picture
+        img(src='./img/product-2.png').img-fluid
       ul.product-top__color
         li
           a(href='page.html').color.color-white
@@ -79,7 +79,7 @@ mixin catalog-position__new
           a(href='page.html').color.color-monarch
       a(href='page.html').product-top__quick-view Быстрый просмотр
     .product-body
-      a(href='page.html').product-add-favorites
+      .product-add-favorites
         +sprite('icon', 'like-ico')
       a(href='page.html').product-name__link FLOX BASIC
       p.product-name__description Бюстгальтеры - Мягкая чашка черный
@@ -120,7 +120,7 @@ mixin shop-position
     a(href='#').cart-item__position--img
       img(src='./img/catalog-img.jpg')
     .cart-item__position--info
-      a(href='page.html').product-add-favorites
+      .product-add-favorites
         +sprite('icon', 'like-ico')
       a(href='#').position-name Flox basic
       .position-article АРТ: 555828
