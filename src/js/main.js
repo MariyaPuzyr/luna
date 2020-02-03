@@ -148,10 +148,12 @@ $(document).ready(function () {
   if ($('.catalog-filter--title').length > 0) {
     $('.catalog-filter--title').click(function () {
       $('.catalog-filter--title').removeClass('open');
-      $('.catalog-filter__list').hide();
       $(this).toggleClass('open');
       $(this).next('.catalog-filter__list').slideToggle();
-      // $(this).next('.catalog-filter__list').slideUp();
+    });
+
+    $('.catalog-filter--title.open').click(function () {
+      $(this).next('.catalog-filter__list').slideUp();
     });
   }
   /* dropdown catalog filterend */
