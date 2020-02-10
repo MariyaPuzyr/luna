@@ -1,0 +1,31 @@
+.cart-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  //display: none;
+  transition: .3s;
+  display: flex;
+  justify-content: center;
+  &.open {
+    display: flex;
+  }
+  &__item {
+    position: absolute;
+    max-width: 1215px;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background: $color_white;
+    padding: 45px 85px 85px;
+    display: flex;
+    color: #000000;
+    flex-direction: column;
+    h2 {
+      margin-top: 0;
+      font: normal 30px/35px $font;
+    }
+  }
+}
