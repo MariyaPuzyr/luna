@@ -190,4 +190,18 @@ $(document).ready(function () {
   $(document).click(function (o) {
     $(o.target).closest(".dropdown-list").length || $(".dropdown-list").removeClass("open"), o.stopPropagation()
   });
+
+  /* show buy in one click modal */
+  if($('.buy-click').length > 0) {
+    $('.buy-click').click(function () {
+      $('.cart-modal').addClass('open');
+      $('body').css('overflow', 'hidden');
+    });
+    /* hide shop cart */
+    $('.cart-overlay, .cart-modal__item .close').click(function () {
+      $('.cart-modal').removeClass('open');
+      $('body').css('overflow', 'auto');
+    });
+  }
+  /* show buy in one click modal end*/
 });
