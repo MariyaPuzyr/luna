@@ -4,8 +4,7 @@
   .phone-info {
     color: $color_white;
     font: normal 14px/16px $font;
-    letter-spacing: .02em;
-    margin-right: 56px;
+    margin-right: 50px;
     transition: .3s;
     text-decoration: none;
     &:hover {
@@ -25,7 +24,6 @@
     list-style: none;
     a {
       color: $color_white;
-      letter-spacing: .02em;
       font: normal 14px/16px $font;
       margin: 0 14px;
       display: block;
