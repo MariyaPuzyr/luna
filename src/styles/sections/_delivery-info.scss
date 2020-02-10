@@ -42,6 +42,9 @@
     .delivery-info__item--top {
       width: 50%;
       margin-right: 70px;
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
