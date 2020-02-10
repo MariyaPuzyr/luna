@@ -47,6 +47,7 @@
   padding: 14px 10px;
   border: 1px solid #828282;
   transition: .3s;
+  resize: none;
   &:hover, &:focus {
     border-color: #dbb7a6;
     outline: none;
