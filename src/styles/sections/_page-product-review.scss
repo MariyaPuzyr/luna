@@ -2,6 +2,7 @@
   display: flex;
   color: $color_dark;
   margin-top: 20px;
+  margin-bottom: 70px;
   h2 {
     margin: 0;
     font: normal 30px/35px $font;
@@ -90,7 +91,6 @@
     h5 {
       margin: 0;
       font: normal 18px/21px $font;
-      letter-spacing: .05em;
       color: #020202;
     }
     &--top {

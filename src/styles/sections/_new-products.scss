@@ -131,7 +131,6 @@
     }
     &__description {
       font: normal 16px/19px $font;
-      letter-spacing: 0.05em;
       color: $color_dark;
       margin-bottom: 10px;
       margin-top: 0;
@@ -177,7 +176,6 @@
     a {
       font: normal 14px/16px $font-regular;
       color: $color_dark;
-      letter-spacing: -0.05em;
       text-decoration: none;
       margin-right: 5px;
       display: block;
@@ -193,7 +191,6 @@
       a {
         font: normal 14px/16px $font-regular;
         color: $color_dark;
-        letter-spacing: -0.05em;
         text-decoration: none;
         margin-right: 5px;
         display: block;

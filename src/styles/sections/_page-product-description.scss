@@ -7,7 +7,6 @@
     &:not(:checked) + label,
     &:checked + label {
       font: normal 18px/21px $font;
-      letter-spacing: 0.02em;
       color: $color_dark;
       cursor: pointer;
       border-bottom: 2px solid transparent;
@@ -21,7 +20,6 @@
   }
   p {
     font: normal 16px/19px $font;
-    letter-spacing: 0.05em;
     color: $color_dark;
     margin-top: 25px;
   }

@@ -68,12 +68,10 @@
   .form-payment__check {
     &:checked + label,
     &:not(:checked) + label {
+      font-family: $font-regular;
       &::before, &::after {
         border-radius: 0;
       }
-    }
-    &:checked + label {
-      font-family: $font;
     }
   }
 }
