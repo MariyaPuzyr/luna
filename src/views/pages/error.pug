@@ -1,0 +1,17 @@
+extends ../extends/layout
+block variables
+  - var title = "Luna lingerie"
+
+block content
+  include ../includes/header
+  include ../includes/nav-list
+  .container-fluid
+    .err404-item
+      img(src='./img/error.png')
+      span.err404-item__title Ууупс...!
+      span.err404-item__caption Такой страницы не существует.
+      a(href='index.html').dark-btn НА ГЛАВНУЮ
+
+
+  include ../includes/footer
+  include ../sections/cart

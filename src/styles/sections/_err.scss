@@ -1,0 +1,25 @@
+.err404-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font: normal 20px/23px $font;
+  margin-top: 60px;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  &__title {
+    color: #DBB7A6;
+    margin-top: 45px;
+    margin-bottom: 30px;
+  }
+  &__caption {
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  .dark-btn {
+    max-width: 255px;
+    text-decoration: none;
+  }
+}
