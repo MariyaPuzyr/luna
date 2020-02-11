@@ -1,0 +1,46 @@
+.size-info {
+  .tab-description:not(:checked) + label,
+  .tab-description:checked + label {
+    margin-right: 100px;
+  }
+  &.tabset {
+    margin-top: 100px;
+    .tab-panels {
+      margin-top: 70px;
+    }
+  }
+}
+
+.size_chart {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  .header-main {
+
+    font: normal 16px/19px $font-bold;
+  }
+  th {
+    background: #F8F8F8;
+    border-right: 1px solid #E7E7E7;
+    color: #000000;
+    padding: 14px 10px;
+  }
+  td {
+    font: normal 16px/19px $font;
+    color: #000000;
+    border-right: 1px solid #E7E7E7;
+    padding: 14px 10px;
+    text-align: center;
+  }
+  tr {
+    border-bottom: 1px solid #E7E7E7;
+    &:last-child {
+      th, td {
+        border-bottom: none;
+      }
+    }
+    th:last-child {
+      border-right: none;
+    }
+  }
+}

@@ -189,6 +189,13 @@ $(document).ready(function () {
   });
   /* single slider end*/
 
+  /* dropdown language list */
+
+  $('.dropdown-toggle').click(function () {
+    $('.dropdown-lang-list').toggleClass('open');
+  });
+  /* dropdown language list end*/
+
   $(document).click(function (o) {
     $(o.target).closest(".dropdown-list").length || $(".dropdown-list").removeClass("open"), o.stopPropagation();
   });

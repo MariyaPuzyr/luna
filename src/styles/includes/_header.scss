@@ -1,12 +1,13 @@
 .header {
   background: #272727;
-  padding: 11px 0;
+  //padding: 11px 0;
   .phone-info {
     color: $color_white;
     font: normal 14px/16px $font;
     margin-right: 50px;
     transition: .3s;
     text-decoration: none;
+    padding: 12px 0;
     &:hover {
       color: #dbb7a6;
     }
@@ -14,12 +15,12 @@
   &-item {
     display: flex;
     flex-flow: row wrap;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
   }
   &-list {
     display: flex;
-    padding: 0;
+    padding: 12px 0;
     margin: 0 auto 0 0;
     list-style: none;
     a {
@@ -36,7 +37,7 @@
   }
   &-links {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     position: relative;
     input {
       outline: none;
@@ -71,7 +72,54 @@
       transition: .3s;
     }
     .dropdown-item {
-      margin-right: 15px;
+      //margin-left: 15px;
+      position: relative;
+      width: 42px;
+      height: 40px;
+      text-align: center;
+      .dropdown-toggle {
+        transition: .3s;
+        width: 42px;
+        height: 40px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          background: #dbb7a6;
+          .lang-ico {
+            fill: #272727;
+          }
+        }
+      }
+      .dropdown-lang-list {
+        position: absolute;
+        background: #272727;
+        top: 40px;
+        width: 100%;
+        z-index: 1;
+        flex-direction: column;
+        display: none;
+        &.open {
+          display: flex;
+        }
+        a {
+          padding: 10px 0;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: .3s;
+          &:hover {
+            background: #dbb7a6;
+            .lang-ico {
+              fill: #272727;
+            }
+          }
+        }
+      }
     }
     .lang-ico {
       width: 20px;

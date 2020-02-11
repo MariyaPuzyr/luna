@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  if($('.single-item').length > 0) {
+  if ($('.single-item').length > 0) {
     $('.single-item').slick({
       dots: false,
       arrow: true,
@@ -26,7 +26,7 @@ $(document).ready(function () {
     });
   }
 
-  if($('.page-product-assemble-set__slider').length > 0) {
+  if ($('.page-product-assemble-set__slider').length > 0) {
     $('.page-product-assemble-set__slider').slick({
       dots: false,
       arrow: true,
@@ -54,7 +54,7 @@ $(document).ready(function () {
   }
 
   /* show all text on seo */
-  if($('.offer-description__link').length > 0) {
+  if ($('.offer-description__link').length > 0) {
     $(".offer-description__link").click(function () {
       var t = this;
       if ($(this).data("temp") || $(this).data("temp", $(this).text()),
@@ -92,7 +92,7 @@ $(document).ready(function () {
   }
 
   /* range slider */
-  if($('#catalog-price').length > 0) {
+  if ($('#catalog-price').length > 0) {
     $("#catalog-price").slider({
       range: true,
       min: 0,
@@ -108,7 +108,7 @@ $(document).ready(function () {
   }
 
   /* show shop cart */
-  if($('.header-cart').length > 0) {
+  if ($('.header-cart').length > 0) {
     $('.header-cart').click(function () {
       $('.cart').addClass('open');
       $('body').css('overflow', 'hidden');
@@ -120,7 +120,7 @@ $(document).ready(function () {
     });
   }
   /* shop cart counter */
-  if($('.minus').length > 0) {
+  if ($('.minus').length > 0) {
     $('.minus').click(function () {
       var $input = $(this).parent().find('input');
       var count = parseInt($input.val()) - 1;
@@ -187,12 +187,18 @@ $(document).ready(function () {
   });
   /* single slider end*/
 
+  /* dropdown language list */
+  $('.dropdown-toggle').click(function () {
+    $('.dropdown-lang-list').toggleClass('open');
+  });
+  /* dropdown language list end*/
+
   $(document).click(function (o) {
     $(o.target).closest(".dropdown-list").length || $(".dropdown-list").removeClass("open"), o.stopPropagation()
   });
 
   /* show buy in one click modal */
-  if($('.buy-click').length > 0) {
+  if ($('.buy-click').length > 0) {
     $('.buy-click').click(function () {
       $('.cart-modal').addClass('open');
       $('body').css('overflow', 'hidden');
