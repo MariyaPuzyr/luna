@@ -6,7 +6,69 @@ block content
   include ../includes/header
   include ../includes/nav-list
   .container-fluid
-    include ../sections/about-info
+    .delivery-info
+      h2 Новости и акции
+      ul.catalog-breadcrumbs
+        li.breadcrumb-item
+          a(href='index.html') Головна
+        li.breadcrumb-item.active(aria-current='page') Новости и акции
+      .news-list
+        .news-item
+          a(href='news.html')
+            img(src='./img/article-img.jpg')
+          a(href='news.html').news-title Акция или новость №1
+          .date 25.12.2019
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla
+          a(href='news.html').news-link-more Подробнее
+        .news-item
+          a(href='news.html')
+            img(src='./img/article-img-2.jpg')
+          a(href='news.html').news-title Акция или новость №2
+          .date 25.12.2019
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla
+          a(href='news.html').news-link-more Подробнее
+        .news-item
+          a(href='news.html')
+            img(src='./img/article-img.jpg')
+          a(href='news.html').news-title Акция или новость №1
+          .date 25.12.2019
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla
+          a(href='news.html').news-link-more Подробнее
 
+        .news-item
+          a(href='news.html')
+            img(src='./img/article-img-2.jpg')
+          a(href='news.html').news-title Акция или новость №2
+          .date 25.12.2019
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla
+          a(href='news.html').news-link-more Подробнее
+        .news-offer
+          span Здесь будет оффер
+        .news-item
+          a(href='news.html')
+            img(src='./img/article-img.jpg')
+          a(href='news.html').news-title Акция или новость №1
+          .date 25.12.2019
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla
+          a(href='news.html').news-link-more Подробнее
+        .news-item
+          a(href='news.html')
+            img(src='./img/article-img-2.jpg')
+          a(href='news.html').news-title Акция или новость №2
+          .date 25.12.2019
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla
+          a(href='news.html').news-link-more Подробнее
+      nav.catalog-items__nav
+        ul.catalog-items__pagination
+          li.page-item.disabled
+            a.page-link.page-prev(href='#')
+          li.page-item
+            a.page-link.active(href='#') 1
+          li.page-item
+            a.page-link(href='#') 2
+          li.page-item
+            a.page-link(href='#') 3
+          li.page-item
+            a.page-link.page-next(href='#')
   include ../includes/footer
   include ../sections/cart
