@@ -1,18 +1,18 @@
 .cart-modal
   .cart-overlay
   .cart-modal__item
-    h2 Покупка в один клик
     .close
       +sprite('icon', 'close-ico')
     .cart-modal__item--body
       a(href='page.html').cart-modal__picture
         img(src='./img/catalog-img.jpg')
       .page-product-about
-        .page-product-about--top
-          h1.product-title FLOX BASIC
-          .product-code АРТ: 555828
         .cart-product-body
           .cart-product__info.page-product
+            .page-product-about--top
+              h1.product-title FLOX BASIC
+              .product-code АРТ: 555828
+              .product-name Бюстгальтер - Мягкая  чашка - черный
             .product-info
               .product-price__item
                 .product-price_new 700 ₴
@@ -70,12 +70,14 @@
                     .dropdown-select-list__item A
                     .dropdown-select-list__item A
                     .dropdown-select-list__item A
-          .page-product-parameters
-            form(action='#')
-              .form-row
-                .form-group
-                  input(type='text' placeholder='Имя, фамилия').form-control
-              .form-row
-                .form-group
-                  input(type='text' placeholder='Телефон').form-control
-              button(type='submit').dark-btn КУПИТЬ
+          .page-product__item
+            h2 Покупка в один клик
+            .page-product-parameters
+              form(action='#')
+                .form-row
+                  .form-group
+                    input(type='text' placeholder='Имя, фамилия').form-control
+                .form-row
+                  .form-group
+                    input(type='text' placeholder='Телефон').form-control
+                button(type='submit').dark-btn КУПИТЬ
