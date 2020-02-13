@@ -17,13 +17,14 @@
     margin-bottom: 35px;
     font: normal 30px/35px $font;
   }
-  .full-img {
-    width: 100%;
+  .full-img, img {
+    max-width: 100%;
     height: auto;
     margin-bottom: 35px;
   }
   p {
     font: normal 16px/19px $font;
+    margin-bottom: 20px;
     b {
       font-family: $font-bold;
       font-weight: normal;
