@@ -140,7 +140,7 @@ $(document).ready(function () {
 
   /*show dropdown list*/
   $('.dropdown-list').click(function () {
-    $(this).toggleClass('open');
+    $(this).toggleClass('open').siblings().removeClass('open');
   });
   /*show dropdown list end */
 
@@ -170,10 +170,11 @@ $(document).ready(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: '.slider-for',
+    loop: true,
     dots: false,
     arrows: false,
     vertical: true,
-    focusOnSelect: true
+    verticalSwiping: true
   });
   /* page product slider end*/
 

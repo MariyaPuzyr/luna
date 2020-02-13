@@ -170,18 +170,21 @@
     margin-top: 10px;
     margin-bottom: 10px;
     width: 85px;
-    padding: 9px 10px;
     border: 1px solid #828282;
     input[type="text"] {
       border: none;
       text-align: center;
       width: 100%;
+      &:focus {
+        outline: none;
+      }
     }
     span {
       font: normal 24px/20px $font-regular;
       color: #828282;
       cursor: pointer;
       transition: .3s;
+      padding: 9px 10px;
       &:hover {
         color: #dbb7a6;
       }
