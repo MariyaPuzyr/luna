@@ -34,7 +34,7 @@
       &-list {
         display: flex;
         align-items: center;
-        .full, .half {
+        .full, .half, .empty {
           width: 13px;
           height: 12px;
           margin-right: 5px;
@@ -47,6 +47,11 @@
         .half {
           mask: url('../img/svg/heart-half.svg') no-repeat center;
           mask-size: cover;
+        }
+        .empty {
+          mask: url('../img/svg/empty-ico.svg') no-repeat center;
+          mask-size: cover;
+          background: #bdbdbd;
         }
       }
       span {
