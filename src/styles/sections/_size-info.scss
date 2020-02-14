@@ -13,34 +13,28 @@
 
 .size_chart {
   width: 100%;
-  border-collapse: collapse;
   margin-bottom: 30px;
-  .header-main {
-
-    font: normal 16px/19px $font-bold;
-  }
-  th {
-    background: #F8F8F8;
-    border-right: 1px solid #E7E7E7;
+  .size-item {
+    width: 100%;
+    display: flex;
+    font: normal 16px/17px $font;
     color: #000000;
-    padding: 14px 10px;
-  }
-  td {
-    font: normal 16px/19px $font;
-    color: #000000;
-    border-right: 1px solid #E7E7E7;
-    padding: 14px 10px;
-    text-align: center;
-  }
-  tr {
     border-bottom: 1px solid #E7E7E7;
-    &:last-child {
-      th, td {
-        border-bottom: none;
-      }
+    &__size, &__title {
+      padding: 16px 10px;
+      border-right: 1px solid #E7E7E7;
+      width: 12.5%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
-    th:last-child {
-      border-right: none;
+    &__title {
+      font: normal 16px/19px $font-bold;
+      background: #F8F8F8;
+    }
+    .full-width {
+      width: 87.5%;
     }
   }
 }
