@@ -203,7 +203,8 @@ $(document).ready(function () {
   /* show buy in one click modal */
 
   if ($('.buy-click').length > 0) {
-    $('.buy-click').click(function () {
+    $('.buy-click').click(function (e) {
+      e.preventDefault();
       $('.cart-modal').addClass('open');
       $('body').css('overflow', 'hidden');
     });
