@@ -67,6 +67,7 @@
           position: absolute;
           right: 16px;
           top: 10px;
+          z-index: -1;
         }
       }
       .dropdown-title {
@@ -77,6 +78,7 @@
         -moz-appearance: none;
         appearance: none;
         width: 100%;
+        background: transparent;
         &::after {
           margin-bottom: 5px;
         }
