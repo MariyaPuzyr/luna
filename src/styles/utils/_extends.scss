@@ -86,6 +86,7 @@
   font: normal 18px/21px $font-regular;
   transition: .3s;
   height: 55px;
+  cursor: pointer;
   &:hover {
     background: $color_white;
     color: $color_dark;
