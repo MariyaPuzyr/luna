@@ -1,32 +1,35 @@
-header.header
-  .container
-    .header-item
-      a.phone-info(href='tel:+380440974323') +38 (044) 097 - 43 - 23
-      ul.header-list
-        li
-          a(href='about.html') О бренде
-        li
-          a(href='delivery.html') Оплата и Доставка
-        li
-          a(href='change.html') Возврат и Обмен
-        li
-          a(href='#') Luna Club
-        li
-          a(href='contacts.html') Контакты
-        li
-          a(href='catalog.html') Акции
-      .header-links
-        form(action='#')
-          input(type='search')
-        a(href='#').user-info
-          +sprite('icon', 'user-ico')
-        .dropdown-item
-          a(href='#').dropdown-toggle
-            +sprite('lang-ico', 'lang-ru')
-          ul.dropdown-lang-list
-            li
-              a(href='#')
-                +sprite('lang-ico', 'lang-ua')
-            li
-              a(href='#')
-                +sprite('lang-ico', 'lang-en')
+.nav-toggle
+.nav-item
+  header.header
+    .container
+      .header-item
+        a.phone-info(href='tel:+380440974323') +38 (044) 097 - 43 - 23
+        ul.header-list
+          li
+            a(href='about.html') О бренде
+          li
+            a(href='delivery.html') Оплата и Доставка
+          li
+            a(href='change.html') Возврат и Обмен
+          li
+            a(href='#') Luna Club
+          li
+            a(href='contacts.html') Контакты
+          li
+            a(href='catalog.html') Акции
+        .header-links
+          form(action='#')
+            input(type='search')
+          a(href='#').user-info
+            +sprite('icon', 'user-ico')
+          .dropdown-item
+            a(href='#').dropdown-toggle
+              +sprite('lang-ico', 'lang-ru')
+            ul.dropdown-lang-list
+              li
+                a(href='#')
+                  +sprite('lang-ico', 'lang-ua')
+              li
+                a(href='#')
+                  +sprite('lang-ico', 'lang-en')
+  include ../includes/nav-list
