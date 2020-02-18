@@ -22,7 +22,10 @@
       background: #c4c4c4;
       position: absolute;
       left: 0;
-
+      @include adapt_to('large-phone') {
+        width: 120%;
+        left: -10%;
+      }
     }
   }
   .slider {
@@ -31,6 +34,7 @@
     margin-right: -20px;
   }
 }
+
 .product {
   &-item {
     margin: 0 20px;
@@ -108,6 +112,10 @@
       transition: .3s;
       opacity: 0;
       visibility: hidden;
+      @include adapt_to('large-phone') {
+        font-size: 16px;
+        line-height: 19px;
+      }
     }
     .new-position {
       position: absolute;
@@ -117,6 +125,9 @@
       color: $color_white;
       background: #333333;
       padding: 10px 21px;
+    }
+    @include adapt_to('large-phone') {
+      height: 220px;
     }
   }
   &-name {
@@ -128,12 +139,22 @@
       margin-bottom: 10px;
       text-decoration: none;
       display: block;
+      @include adapt_to('large-phone') {
+        font-size: 18px;
+        line-height: 21px;
+        font-family: $font;
+        margin-bottom: 5px;
+      }
     }
     &__description {
       font: normal 16px/19px $font;
       color: $color_dark;
       margin-bottom: 10px;
       margin-top: 0;
+      @include adapt_to('large-phone') {
+        font-size: 14px;
+        line-height: 16px;
+      }
     }
   }
   &-price {
@@ -143,6 +164,10 @@
       margin-bottom: 5px;
       font: normal 30px/35px $font-bold;
       color: #dbb7a6;
+      @include adapt_to('large-phone') {
+        font-size: 20px;
+        line-height: 23px;
+      }
     }
     &_new {
       margin-right: 10px;
@@ -153,6 +178,10 @@
       color: #BDBDBD;
       display: inline-flex;
       align-items: center;
+      @include adapt_to('large-phone') {
+        font-size: 16px;
+        line-height: 19px;
+      }
       &::after {
         content: '';
         position: absolute;

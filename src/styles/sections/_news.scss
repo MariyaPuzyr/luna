@@ -38,9 +38,32 @@
       &:hover {
         background: #dbb7a6;
       }
+      @include adapt_to('large-phone') {
+        width: 100%;
+        margin-top: 15px;
+        justify-content: center;
+      }
+    }
+    @include adapt_to('large-phone') {
+      flex-direction: column;
+      margin-bottom: 50px;
+      &__description {
+        margin-left: 0;
+        margin-top: 30px;
+        &--title {
+          font-size: 20px;
+          line-height: 23px;
+          margin-bottom: 15px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
     }
   }
 }
+
 .offer-description {
   margin-top: 70px;
   &__text {
@@ -62,6 +85,23 @@
     transition: .3s;
     &:hover {
       text-decoration: none;
+    }
+    @include adapt_to('large-phone') {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      line-height: 21px;
+      color: #DBB7A6;
+      border: 1px solid #DBB7A6;
+      text-decoration: none;
+      margin-top: 25px;
+      &:hover {
+        background: #dbb7a6;
+        color: #ffffff;
+      }
     }
   }
 }
