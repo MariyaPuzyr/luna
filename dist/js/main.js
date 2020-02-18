@@ -217,4 +217,11 @@ $(document).ready(function () {
   }
   /* show buy in one click modal end*/
 
+  /* init select by styler */
+
+
+  $(function () {
+    $('select').styler();
+  });
+  /* init select by styler end*/
 });

@@ -43,6 +43,7 @@
     "gulp-newer": "^1.4.0",
     "gulp-postcss": "^8.0.0",
     "jquery": "^3.4.1",
+    "jquery-form-styler": "^2.0.2",
     "newer": "^0.1.5",
     "slick-carousel": "^1.8.1"
   },
