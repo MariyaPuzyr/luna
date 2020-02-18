@@ -65,4 +65,11 @@
     width: 100%;
     justify-content: center;
   }
+  @include adapt_to('large-phone') {
+    margin-top: 15px;
+    h2 {
+      font-size: 20px;
+      line-height: 23px;
+    }
+  }
 }

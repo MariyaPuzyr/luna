@@ -1,9 +1,19 @@
 .catalog-breadcrumbs {
-  display: flex;
+  display: inline-flex;
   align-items: baseline;
+  flex-flow: row wrap;
+  @include adapt_to('large-phone') {
+    border-bottom: 1px solid #E7E7E7;
+    width: 100%;
+    padding-bottom: 5px;
+  }
   .breadcrumb-item {
     font: normal 16px/19px $font;
     color: #828282;
+    @include adapt_to('large-phone') {
+      font-size: 14px;
+      line-height: 16px;
+    }
     a {
       color: #828282;
       text-decoration: none;

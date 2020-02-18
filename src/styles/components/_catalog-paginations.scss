@@ -16,6 +16,12 @@
         color: $color_white;
         background: #dbb7a6;
       }
+      @include adapt_to('large-phone') {
+        font-size: 16px;
+        line-height: 19px;
+        width: 31px;
+        height: 31px;
+      }
     }
     .page-prev, .page-next {
       &::after {

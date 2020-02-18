@@ -5,15 +5,12 @@
   &-fluid {
     max-width: 1360px;
     margin: auto;
-    @media (max-width: 767px) {
-      padding: 0 10px;
+    @media (max-width: 1366px) {
+      padding: 0 20px;
     }
-  }
-}
-
-@media (max-width: 1366px) {
-  .container-fluid {
-    padding: 0 20px;
+    @media (max-width: 767px) {
+      padding: 0 15px;
+    }
   }
 }
 

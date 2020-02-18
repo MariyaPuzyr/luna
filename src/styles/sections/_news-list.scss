@@ -2,6 +2,10 @@
   display: flex;
   flex-flow: row wrap;
   margin: 35px -20px 0;
+  @include adapt_to('large-phone') {
+    flex-direction: column;
+    margin: 30px 0 0;
+  }
   .news-item {
     flex: 0 0 50%;
     max-width: 50%;
@@ -23,6 +27,19 @@
       margin-bottom: 15px;
       font: normal 16px/19px $font;
     }
+    @include adapt_to('large-phone') {
+      flex: 0 0 auto;
+      max-width: 100%;
+      padding: 0;
+      margin-bottom: 30px;
+      img {
+        max-height: 290px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
   }
   .news-title {
     font: normal 28px/33px $font-regular;
@@ -32,6 +49,11 @@
     transition: .3s;
     &:hover {
       color: #dbb7a6;
+    }
+    @include adapt_to('large-phone') {
+      font-size: 20px;
+      line-height: 23px;
+      margin-bottom: 15px;
     }
   }
   .date {
@@ -61,6 +83,11 @@
       color: #ffffff;
       font: normal 28px/33px $font-regular;
       background: rgba(0, 0, 0, 0.8);
+    }
+    @include adapt_to('large-phone') {
+      padding: 0;
+      margin-top: 0;
+      margin-bottom: 60px;
     }
   }
 }
