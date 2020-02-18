@@ -221,7 +221,9 @@ $(document).ready(function () {
 
 
   $(function () {
-    $('select').styler();
+    $('select').styler({
+      selectSmartPositioning: true
+    });
   });
   /* init select by styler end*/
 });

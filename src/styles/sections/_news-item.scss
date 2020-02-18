@@ -46,7 +46,7 @@
     margin-bottom: 5px;
     font: normal 20px/23px $font-regular;
   }
-  ul {
+  ul:not(.contact-info__social) {
     margin: 40px 90px;
     li{
       display: flex;
