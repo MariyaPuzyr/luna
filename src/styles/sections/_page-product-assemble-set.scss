@@ -6,6 +6,11 @@
     margin-top: 50px;
     margin-bottom: 75px;
     text-align: center;
+    @include adapt_to('large-phone') {
+      font-size: 20px;
+      line-height: 23px;
+      margin-bottom: 20px;
+    }
   }
   &__slider {
     margin-left: -20px;
