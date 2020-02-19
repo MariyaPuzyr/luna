@@ -9,6 +9,9 @@
   transition: .3s;
   justify-content: center;
   padding-top: 50px;
+  @include adapt_to('laptop-big') {
+    padding-top: 0;
+  }
   &.open {
     display: flex;
   }
@@ -23,6 +26,9 @@
     flex-direction: column;
     overflow: auto;
     max-height: calc(100% - 85px);
+    @include adapt_to('laptop-big') {
+      max-height: 100%;
+    }
     h2 {
       margin-top: 0;
       margin-bottom: 15px;
@@ -42,6 +48,12 @@
     &--body {
       display: flex;
       position: relative;
+      @include adapt_to('laptop-big') {
+        flex-flow: row wrap;
+        &.kits-items {
+          margin: 0 -9px;
+        }
+      }
     }
   }
   &__picture {

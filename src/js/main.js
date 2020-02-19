@@ -197,6 +197,7 @@ $(document).ready(function () {
       $('body').css('overflow', 'hidden');
       $('.kits-product-slider .product-kit__slider').not('.slick-initialized').slick();
       $('.kits-product-slider .product-kit__slider').slick('refresh');
+      $('select').styler();
     });
     /* hide shop cart */
     $('.cart-overlay, .cart-modal__item .close').click(function () {
@@ -208,9 +209,7 @@ $(document).ready(function () {
 
   /* init select by styler */
   $(function () {
-    $('select').styler({
-      selectSmartPositioning: true
-    });
+    $('select').styler();
   });
   /* init select by styler end*/
 });

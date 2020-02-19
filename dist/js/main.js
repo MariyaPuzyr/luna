@@ -200,6 +200,7 @@ $(document).ready(function () {
       $('body').css('overflow', 'hidden');
       $('.kits-product-slider .product-kit__slider').not('.slick-initialized').slick();
       $('.kits-product-slider .product-kit__slider').slick('refresh');
+      $('select').styler();
     });
     /* hide shop cart */
 
@@ -214,9 +215,7 @@ $(document).ready(function () {
 
 
   $(function () {
-    $('select').styler({
-      selectSmartPositioning: true
-    });
+    $('select').styler();
   });
   /* init select by styler end*/
 });
