@@ -1,0 +1,44 @@
+.accordion {
+  &-body {
+    @include adapt_to('large-phone') {
+      display: none;
+      margin-top: 25px;
+    }
+  }
+  .accordion--title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    &::after {
+      content: '';
+      mask: url('../img/svg/arrow.svg') no-repeat center;
+      width: 15px;
+      height: 15px;
+      background: #000000;
+      mask-size: contain;
+      transition: .3s;
+      transform: rotate(90deg);
+      display: none;
+      margin-left: auto;
+      @include adapt_to('large-phone') {
+        display: block;
+      }
+    }
+  }
+  &-item {
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    &.show {
+      @include adapt_to('large-phone') {
+        .accordion--title::after {
+          transform: rotate(-90deg);
+        }
+        .accordion-body {
+          display: block;
+        }
+      }
+    }
+  }
+}

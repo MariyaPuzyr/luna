@@ -218,4 +218,25 @@ $(document).ready(function () {
   }
   /* show buy in one click modal end*/
 
+  /* accordion */
+
+
+  if ($('.accordion').length > 0) {
+    $('.accordion--title').click(function (e) {
+      e.preventDefault();
+      var $this = $(this); // $('.accordion-item').removeClass('show');
+
+      if ($this.parent('.accordion-item').hasClass('show')) {
+        // $this.parents('.accordion-item').slideUp(350);
+        $('.accordion-item').removeClass('show');
+      } else {
+        $('.accordion-item').removeClass('show'); // $this.parents('.accordion-item').removeClass('show');
+        // $this.parents('.accordion-item').slideUp(350);
+
+        $this.parent('.accordion-item').addClass('show'); // $this.parents('.accordion-item').slideToggle(350);
+      }
+    });
+  }
+  /* accordion end*/
+
 });

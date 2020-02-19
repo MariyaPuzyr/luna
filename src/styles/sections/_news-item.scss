@@ -86,7 +86,11 @@
         background: #DBB7A6;
         border-radius: 50%;
         margin-right: 15px;
+        flex: 0 0 auto;
       }
+    }
+    @include adapt_to('large-phone') {
+      margin: 20px;
     }
   }
   hr {
