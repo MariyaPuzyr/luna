@@ -240,7 +240,7 @@
                 </div>
                 <div class="product-parameters__btns">
                   <button class="buy dark-btn" type="submit">КУПИТЬ</button>
-                  <div class="buy-click gold-btn">КУПИТЬ В 1 КЛИК</div>
+                  <div class="buy-click gold-btn" data-target="buy-one-click">КУПИТЬ В 1 КЛИК</div>
                 </div>
               </form>
             </div>
@@ -297,7 +297,7 @@
                 <div class="product-price__item">
                   <div class="product-price_new">700 ₴</div>
                   <div class="product-price_old">900 ₴</div>
-                </div><a class="leave-feedback" href="checkout.html">ЗАКАЗАТЬ</a>
+                </div><a class="buy-click leave-feedback" href="checkout.html" data-target="buy-complect">ЗАКАЗАТЬ</a>
               </div>
             </div>
           </div>
@@ -1075,7 +1075,7 @@
         </div>
       </div>
     </div>
-    <div class="cart-modal">
+    <div class="cart-modal" data-id="buy-one-click">
       <div class="cart-overlay"></div>
       <div class="cart-modal__item">
         <div class="close">
@@ -1089,6 +1089,132 @@
               <div class="cart-product__info page-product">
                 <div class="page-product-about--top">
                   <h1 class="product-title">FLOX BASIC</h1>
+                  <div class="product-code">АРТ: 555828</div>
+                  <div class="product-name">Бюстгальтер - Мягкая  чашка - черный</div>
+                </div>
+                <div class="product-info">
+                  <div class="product-price__item">
+                    <div class="product-price_new">700 ₴</div>
+                    <div class="product-price_old">800 ₴</div>
+                  </div>
+                </div>
+                <div class="product-parameters__list">
+                  <div class="product-parameters__title">Цвет:<span>Бордо</span></div>
+                  <div class="product-parameters__color-list catalog-filter">
+                    <div class="catalog-filter__position">
+                      <input class="catalog-filter__position__check" id="black" type="radio" name="color">
+                      <label for="black">
+                        <div class="color" style="background: black;"></div>
+                      </label>
+                    </div>
+                    <div class="catalog-filter__position">
+                      <input class="catalog-filter__position__check" id="chocolate" type="radio" name="color">
+                      <label for="chocolate">
+                        <div class="color" style="background: chocolate;"></div>
+                      </label>
+                    </div>
+                    <div class="catalog-filter__position">
+                      <input class="catalog-filter__position__check" id="bordeaux" type="radio" name="color" checked="checked">
+                      <label for="bordeaux">
+                        <div class="color" style="background: darkred;"></div>
+                      </label>
+                    </div>
+                    <div class="catalog-filter__position">
+                      <input class="catalog-filter__position__check" id="blue" type="radio" name="color">
+                      <label for="blue">
+                        <div class="color" style="background: blue;"></div>
+                      </label>
+                    </div>
+                    <div class="catalog-filter__position">
+                      <input class="catalog-filter__position__check" id="white" type="radio" name="color">
+                      <label for="white">
+                        <div class="color" style="background: white;"></div>
+                      </label>
+                    </div>
+                    <div class="catalog-filter__position">
+                      <input class="catalog-filter__position__check" id="pearl" type="radio" name="color">
+                      <label for="pearl">
+                        <div class="color" style="background: pearl;"></div>
+                      </label>
+                    </div>
+                    <div class="catalog-filter__position">
+                      <input class="catalog-filter__position__check" id="beige" type="radio" name="color">
+                      <label for="beige">
+                        <div class="color" style="background: beige;"></div>
+                      </label>
+                    </div>
+                    <div class="catalog-filter__position">
+                      <input class="catalog-filter__position__check" id="powder" type="radio" name="color">
+                      <label for="powder">
+                        <div class="color" style="background: powder;"></div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-parameters__list">
+                  <div class="product-parameters__title">Размер:</div>
+                  <div class="product-parameters__size-list">
+                    <div class="dropdown-list">
+                      <select>
+                        <option>95</option>
+                        <option>95</option>
+                        <option>105</option>
+                        <option>95</option>
+                        <option>95</option>
+                        <option>95</option>
+                        <option>95</option>
+                      </select>
+                    </div>
+                    <div class="dropdown-list">
+                      <select>
+                        <option>A</option>
+                        <option>B</option>
+                        <option>C</option>
+                        <option>D</option>
+                        <option>E</option>
+                        <option>F</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="page-product__item">
+                <h2>Покупка в один клик</h2>
+                <div class="page-product-parameters">
+                  <form action="#">
+                    <div class="form-row">
+                      <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Имя, фамилия">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Телефон">
+                      </div>
+                    </div>
+                    <button class="dark-btn" type="submit">КУПИТЬ</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cart-modal" data-id="buy-complect">
+      <div class="cart-overlay"></div>
+      <div class="cart-modal__item">
+        <div class="close">
+          <svg class="icon">
+            <use xlink:href="./img/svg/symbol/sprite.svg#close-ico"></use>
+          </svg>
+        </div>
+        <div class="cart-modal__item--body"><a class="cart-modal__picture" href="page.html"><img src="./img/catalog-img.jpg"></a>
+          <div class="page-product-about">
+            <div class="cart-product-body">
+              <div class="cart-product__info page-product">
+                <div class="page-product-about--top">
+                  <h1 class="product-title">!!!!FLOX BASIC</h1>
                   <div class="product-code">АРТ: 555828</div>
                   <div class="product-name">Бюстгальтер - Мягкая  чашка - черный</div>
                 </div>

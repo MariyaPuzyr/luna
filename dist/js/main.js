@@ -195,7 +195,8 @@ $(document).ready(function () {
   if ($('.buy-click').length > 0) {
     $('.buy-click').click(function (e) {
       e.preventDefault();
-      $('.cart-modal').addClass('open');
+      var targetModal = $(this).data('target');
+      $(".cart-modal[data-id='" + targetModal + "']").addClass('open');
       $('body').css('overflow', 'hidden');
     });
     /* hide shop cart */
