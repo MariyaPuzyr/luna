@@ -19,6 +19,7 @@
     }
     &__color-list {
       display: flex;
+      flex-flow: row wrap;
       .catalog-filter__position {
         width: auto;
         margin: 0;

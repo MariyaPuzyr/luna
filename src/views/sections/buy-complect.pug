@@ -1,86 +1,284 @@
 .cart-modal(data-id='buy-complect')
   .cart-overlay
-  .cart-modal__item
+  .cart-modal__item.buy-complect
     .close
       +sprite('icon', 'close-ico')
-    .cart-modal__item--body
-      a(href='page.html').cart-modal__picture
-        img(src='./img/catalog-img.jpg')
-      .page-product-about
-        .cart-product-body
-          .cart-product__info.page-product
-            .page-product-about--top
-              h1.product-title !!!!FLOX BASIC
-              .product-code АРТ: 555828
-              .product-name Бюстгальтер - Мягкая  чашка - черный
-            .product-info
+    h2.product-title Комлектом дешевле
+    .cart-modal__item--body.kits-items
+      .kits-product.page-product
+        a(href='page.html').cart-modal__picture
+          img(src='./img/catalog-img.jpg')
+        .kits-article АРТ: 555828
+        a(href='page.html').kits-product-name FLOX BASIC
+        .kits-product-description Бюстгальтер - Мягкая  чашка - черный
+        .product-price__item
+          .product-price_new 700 ₴
+        .product-parameters__list
+          .product-parameters__title Цвет:
+            span Бордо
+          .product-parameters__color-list.catalog-filter
+            .catalog-filter__position
+            input#black(type='radio' name='color').catalog-filter__position__check
+            label(for='black')
+              .color(style='background: black;')
+            .catalog-filter__position
+            input#chocolate(type='radio' name='color').catalog-filter__position__check
+            label(for='chocolate')
+              .color(style='background: chocolate;')
+            .catalog-filter__position
+            input#bordeaux(type='radio' name='color' checked='checked').catalog-filter__position__check
+            label(for='bordeaux')
+              .color(style='background: darkred;')
+            .catalog-filter__position
+            input#blue(type='radio' name='color').catalog-filter__position__check
+            label(for='blue')
+              .color(style='background: blue;')
+            .catalog-filter__position
+            input#white(type='radio' name='color').catalog-filter__position__check
+            label(for='white')
+              .color(style='background: white;')
+            .catalog-filter__position
+            input#pearl(type='radio' name='color').catalog-filter__position__check
+            label(for='pearl')
+              .color(style='background: pearl;')
+            .catalog-filter__position
+            input#beige(type='radio' name='color').catalog-filter__position__check
+            label(for='beige')
+              .color(style='background: beige;')
+            .catalog-filter__position
+            input#powder(type='radio' name='color').catalog-filter__position__check
+            label(for='powder')
+              .color(style='background: powder;')
+        .product-parameters__list
+          .product-parameters__title Размер:
+          .product-parameters__size-list
+            .dropdown-list
+              select
+                option 95
+                option 95
+                option 105
+                option 95
+                option 95
+                option 95
+                option 95
+            .dropdown-list
+              select
+                option A
+                option B
+                option C
+                option D
+                option E
+                option F
+      .kits-product-plus
+        +sprite('icon', 'plus-ico')
+      .kits-product-slider
+        .product-kit__slider
+          div
+            .kits-product.page-product
+              a(href='page.html').cart-modal__picture
+                img(src='./img/catalog-img.jpg')
+              .kits-article АРТ: 555828
+              a(href='page.html').kits-product-name FLOX BASIC
+              .kits-product-description Бюстгальтер - Мягкая  чашка - черный
               .product-price__item
                 .product-price_new 700 ₴
-                .product-price_old 800 ₴
-            .product-parameters__list
-              .product-parameters__title Цвет:
-                span Бордо
-              .product-parameters__color-list.catalog-filter
-                .catalog-filter__position
+              .product-parameters__list
+                .product-parameters__title Цвет:
+                  span Бордо
+                .product-parameters__color-list.catalog-filter
+                  .catalog-filter__position
                   input#black(type='radio' name='color').catalog-filter__position__check
                   label(for='black')
                     .color(style='background: black;')
-                .catalog-filter__position
+                  .catalog-filter__position
                   input#chocolate(type='radio' name='color').catalog-filter__position__check
                   label(for='chocolate')
                     .color(style='background: chocolate;')
-                .catalog-filter__position
+                  .catalog-filter__position
                   input#bordeaux(type='radio' name='color' checked='checked').catalog-filter__position__check
                   label(for='bordeaux')
                     .color(style='background: darkred;')
-                .catalog-filter__position
+                  .catalog-filter__position
                   input#blue(type='radio' name='color').catalog-filter__position__check
                   label(for='blue')
                     .color(style='background: blue;')
-                .catalog-filter__position
+                  .catalog-filter__position
                   input#white(type='radio' name='color').catalog-filter__position__check
                   label(for='white')
                     .color(style='background: white;')
-                .catalog-filter__position
+                  .catalog-filter__position
                   input#pearl(type='radio' name='color').catalog-filter__position__check
                   label(for='pearl')
                     .color(style='background: pearl;')
-                .catalog-filter__position
+                  .catalog-filter__position
                   input#beige(type='radio' name='color').catalog-filter__position__check
                   label(for='beige')
                     .color(style='background: beige;')
-                .catalog-filter__position
+                  .catalog-filter__position
                   input#powder(type='radio' name='color').catalog-filter__position__check
                   label(for='powder')
                     .color(style='background: powder;')
-            .product-parameters__list
-              .product-parameters__title Размер:
-              .product-parameters__size-list
-                .dropdown-list
-                  select
-                    option 95
-                    option 95
-                    option 105
-                    option 95
-                    option 95
-                    option 95
-                    option 95
-                .dropdown-list
-                  select
-                    option A
-                    option B
-                    option C
-                    option D
-                    option E
-                    option F
-          .page-product__item
-            h2 Покупка в один клик
-            .page-product-parameters
-              form(action='#')
-                .form-row
-                  .form-group
-                    input(type='text' placeholder='Имя, фамилия').form-control
-                .form-row
-                  .form-group
-                    input(type='text' placeholder='Телефон').form-control
-                button(type='submit').dark-btn КУПИТЬ
+              .product-parameters__list
+                .product-parameters__title Размер:
+                .product-parameters__size-list
+                  .dropdown-list
+                    select
+                      option 95
+                      option 95
+                      option 105
+                      option 95
+                      option 95
+                      option 95
+                      option 95
+                  .dropdown-list
+                    select
+                      option A
+                      option B
+                      option C
+                      option D
+                      option E
+                      option F
+          div
+            .kits-product.page-product
+              a(href='page.html').cart-modal__picture
+                img(src='./img/catalog-img.jpg')
+              .kits-article АРТ: 555828
+              a(href='page.html').kits-product-name FLOX BASIC
+              .kits-product-description Бюстгальтер - Мягкая  чашка - черный
+              .product-price__item
+                .product-price_new 700 ₴
+              .product-parameters__list
+                .product-parameters__title Цвет:
+                  span Бордо
+                .product-parameters__color-list.catalog-filter
+                  .catalog-filter__position
+                  input#black(type='radio' name='color').catalog-filter__position__check
+                  label(for='black')
+                    .color(style='background: black;')
+                  .catalog-filter__position
+                  input#chocolate(type='radio' name='color').catalog-filter__position__check
+                  label(for='chocolate')
+                    .color(style='background: chocolate;')
+                  .catalog-filter__position
+                  input#bordeaux(type='radio' name='color' checked='checked').catalog-filter__position__check
+                  label(for='bordeaux')
+                    .color(style='background: darkred;')
+                  .catalog-filter__position
+                  input#blue(type='radio' name='color').catalog-filter__position__check
+                  label(for='blue')
+                    .color(style='background: blue;')
+                  .catalog-filter__position
+                  input#white(type='radio' name='color').catalog-filter__position__check
+                  label(for='white')
+                    .color(style='background: white;')
+                  .catalog-filter__position
+                  input#pearl(type='radio' name='color').catalog-filter__position__check
+                  label(for='pearl')
+                    .color(style='background: pearl;')
+                  .catalog-filter__position
+                  input#beige(type='radio' name='color').catalog-filter__position__check
+                  label(for='beige')
+                    .color(style='background: beige;')
+                  .catalog-filter__position
+                  input#powder(type='radio' name='color').catalog-filter__position__check
+                  label(for='powder')
+                    .color(style='background: powder;')
+              .product-parameters__list
+                .product-parameters__title Размер:
+                .product-parameters__size-list
+                  .dropdown-list
+                    select
+                      option 95
+                      option 95
+                      option 105
+                      option 95
+                      option 95
+                      option 95
+                      option 95
+                  .dropdown-list
+                    select
+                      option A
+                      option B
+                      option C
+                      option D
+                      option E
+                      option F
+
+          div
+            .kits-product.page-product
+              a(href='page.html').cart-modal__picture
+                img(src='./img/catalog-img.jpg')
+              .kits-article АРТ: 555828
+              a(href='page.html').kits-product-name FLOX BASIC
+              .kits-product-description Бюстгальтер - Мягкая  чашка - черный
+              .product-price__item
+                .product-price_new 700 ₴
+              .product-parameters__list
+                .product-parameters__title Цвет:
+                  span Бордо
+                .product-parameters__color-list.catalog-filter
+                  .catalog-filter__position
+                  input#black(type='radio' name='color').catalog-filter__position__check
+                  label(for='black')
+                    .color(style='background: black;')
+                  .catalog-filter__position
+                  input#chocolate(type='radio' name='color').catalog-filter__position__check
+                  label(for='chocolate')
+                    .color(style='background: chocolate;')
+                  .catalog-filter__position
+                  input#bordeaux(type='radio' name='color' checked='checked').catalog-filter__position__check
+                  label(for='bordeaux')
+                    .color(style='background: darkred;')
+                  .catalog-filter__position
+                  input#blue(type='radio' name='color').catalog-filter__position__check
+                  label(for='blue')
+                    .color(style='background: blue;')
+                  .catalog-filter__position
+                  input#white(type='radio' name='color').catalog-filter__position__check
+                  label(for='white')
+                    .color(style='background: white;')
+                  .catalog-filter__position
+                  input#pearl(type='radio' name='color').catalog-filter__position__check
+                  label(for='pearl')
+                    .color(style='background: pearl;')
+                  .catalog-filter__position
+                  input#beige(type='radio' name='color').catalog-filter__position__check
+                  label(for='beige')
+                    .color(style='background: beige;')
+                  .catalog-filter__position
+                  input#powder(type='radio' name='color').catalog-filter__position__check
+                  label(for='powder')
+                    .color(style='background: powder;')
+              .product-parameters__list
+                .product-parameters__title Размер:
+                .product-parameters__size-list
+                  .dropdown-list
+                    select
+                      option 95
+                      option 95
+                      option 105
+                      option 95
+                      option 95
+                      option 95
+                      option 95
+                  .dropdown-list
+                    select
+                      option A
+                      option B
+                      option C
+                      option D
+                      option E
+                      option F
+
+      .page-product-about
+        .finish-order-list__info
+          .finish-order-list__info-item
+            span Ваша скидка:
+            span.price 10 ₴
+          .finish-order-list__info-item
+            span Сумма доставки:
+            span.price 10 ₴
+          .cart-total-cost
+            span Итоговая стоимость:
+            .cart-total-cost__price 700 ₴
+          a(href='#').dark-btn В КОРЗИНУ

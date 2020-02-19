@@ -198,6 +198,8 @@ $(document).ready(function () {
       var targetModal = $(this).data('target');
       $(".cart-modal[data-id='" + targetModal + "']").addClass('open');
       $('body').css('overflow', 'hidden');
+      $('.kits-product-slider .product-kit__slider').not('.slick-initialized').slick();
+      $('.kits-product-slider .product-kit__slider').slick('refresh');
     });
     /* hide shop cart */
 
