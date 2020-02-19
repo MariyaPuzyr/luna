@@ -6,8 +6,49 @@
       .cart-top__continue-shop ПРОДОЛЖИТЬ ПОКУПКИ
     .cart-body
       +shop-position
-      +shop-position
-      +shop-position
+      .cart-item__position.cart-kits
+        button.cart-item__delete(type='button')
+          +sprite('close', 'close-ico')
+        .cart-kits__item
+          .cart-kits__title Комплект
+          .position-counter
+            span.minus -
+            input(type='text', value='1')
+            span.plus +
+        .cart-kits__position-item
+          .cart-item__position--img
+            a(href='page.html')
+              img(src='./img/catalog-img.jpg')
+          .cart-item__position--info
+            a(href='#').position-name Flox basic
+            .position-article АРТ: 555828
+            .position-info
+              .position-info__item
+                .position.position-color Цвет:
+                  .position-color__item.black
+                .position Размер:
+                  span 80A
+        .cart-kits__plus
+          +sprite('icon', 'plus-ico')
+        .cart-kits__position-item
+          .cart-item__position--img
+            a(href='page.html')
+              img(src='./img/catalog-img.jpg')
+          .cart-item__position--info
+            a(href='#').position-name Flox basic
+            .position-article АРТ: 555828
+            .position-info
+              .position-info__item
+                .position.position-color Цвет:
+                  .position-color__item.black
+                .position Размер:
+                  span 80A
+            .position-info
+              .position-info__item.text-right
+                .product-price_old 900 ₴
+                .product-price_new 700 ₴
+      //+shop-position
+      //+shop-position
     .cart-bottom
       .cart-total-cost
         span Общая стоимость:
