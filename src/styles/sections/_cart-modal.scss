@@ -8,10 +8,6 @@
   display: none;
   transition: .3s;
   justify-content: center;
-  padding-top: 50px;
-  @include adapt_to('laptop-big') {
-    padding-top: 0;
-  }
   &.open {
     display: flex;
   }
@@ -26,8 +22,10 @@
     flex-direction: column;
     overflow: auto;
     max-height: calc(100% - 85px);
+    top: 50px;
     @include adapt_to('laptop-big') {
       max-height: 100%;
+      top: 0;
     }
     h2 {
       margin-top: 0;

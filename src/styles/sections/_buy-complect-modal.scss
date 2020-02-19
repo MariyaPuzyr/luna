@@ -1,8 +1,7 @@
 .buy-complect {
-  padding: 60px 75px 50px 85px;
-  max-height: initial;
-  height: 500px;
+  padding: 60px 75px 55px 85px;
   @include adapt_to('laptop-big') {
+    max-height: 100%;
     padding: 65px 15px 25px;
     h2 {
       margin-bottom: 20px;
@@ -138,6 +137,9 @@
   }
   .finish-order-list__info {
     margin-top: 0;
+    @include adapt_to('laptop-big') {
+      margin-top: 45px;
+    }
   }
   .cart-total-cost__price {
     font-size: 30px;

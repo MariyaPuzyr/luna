@@ -129,9 +129,9 @@ $(document).ready(function () {
   /* shop cart counter end */
 
   /*show dropdown list*/
-  $('.dropdown-list').click(function () {
-    $(this).toggleClass('open').siblings().removeClass('open');
-  });
+  // $('.dropdown-list').click(function () {
+  //   $(this).toggleClass('open').siblings().removeClass('open');
+  // });
   /*show dropdown list end */
 
   /* dropdown catalog filter*/
@@ -187,7 +187,11 @@ $(document).ready(function () {
   $(document).click(function (o) {
     $(o.target).closest(".dropdown-list").length || $(".dropdown-list").removeClass("open"), o.stopPropagation()
   });
-
+  /* init select by styler */
+  $(function () {
+    $('select').styler();
+  });
+  /* init select by styler end*/
   /* show buy in one click modal */
   if ($('.buy-click').length > 0) {
     $('.buy-click').click(function (e) {
@@ -197,7 +201,7 @@ $(document).ready(function () {
       $('body').css('overflow', 'hidden');
       $('.kits-product-slider .product-kit__slider').not('.slick-initialized').slick();
       $('.kits-product-slider .product-kit__slider').slick('refresh');
-      $('select').styler();
+      $('select').trigger('refresh');
     });
     /* hide shop cart */
     $('.cart-overlay, .cart-modal__item .close').click(function () {
@@ -206,10 +210,4 @@ $(document).ready(function () {
     });
   }
   /* show buy in one click modal end*/
-
-  /* init select by styler */
-  $(function () {
-    $('select').styler();
-  });
-  /* init select by styler end*/
 });
