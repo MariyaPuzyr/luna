@@ -1,9 +1,15 @@
 .cart
   .cart-overlay
   .cart-item
-    .cart-top
-      .cart-top__title МОЯ КОРЗИНА
-      .cart-top__continue-shop ПРОДОЛЖИТЬ ПОКУПКИ
+    .hide-desktop
+      .cart-top
+        .cart-top__title Корзина
+        .cart-close
+          +sprite('icon', 'close-ico')
+    .hide-mobile
+      .cart-top
+        .cart-top__title МОЯ КОРЗИНА
+        .cart-top__continue-shop ПРОДОЛЖИТЬ ПОКУПКИ
     .cart-body
       +shop-position
       .cart-item__position.cart-kits
@@ -47,8 +53,19 @@
               .position-info__item.text-right
                 .product-price_old 900 ₴
                 .product-price_new 700 ₴
-      //+shop-position
-      //+shop-position
+      +shop-position
+      +shop-position
+      .hide-desktop
+        .finish-order-list__info
+          .form-row
+            .form-group
+              input(type='text' placeholder='Введите ваш промокод').form-control
+          .finish-order-list__info-item
+            span Ваша скидка:
+            span.price 10 ₴
+          .finish-order-list__info-item
+            span Сумма доставки:
+            span.price 10 ₴
     .cart-bottom
       .cart-total-cost
         span Общая стоимость:

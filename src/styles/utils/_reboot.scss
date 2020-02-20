@@ -79,3 +79,17 @@ textarea {
 .text-right {
   text-align: right;
 }
+
+.hide-desktop {
+  display: none;
+  @media (max-width: 991px) {
+    display: block;
+  }
+}
+
+.hide-mobile {
+  display: block;
+  @media (max-width: 991px) {
+    display: none;
+  }
+}

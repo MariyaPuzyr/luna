@@ -129,9 +129,21 @@
     <div class="cart">
       <div class="cart-overlay"></div>
       <div class="cart-item">
-        <div class="cart-top">
-          <div class="cart-top__title">МОЯ КОРЗИНА</div>
-          <div class="cart-top__continue-shop">ПРОДОЛЖИТЬ ПОКУПКИ</div>
+        <div class="hide-desktop">
+          <div class="cart-top">
+            <div class="cart-top__title">Корзина</div>
+            <div class="cart-close">
+              <svg class="icon">
+                <use xlink:href="./img/svg/symbol/sprite.svg#close-ico"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="hide-mobile">
+          <div class="cart-top">
+            <div class="cart-top__title">МОЯ КОРЗИНА</div>
+            <div class="cart-top__continue-shop">ПРОДОЛЖИТЬ ПОКУПКИ</div>
+          </div>
         </div>
         <div class="cart-body">
           <div class="cart-item__position">
@@ -216,8 +228,77 @@
               </div>
             </div>
           </div>
-          <!--+shop-position-->
-          <!--+shop-position-->
+          <div class="cart-item__position">
+            <button class="cart-item__delete" type="button">
+              <svg class="close">
+                <use xlink:href="./img/svg/symbol/sprite.svg#close-ico"></use>
+              </svg>
+            </button><a class="cart-item__position--img" href="#"><img src="./img/catalog-img.jpg"/></a>
+            <div class="cart-item__position--info">
+              <div class="product-add-favorites">
+                <svg class="icon">
+                  <use xlink:href="./img/svg/symbol/sprite.svg#like-ico"></use>
+                </svg>
+              </div><a class="position-name" href="#">Flox basic</a>
+              <div class="position-article">АРТ: 555828</div>
+              <div class="position-counter"><span class="minus">-</span>
+                <input type="text" value="1"/><span class="plus">+</span>
+              </div>
+              <div class="position-info">
+                <div class="position-info__item">
+                  <div class="position position-color">Цвет:
+                    <div class="position-color__item black"></div>
+                  </div>
+                  <div class="position">Размер:<span>80A</span></div>
+                </div>
+                <div class="position-info__item text-right">
+                  <div class="product-price_old">900 ₴</div>
+                  <div class="product-price_new">700 ₴</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-item__position">
+            <button class="cart-item__delete" type="button">
+              <svg class="close">
+                <use xlink:href="./img/svg/symbol/sprite.svg#close-ico"></use>
+              </svg>
+            </button><a class="cart-item__position--img" href="#"><img src="./img/catalog-img.jpg"/></a>
+            <div class="cart-item__position--info">
+              <div class="product-add-favorites">
+                <svg class="icon">
+                  <use xlink:href="./img/svg/symbol/sprite.svg#like-ico"></use>
+                </svg>
+              </div><a class="position-name" href="#">Flox basic</a>
+              <div class="position-article">АРТ: 555828</div>
+              <div class="position-counter"><span class="minus">-</span>
+                <input type="text" value="1"/><span class="plus">+</span>
+              </div>
+              <div class="position-info">
+                <div class="position-info__item">
+                  <div class="position position-color">Цвет:
+                    <div class="position-color__item black"></div>
+                  </div>
+                  <div class="position">Размер:<span>80A</span></div>
+                </div>
+                <div class="position-info__item text-right">
+                  <div class="product-price_old">900 ₴</div>
+                  <div class="product-price_new">700 ₴</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hide-desktop">
+            <div class="finish-order-list__info">
+              <div class="form-row">
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Введите ваш промокод">
+                </div>
+              </div>
+              <div class="finish-order-list__info-item"><span>Ваша скидка:</span><span class="price">10 ₴</span></div>
+              <div class="finish-order-list__info-item"><span>Сумма доставки:</span><span class="price">10 ₴</span></div>
+            </div>
+          </div>
         </div>
         <div class="cart-bottom">
           <div class="cart-total-cost"><span>Общая стоимость:</span>

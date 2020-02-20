@@ -1,7 +1,6 @@
-@import "utils/reboot";
+@import "utils/variables";
 @import "libs";
 @import "utils/extends";
-@import "utils/variables";
 @import "utils/mixins";
 @import "utils/fonts";
 @import "utils/formstyler";
@@ -9,3 +8,4 @@
 @import "includes/footer";
 @import "sections/section";
 @import "components/component";
+@import "utils/reboot";

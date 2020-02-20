@@ -7,6 +7,17 @@
   z-index: 10;
   display: none;
   transition: .3s;
+  @include adapt_to('large-phone') {
+    top: 50px;
+    overflow: auto;
+    height: calc(100% - 50px);
+  }
+  @include adapt_to('desktop') {
+    .cart-top__continue-shop {
+      max-width: 100%;
+      padding: 14px 15px;
+    }
+  }
   &.open {
     display: block;
   }
@@ -84,6 +95,21 @@
         transition: .3s;
       }
     }
+    @include adapt_to('desktop') {
+      padding: 15px;
+      .cart-close {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        top: 15px;
+        right: 15px;
+        .icon {
+          fill: #3F3F41;
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
   }
   &-top {
     display: flex;
@@ -97,6 +123,9 @@
       width: 100%;
       max-width: 234px;
       text-align: center;
+      @include adapt_to('desktop') {
+        text-align: left;
+      }
     }
     &__continue-shop {
       color: $color_white;
@@ -119,6 +148,17 @@
   }
   &-bottom {
     margin-top: auto;
+    @include adapt_to('large-phone') {
+      border-top: 1px solid #E7E7E7;
+      margin-top: 25px;
+      padding-top: 10px;
+      .cart-total-cost {
+        font-size: 16px;
+        line-height: 19px;
+        font-family: $font;
+        margin-bottom: 30px;
+      }
+    }
   }
   &-total-cost {
     display: flex;
@@ -148,6 +188,10 @@
     &:hover {
       background: transparent;
       color: $color_dark;
+    }
+    @include adapt_to('desktop') {
+      padding: 13px 5px;
+      margin-bottom: 20px;
     }
   }
 }
@@ -281,6 +325,9 @@
   &__position-item {
     display: flex;
     margin-bottom: 25px;
+    @include adapt_to('large-phone') {
+      margin-bottom: 5px;
+    }
     &:last-child {
       margin-bottom: 0;
     }
@@ -289,6 +336,10 @@
     font: normal 20px/23px $font-regular;
     color: $color_dark;
     width: 160px;
+    @include adapt_to('large-phone') {
+      width: 97px;
+      font-size: 16px;
+    }
   }
   &__plus {
     width: 40px;
@@ -305,6 +356,12 @@
       width: 12px;
       height: 12px;
       fill: #DBB7A6;
+    }
+    @include adapt_to('large-phone') {
+      width: 30px;
+      height: 30px;
+      left: 20px;
+      top: 152px;
     }
   }
   .text-right {

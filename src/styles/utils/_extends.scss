@@ -139,17 +139,3 @@
 h2 {
   font: normal 20px/23px $font;
 }
-
-.hide-desktop {
-  display: none;
-  @media (max-width: 991px) {
-    display: block;
-  }
-}
-
-.hide-mobile {
-  display: block;
-  @media (max-width: 991px) {
-    display: none;
-  }
-}

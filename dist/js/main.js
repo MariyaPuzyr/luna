@@ -100,7 +100,7 @@ $(document).ready(function () {
     });
     /* hide shop cart */
 
-    $('.cart-overlay, .cart-top__continue-shop').click(function () {
+    $('.cart-overlay, .cart-top__continue-shop, .cart-close').click(function () {
       $('.cart').removeClass('open');
       $('body').css('overflow', 'auto');
     });
@@ -224,16 +224,13 @@ $(document).ready(function () {
   if ($('.accordion').length > 0) {
     $('.accordion--title').click(function (e) {
       e.preventDefault();
-      var $this = $(this); // $('.accordion-item').removeClass('show');
+      var $this = $(this);
 
       if ($this.parent('.accordion-item').hasClass('show')) {
-        // $this.parents('.accordion-item').slideUp(350);
         $('.accordion-item').removeClass('show');
       } else {
-        $('.accordion-item').removeClass('show'); // $this.parents('.accordion-item').removeClass('show');
-        // $this.parents('.accordion-item').slideUp(350);
-
-        $this.parent('.accordion-item').addClass('show'); // $this.parents('.accordion-item').slideToggle(350);
+        $('.accordion-item').removeClass('show');
+        $this.parent('.accordion-item').addClass('show');
       }
     });
   }
