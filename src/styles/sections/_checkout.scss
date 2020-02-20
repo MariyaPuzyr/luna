@@ -18,6 +18,9 @@
       border-bottom: 1px solid #DADADA;
       padding-bottom: 15px;
       margin-bottom: 25px;
+      @include adapt_to('large-phone') {
+        margin-bottom: 20px;
+      }
     }
     .help-text {
       position: absolute;
@@ -25,6 +28,9 @@
       color: #999696;
       left: 0;
       bottom: -20px;
+      @include adapt_to('large-phone') {
+        color: #000000;
+      }
     }
   }
   @include adapt_to('large-phone') {
@@ -33,6 +39,13 @@
       padding-top: 0;
       padding-right: 0;
       border-right: none;
+      border-top: 1px solid #E7E7E7;
+      margin-top: 25px;
+      h3 {
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 20px;
+      }
     }
   }
 }
@@ -40,12 +53,18 @@
 .form-row {
   display: flex;
   margin: 0 -10px;
+  @include adapt_to('large-phone') {
+    flex-direction: column;
+  }
 }
 
 .form-group {
   width: 100%;
   margin: 0 10px 20px;
   position: relative;
+  @include adapt_to('large-phone') {
+    width: auto;
+  }
 }
 
 .form-control {
@@ -63,12 +82,17 @@
   &::placeholder {
     color: #999696;
   }
+  @include adapt_to('large-phone') {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 11px 10px;
+  }
 }
 
 .dropdown {
   &-list {
     position: relative;
-    &:hover .dropdown-title{
+    &:hover .dropdown-title {
       border-color: #dbb7a6;
     }
     &.open {

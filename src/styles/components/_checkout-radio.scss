@@ -8,6 +8,11 @@
   width: 50%;
   flex: 0 0 auto;
   padding: 0 10px;
+  @include adapt_to('large-phone') {
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+  }
   &__check:not(:checked),
   &__check:checked {
     position: absolute;
@@ -74,6 +79,12 @@
       }
     }
   }
+  @include adapt_to('large-phone') {
+    font-size: 14px;
+    label {
+      display: flex;
+    }
+  }
 }
 
 .get-order {
@@ -91,5 +102,8 @@
   }
   &:focus {
     outline: none;
+  }
+  @include adapt_to('large-phone') {
+    margin-top: 25px;
   }
 }
