@@ -125,6 +125,9 @@
       text-align: center;
       @include adapt_to('desktop') {
         text-align: left;
+        font-size: 20px;
+        line-height: 23px;
+        text-transform: none;
       }
     }
     &__continue-shop {

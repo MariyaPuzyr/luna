@@ -117,12 +117,12 @@ mixin shop-position
   .cart-item__position
     button.cart-item__delete(type='button')
       +sprite('close', 'close-ico')
-    a(href='#').cart-item__position--img
+    a(href='page.html').cart-item__position--img
       img(src='./img/catalog-img.jpg')
     .cart-item__position--info
       .product-add-favorites
         +sprite('icon', 'like-ico')
-      a(href='#').position-name Flox basic
+      a(href='page.html').position-name Flox basic
       .position-article АРТ: 555828
       .position-counter
         span.minus -
@@ -140,10 +140,10 @@ mixin shop-position
 
 mixin finish-position
   .cart-item__position
-    a(href='#').cart-item__position--img
+    a(href='page.html').cart-item__position--img
       img(src='./img/catalog-img.jpg')
     .cart-item__position--info
-      a(href='#').position-name Flox basic
+      a(href='page.html').position-name Flox basic
       .position-article АРТ: 555828
       .position-count-item Количество: 10 шт
       .position-info

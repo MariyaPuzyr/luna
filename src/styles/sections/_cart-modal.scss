@@ -26,11 +26,15 @@
     @include adapt_to('laptop-big') {
       max-height: 100%;
       top: 0;
+      padding: 20px 15px;
     }
     h2 {
       margin-top: 0;
       margin-bottom: 15px;
       font: normal 30px/35px $font;
+      @include adapt_to('large-phone') {
+        display: none;
+      }
     }
     .close {
       position: absolute;
@@ -63,6 +67,10 @@
       max-width: 100%;
       height: auto;
     }
+    @include adapt_to('large-phone') {
+      width: 70px;
+      margin-right: 20px;
+    }
   }
   .cart-product {
     &-body {
@@ -75,10 +83,17 @@
       .product-price__item {
         margin-bottom: 15px;
       }
+      @include adapt_to('large-phone') {
+        flex-flow: row wrap;
+      }
     }
     &__info {
       width: 100%;
       margin-right: 45px;
+      @include adapt_to('large-phone') {
+        width: calc(100% - 90px);
+        margin-right: 0;
+      }
     }
   }
   .page-product-about {
@@ -90,6 +105,9 @@
       .product-name {
         font: normal 18px/21px $font;
         color: #000000;
+        @include adapt_to('large-phone') {
+          display: none;
+        }
       }
     }
     .product-title {

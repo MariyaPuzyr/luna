@@ -1,13 +1,16 @@
 .cart-modal(data-id='buy-one-click')
   .cart-overlay
   .cart-modal__item
+    .hide-desktop
+      .cart-top
+        .cart-top__title Покупка в один клик
     .close
       +sprite('icon', 'close-ico')
     .cart-modal__item--body
-      a(href='page.html').cart-modal__picture
-        img(src='./img/catalog-img.jpg')
       .page-product-about
         .cart-product-body
+          a(href='page.html').cart-modal__picture
+            img(src='./img/catalog-img.jpg')
           .cart-product__info.page-product
             .page-product-about--top
               h1.product-title FLOX BASIC
