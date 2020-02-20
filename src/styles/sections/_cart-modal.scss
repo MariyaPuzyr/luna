@@ -32,7 +32,7 @@
       margin-top: 0;
       margin-bottom: 15px;
       font: normal 30px/35px $font;
-      @include adapt_to('large-phone') {
+      @include adapt_to('desktop') {
         display: none;
       }
     }
@@ -67,6 +67,9 @@
       max-width: 100%;
       height: auto;
     }
+    @include adapt_to('desktop') {
+      margin-bottom: 20px;
+    }
     @include adapt_to('large-phone') {
       width: 70px;
       margin-right: 20px;
@@ -83,13 +86,21 @@
       .product-price__item {
         margin-bottom: 15px;
       }
-      @include adapt_to('large-phone') {
+      @include adapt_to('desktop') {
         flex-flow: row wrap;
+        .page-product-parameters {
+          padding: 0;
+          border: none;
+        }
       }
     }
     &__info {
       width: 100%;
       margin-right: 45px;
+      @include adapt_to('desktop') {
+        width: calc(100% - 350px);
+        margin-right: 0;
+      }
       @include adapt_to('large-phone') {
         width: calc(100% - 90px);
         margin-right: 0;
@@ -105,13 +116,26 @@
       .product-name {
         font: normal 18px/21px $font;
         color: #000000;
-        @include adapt_to('large-phone') {
-          display: none;
+        @include adapt_to('desktop') {
+          font-size: 14px;
+          line-height: 16px;
         }
       }
     }
     .product-title {
       margin-bottom: 15px;
+    }
+    @include adapt_to('desktop') {
+      .product-title {
+        font-size: 20px;
+        line-height: 23px;
+        font-family: $font-regular;
+      }
+      .product-code {
+        font-size: 12px;
+        line-height: 14px;
+        color: #BDBDBD;
+      }
     }
   }
 }

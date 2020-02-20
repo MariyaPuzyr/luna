@@ -46,6 +46,9 @@
         width: 30px;
         height: 30px;
         margin-right: 14px;
+        @include adapt_to('desktop') {
+          margin-bottom: 14px;
+        }
       }
     }
     &__list {
