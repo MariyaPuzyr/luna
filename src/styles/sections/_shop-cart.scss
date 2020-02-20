@@ -35,11 +35,21 @@
       border-bottom: 1px solid #E7E7E7;
       padding: 10px 0;
       position: relative;
+      @include adapt_to('large-phone') {
+        padding: 20px 0;
+        &:first-child {
+          border-top: 1px solid #E7E7E7;
+        }
+      }
       &--img {
         width: 133px;
         height: 175px;
         flex-shrink: 0;
         overflow: hidden;
+        @include adapt_to('large-phone') {
+          width: 70px;
+          height: 110px;
+        }
         img {
           max-width: 100%;
           height: auto;
@@ -146,6 +156,10 @@
   display: flex;
   align-items: flex-end;
   margin-top: 10px;
+  @include adapt_to('large-phone') {
+    margin-top: 0;
+    font-family: $font-regular;
+  }
   &-color {
     align-items: center;
   }
@@ -166,6 +180,11 @@
   &-article {
     font: normal 16px/19px $font;
     color: rgba($color_dark, .5);
+    @include adapt_to('large-phone') {
+      font-size: 12px;
+      line-height: 14px;
+      color: #BDBDBD;
+    }
   }
   &-counter {
     display: inline-flex;
@@ -177,6 +196,7 @@
       border: none;
       text-align: center;
       width: 100%;
+      font: normal 18px/21px $font;
       &:focus {
         outline: none;
       }
@@ -189,6 +209,15 @@
       padding: 9px 10px;
       &:hover {
         color: #dbb7a6;
+      }
+    }
+    @include adapt_to('large-phone') {
+      width: 70px;
+      span {
+        padding: 5px 8px;
+      }
+      input[type="text"] {
+        font-size: 16px;
       }
     }
   }
@@ -207,6 +236,10 @@
     .product-price_old {
       margin-top: 10px;
     }
+    @include adapt_to('large-phone') {
+      font-size: 16px;
+      line-height: 19px;
+    }
   }
   &-color__item {
     margin-left: 10px;
@@ -214,6 +247,11 @@
     height: 30px;
     border-radius: 50%;
     background: #383230;
+    @include adapt_to('large-phone') {
+      width: 20px;
+      height: 20px;
+      margin-left: 5px;
+    }
   }
   .black {
     background: #383230;
@@ -223,6 +261,11 @@
     color: $color_dark;
     margin-top: 20px;
     margin-bottom: 20px;
+    @include adapt_to('large-phone') {
+      font-size: 16px;
+      line-height: 19px;
+      margin: 10px 0;
+    }
   }
 }
 

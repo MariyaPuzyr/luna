@@ -18,7 +18,19 @@
   .form-group {
     margin-bottom: 0;
   }
+  @include adapt_to('large-phone') {
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+    h2 {
+      font-size: 20px;
+      line-height: 23px;
+      margin: 0;
+      padding: 35px 0;
+    }
+  }
 }
+
 .finish-order-list__info {
   margin-top: 40px;
   &-item {
@@ -35,5 +47,22 @@
     border-top: 1px solid #E7E7E7;
     margin-top: 25px;
     padding-top: 10px;
+  }
+  @include adapt_to('large-phone') {
+    margin-top: 20px;
+    &-item {
+      font-size: 16px;
+      line-height: 19px;
+      font-family: $font;
+      .price {
+        font-size: 20px;
+        line-height: 23px;
+      }
+    }
+    .cart-total-cost {
+      font-size: 16px;
+      line-height: 19px;
+      font-family: $font;
+    }
   }
 }
