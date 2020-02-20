@@ -25,6 +25,9 @@
     span {
       text-decoration: underline;
     }
+    @include adapt_to('large-phone') {
+      display: none;
+    }
   }
   .separate::after {
     content: '/';

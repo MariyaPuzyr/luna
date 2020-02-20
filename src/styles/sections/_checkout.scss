@@ -27,6 +27,14 @@
       bottom: -20px;
     }
   }
+  @include adapt_to('large-phone') {
+    flex-direction: column;
+    &-info {
+      padding-top: 0;
+      padding-right: 0;
+      border-right: none;
+    }
+  }
 }
 
 .form-row {

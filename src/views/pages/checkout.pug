@@ -3,6 +3,10 @@ block variables
   - var title = "Luna lingerie"
 
 block content
+  .hide-desktop
+    include ../includes/header
   .checkout.container-fluid
+    .delivery-info.hide-desktop
+      h2 О нас
     include ../sections/checkout-info
     include ../sections/checkout-cart
