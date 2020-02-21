@@ -29,16 +29,17 @@
               li
                 a(href='catalog.html') Акции
             .header-links
-              form(action='#')
-                input(type='search')
+              form(action='#').form-search
+                input(type='search' placeholder='Поиск')
               a(href='#').user-info
-                +sprite('icon', 'user-ico')
+                span.hide-desktop Кабинет
+                +sprite('icon hide-mobile', 'user-ico')
               .dropdown-item
                 a(href='#').dropdown-toggle
                   +sprite('lang-ico', 'lang-ru')
                 ul.dropdown-lang-list
                   li
-                    a(href='#')
+                    a(href='#').active
                       +sprite('lang-ico', 'lang-ua')
                   li
                     a(href='#')

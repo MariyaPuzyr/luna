@@ -134,7 +134,7 @@
   }
 }
 
-@include adapt_to('large-phone') {
+@include adapt_to('desktop') {
   .nav {
     &-toggle {
       display: flex;
@@ -153,6 +153,8 @@
     width: 100%;
     z-index: 11;
     background: #fff;
+    max-height: 100vh;
+    overflow: auto;
     &--top {
       display: flex;
       align-items: center;
@@ -174,6 +176,7 @@
     }
     .header {
       order: 2;
+      padding: 15px 0;
       &-wish__link {
         text-decoration: none;
         .icon {
@@ -194,8 +197,90 @@
           left: 0;
         }
       }
-      &-list {
+      &-list, &-item {
         flex-direction: column;
+      }
+      .phone-info {
+        order: 1;
+        width: 100%;
+        padding-bottom: 30px;
+        margin-right: 0;
+      }
+      &-links {
+        order: -1;
+        width: 100%;
+        flex-flow: row wrap;
+        .form-search {
+          width: 100%;
+          order: 1;
+          margin-top: 25px;
+          margin-bottom: 25px;
+          input[type=search] {
+            width: 100%;
+            border-bottom: 1px solid #BFBFBF;
+            padding-bottom: 5px;
+            &:focus {
+              width: 100%;
+            }
+            &::placeholder {
+              font-size: 14px;
+              line-height: 16px;
+              color: #BFBFBF;
+            }
+          }
+        }
+        .dropdown-item {
+          width: auto;
+          height: auto;
+          display: flex;
+          align-items: center;
+          order: -1;
+          .dropdown-toggle {
+            position: relative;
+            width: auto;
+            height: auto;
+          }
+          .dropdown-lang-list {
+            display: flex;
+            position: relative;
+            top: auto;
+            flex-direction: row;
+            a {
+              padding: 0;
+              margin-right: 10px;
+              opacity: .35;
+              &:hover {
+                background: transparent;
+              }
+              &.active .lang-ico, &:hover .lang-ico {
+                fill: #C4C4C4;
+                opacity: 1;
+              }
+            }
+          }
+        }
+        .user-info {
+          margin: 0;
+          margin-left: auto;
+          font-size: 14px;
+          line-height: 16px;
+          font-family: $font;
+          color: #BFBFBF;
+          transition: .3s;
+          text-decoration: none;
+          &:hover {
+            color: #dbb7a6;
+          }
+        }
+      }
+      &-list {
+        width: 100%;
+        padding: 0;
+        display: block;
+        column-count: 2;
+        a {
+          margin: 0 0 15px;
+        }
       }
     }
     .logo {
