@@ -190,7 +190,11 @@ $(document).ready(function () {
     dots: false,
     arrows: false,
     vertical: true,
-    verticalSwiping: true
+    verticalSwiping: true,
+    responsive: [{
+      breakpoint: 992,
+      settings: "unslick"
+    }]
   });
   /* page product slider end*/
 
