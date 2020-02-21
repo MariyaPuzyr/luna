@@ -2,6 +2,9 @@
   .dropdown-list {
     min-width: 156px;
     font: normal 18px/21px $font-regular;
+    .jq-selectbox.jqselect {
+      width: 100%;
+    }
   }
   .dropdown-title {
     border: 1px solid transparent;
