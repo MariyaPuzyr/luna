@@ -45,27 +45,6 @@
       border-bottom-color: #DBB7A6;
     }
   }
-  .header-wish__link {
-    position: relative;
-    &-counter {
-      position: absolute;
-      top: -3px;
-      right: -5px;
-      background: #ef2669;
-      color: $color_white;
-      font-family: $font-bold;
-      border-radius: 50%;
-      font-size: 10px;
-      padding: 2px 4px;
-      line-height: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    &:hover svg {
-      fill: #DBB7A6;
-    }
-  }
   .header-cart {
     margin-left: 15px;
     margin-right: 15px;
@@ -82,5 +61,202 @@
   .icon-cart {
     fill: #3F3F41;
     transition: .3s;
+  }
+
+  &-toggle {
+    display: none;
+    position: absolute;
+    right: 15px;
+    height: 14px;
+    width: 18px;
+    cursor: pointer;
+    span,
+    span:before,
+    span:after {
+      cursor: pointer;
+      border-radius: 5px;
+      height: 2px;
+      width: 18px;
+      background: #3F3F41;
+      position: absolute;
+      display: block;
+      content: '';
+      transition: all 300ms ease-in-out;
+    }
+    span:before {
+      top: -5px;
+    }
+    span:after {
+      bottom: -5px;
+    }
+    &.active span {
+      background-color: transparent;
+      &:before,
+      &:after {
+        top: 0;
+      }
+      &:before {
+        transform: rotate(45deg);
+      }
+      &:after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+.header-wish__link {
+  position: relative;
+  &-counter {
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    background: #ef2669;
+    color: $color_white;
+    font-family: $font-bold;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 2px 4px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-title {
+    display: none;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    font-family: $font-regular;
+  }
+  &:hover svg {
+    fill: #DBB7A6;
+  }
+}
+
+@include adapt_to('large-phone') {
+  .nav {
+    &-toggle {
+      display: flex;
+      align-items: center;
+    }
+    &-item {
+      display: none;
+    }
+  }
+  .mobile-header {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 11;
+    background: #fff;
+    &--top {
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding: 10px 15px;
+      min-height: 50px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transition: .3s;
+      &.active {
+        .logo {
+          opacity: 0;
+          visibility: hidden;
+        }
+        .header-wish__link.header-cart {
+          position: absolute;
+          left: 15px;
+        }
+      }
+    }
+    .header {
+      order: 2;
+      &-wish__link {
+        text-decoration: none;
+        .icon {
+          width: 18px;
+          height: 16px;
+          margin-left: 10px;
+          &-cart {
+            width: 22px;
+            height: 22px;
+          }
+        }
+        &-title {
+          display: block;
+        }
+        &.header-cart {
+          margin-right: 40px;
+          transition: .3s;
+          left: 0;
+        }
+      }
+      &-list {
+        flex-direction: column;
+      }
+    }
+    .logo {
+      width: 74px;
+      height: 27px;
+      margin-right: auto;
+      transition: .3s;
+      img {
+        max-width: 100%;
+      }
+    }
+    .mobile-menu {
+      display: flex;
+      flex-direction: column;
+      &--title {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        z-index: -1;
+        line-height: 51px;
+        font-size: 20px;
+        color: #000000;
+        font-family: $font;
+      }
+      .container {
+        padding: 0 15px;
+      }
+      .nav-items {
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: 40px;
+        .logo {
+          display: none;
+        }
+      }
+      .nav-list {
+        flex-direction: column;
+        width: 100%;
+        margin: 15px 0 10px;
+        a {
+          font-size: 16px;
+          line-height: 19px;
+          margin: 0 0 10px;
+        }
+      }
+      .offers {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 16px;
+        line-height: 19px;
+        width: 100%;
+      }
+      .header-wish__link.header-wish {
+        display: inline-flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin-top: 20px;
+        margin-right: auto;
+
+      }
+    }
   }
 }

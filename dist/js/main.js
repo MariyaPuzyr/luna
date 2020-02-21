@@ -235,5 +235,15 @@ $(document).ready(function () {
     });
   }
   /* accordion end*/
+  // Toggle open and close nav styles on click
 
+
+  $('.nav-toggle').click(function () {
+    $('.nav-item').slideToggle();
+  }); // Hamburger to X toggle
+
+  $('.nav-toggle').on('click', function () {
+    this.classList.toggle('active');
+    $(this).parent().toggleClass('active');
+  });
 });
