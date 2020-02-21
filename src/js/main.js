@@ -1,4 +1,20 @@
 $(document).ready(function () {
+  /* main promo slider */
+  if ($('.single-item').length > 0) {
+    $('.main-promo-slider').slick({
+      arrows: false,
+      dots: true,
+      infinite: true,
+      slidesToScroll: 1,
+      mobileFirst: true,
+      adaptiveHeight: true,
+      responsive: [{
+        breakpoint: 992,
+        settings: "unslick"
+      }]
+    });
+  }
+  /* main promo slider end */
   if ($('.single-item').length > 0) {
     $('.single-item').slick({
       dots: false,
@@ -18,6 +34,16 @@ $(document).ready(function () {
           slidesToShow: 2
         }
       }]
+    });
+  }
+  if ($('.single-slider').length > 0) {
+    $('.single-slider').slick({
+      dots: true,
+      arrows: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
     });
   }
 

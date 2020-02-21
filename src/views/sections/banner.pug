@@ -1,16 +1,26 @@
 section.main-promo
   .container-fluid
-    a.main-promo__large(href='#')
-      img(src='./img/main-promo-large.png').img-fluid
-    .main-promo-row
-      a.main-promo-left( href='#' style='background-image: url("./img/main-promo-md.png");')
-        .main-promo-description Здесь будет
-          span классный оффер
-      a.main-promo-right(href='#' style='background-image: url("./img/main-promo-sm.png");')
-        .main-promo-description Здесь
-          br
-          |будет
-          br
-          |классный
-          br
-          |оффер
+    .slider.main-promo-slider
+      div
+        .main-promo__large
+          .main-promo-description
+            a(href='#')
+              img(src='./img/main-promo-large.png').img-fluid
+            //a(href='#').dark-btn Узнать подробнее
+      div.main-promo-left
+        .main-promo-img(style='background-image: url("./img/main-promo-md.png");')
+          .main-promo-description
+            a(href='#') Здесь будет
+              span классный оффер
+            a(href='#').dark-btn Узнать подробнее
+      div.main-promo-right
+        .main-promo-img(style='background-image: url("./img/main-promo-sm.png");')
+          .main-promo-description
+            a(href='#') Здесь
+              br
+              | будет
+              br
+              | классный
+              br
+              | оффер
+            a(href='#').dark-btn Узнать подробнее

@@ -5,6 +5,9 @@
     display: block;
     max-height: 280px;
     overflow: hidden;
+    .main-promo-description {
+      padding: 0;
+    }
   }
   &-row {
     display: flex;
@@ -19,6 +22,9 @@
     &:hover .main-promo-description {
       color: #dbb7a6;
     }
+    @include adapt_to('desktop') {
+      height: 435px;
+    }
   }
   &-left {
     flex: 0 0 calc(59.56% - 10px);
@@ -31,8 +37,6 @@
     margin-bottom: 20px;
   }
   &-description {
-    color: $color_white;
-    font: normal 28px/38px $font;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -41,6 +45,79 @@
     transition: .3s;
     span {
       font-family: $font-thin;
+    }
+    a {
+      display: flex;
+      flex-direction: column;
+      color: $color_white;
+      font: normal 28px/38px $font;
+      text-decoration: none;
+    }
+  }
+  &-img {
+    background-size: cover;
+    background-position: top center;
+    text-decoration: none;
+    transition: .3s;
+    display: block;
+    height: 100%;
+  }
+  &-slider {
+    display: flex;
+    flex-flow: row wrap;
+    &.slick-dotted.slick-slider {
+      margin-bottom: 0;
+    }
+    .slick-dots {
+      bottom: 5px;
+      li {
+        width: 8px;
+        height: 8px;
+        button::before {
+          content: '';
+          width: 8px;
+          height: 8px;
+          background: rgba(#DBB7A6, .35);
+          border-radius: 50%;
+        }
+        &.slick-active button::before {
+          background: #ffffff;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .dark-btn {
+    display: none;
+  }
+  @include adapt_to('desktop') {
+    margin-top: 50px;
+    .container-fluid {
+      padding: 0;
+    }
+    .dark-btn {
+      display: flex;
+      max-width: 260px;
+      text-transform: none;
+      font-size: 18px;
+      line-height: 21px;
+      margin: 50px 0 0;
+    }
+    &-left, &-right {
+      max-width: 100%;
+      flex: 0 0 auto;
+      margin: 0;
+    }
+    .main-promo{
+      &-description {
+        padding: 0;
+        align-items: center;
+        text-align: center;
+        background: rgba(0,0,0, .35);
+      }
+      &__large {
+        margin: 0;
+      }
     }
   }
 }

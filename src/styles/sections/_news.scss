@@ -2,6 +2,7 @@
   padding-top: 95px;
   &-image {
     width: 100%;
+    max-width: 670px;
   }
   &-article {
     display: flex;
@@ -101,6 +102,27 @@
       &:hover {
         background: #dbb7a6;
         color: #ffffff;
+      }
+    }
+  }
+}
+
+.single-slider {
+  .slick-dots {
+    bottom: 25px;
+    li {
+      width: 8px;
+      height: 8px;
+      button::before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        background: rgba(#DBB7A6, .35);
+        border-radius: 50%;
+      }
+      &.slick-active button::before {
+        background: #DBB7A6;
+        opacity: 1;
       }
     }
   }
