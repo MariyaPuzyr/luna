@@ -85,12 +85,22 @@
     <div class="container-fluid">
       <div class="catalog">
         <div class="catalog-filters">
-          <div class="catalog-filters__title">Бюсты</div>
+          <div class="catalog-filters__title hide-mobile">Бюсты</div>
+          <div class="hide-desktop">
+            <div class="delivery-info catalog-filter-top">
+              <h2>Фильт</h2>
+              <div class="close">
+                <svg class="icon">
+                  <use xlink:href="./img/svg/symbol/sprite.svg#close-ico"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
           <div class="catalog-filters__reset">Сбросить фильтр
             <svg class="close">
               <use xlink:href="./img/svg/symbol/sprite.svg#close-ico"></use>
             </svg>
-          </div>
+          </div><a class="gold-btn apply-filter hide-desktop" href="#">Применить фильтр</a>
           <div class="catalog-filter">
             <div class="catalog-filter--title">Все модели</div>
             <div class="catalog-filter__list">
@@ -317,7 +327,7 @@
                 <label for="seedless">Без косточек</label>
               </div>
             </div>
-          </div>
+          </div><a class="gold-btn apply-filter hide-desktop" href="#">Применить фильтр</a>
           <div class="catalog-filters__reset">Сбросить фильтр
             <svg class="close">
               <use xlink:href="./img/svg/symbol/sprite.svg#close-ico"></use>
@@ -325,6 +335,9 @@
           </div>
         </div>
         <div class="catalog-items">
+          <div class="hide-desktop delivery-info">
+            <h2>Бюсты</h2>
+          </div>
           <div class="catalog-items__top">
             <ul class="catalog-breadcrumbs">
               <li class="breadcrumb-item"><a href="index.html">Головна</a></li>
@@ -342,6 +355,9 @@
                 </select>
               </div>
             </div>
+          </div>
+          <div class="hide-desktop">
+            <div class="catalog-filters__item">Фильтр</div>
           </div>
           <div class="catalog-items__body">
             <div class="catalog-items__catalog">
@@ -927,6 +943,7 @@
     </div>
     <script src="./js/main-libs.min.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

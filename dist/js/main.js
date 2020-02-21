@@ -275,4 +275,16 @@ $(document).ready(function () {
     this.classList.toggle('active');
     $(this).parent().toggleClass('active');
   });
+  /* show/hide catalog filters by click */
+
+  if ($('.catalog-filters__item').length > 0) {
+    $('.catalog-filters__item').click(function () {
+      $('.catalog-filters').addClass('open');
+    });
+    $('.catalog-filter-top .close').click(function () {
+      $('.catalog-filters').removeClass('open');
+    });
+  }
+  /* show/hide catalog filters by click end */
+
 });

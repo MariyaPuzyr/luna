@@ -32,10 +32,73 @@
           fill: #dbb7a6;
         }
       }
+      @include adapt_to('desktop') {
+        font-size: 16px;
+        line-height: 19px;
+        padding: 20px;
+        margin-bottom: 0;
+        .close {
+          width: 14px;
+          height: 14px;
+        }
+      }
     }
     &__title {
       font: normal 30px/35px $font-regular;
       color: $color_dark;
+    }
+    &__item {
+      border-top: 1px solid #C4C4C4;
+      border-bottom: 1px solid #C4C4C4;
+      font: normal 16px/19px $font-bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #828282;
+      padding: 7px 0;
+      cursor: pointer;
+      transition: .3s;
+      margin-bottom: 20px;
+      &:hover {
+        color: #dbb7a6;
+        &::before {
+          background: #dbb7a6;
+        }
+      }
+      &::before {
+        content: '';
+        mask: url('../img/svg/filter-ico.svg') no-repeat center;
+        width: 13px;
+        height: 14px;
+        margin-right: 5px;
+        background: #828282;
+        transition: .3s;
+      }
+    }
+    @include adapt_to('desktop') {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: fixed;
+      top: 50px;
+      left: -100%;
+      padding: 0;
+      background: #ffffff;
+      max-height: calc(100vh - 50px);
+      overflow: auto;
+      transition: .3s;
+      z-index: 11;
+      &.open {
+        display: flex;
+        left: 0;
+      }
+      .apply-filter {
+        text-decoration: none;
+        text-transform: none;
+        margin: 20px 15px 0;
+        width: auto;
+        padding: 14px 0;
+      }
     }
   }
   &--title {
@@ -67,16 +130,30 @@
     &.open::after {
       transform: rotate(90deg);
     }
+    @include adapt_to('desktop') {
+      font-size: 16px;
+      line-height: 19px;
+      padding: 0 15px;
+    }
   }
   &__list {
     display: none;
     margin-top: 20px;
+    @include adapt_to('desktop') {
+      margin-top: 15px;
+      margin-left: 35px;
+    }
   }
   .catalog-filter__position {
     width: 100%;
     padding: 0;
     display: flex;
     align-items: center;
+    @include adapt_to('desktop') {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
     label {
       width: 100%;
       display: flex;
@@ -170,6 +247,27 @@
       border: none;
       &:focus {
         outline: none;
+      }
+    }
+  }
+  &-top {
+    border-bottom: 1px solid #C4C4C4;
+    padding: 0 15px 10px;
+    position: relative;
+    .close {
+      position: absolute;
+      top: 4px;
+      width: 18px;
+      height: 18px;
+      right: 15px;
+      &:hover .icon {
+        fill: #dbb7a6;
+      }
+      .icon {
+        width: 18px;
+        height: 18px;
+        fill: #3F3F41;
+        transition: .3s;
       }
     }
   }

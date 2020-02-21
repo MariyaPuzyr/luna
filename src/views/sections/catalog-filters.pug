@@ -1,7 +1,13 @@
 .catalog-filters
-  .catalog-filters__title Бюсты
+  .catalog-filters__title.hide-mobile Бюсты
+  .hide-desktop
+    .delivery-info.catalog-filter-top
+      h2 Фильт
+      .close
+        +sprite('icon', 'close-ico')
   .catalog-filters__reset Сбросить фильтр
     +sprite('close', 'close-ico')
+  a(href='#').gold-btn.apply-filter.hide-desktop Применить фильтр
   .catalog-filter
     .catalog-filter--title Все модели
     .catalog-filter__list
@@ -176,5 +182,6 @@
       .catalog-filter__position
         input#seedless(type='checkbox' name='models').catalog-filter__position__check
         label(for='seedless') Без косточек
+  a(href='#').gold-btn.apply-filter.hide-desktop Применить фильтр
   .catalog-filters__reset Сбросить фильтр
     +sprite('close', 'close-ico')
