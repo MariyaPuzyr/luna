@@ -301,8 +301,19 @@ $(document).ready(function () {
   /* get load reviews by click */
 
 
-  $('.page-product-review__get-more').click(function () {
-    $('.page-product-review__item').show();
-  });
+  if ($('.page-product-review__get-more').length > 0) {
+    $('.page-product-review__get-more').click(function () {
+      $('.page-product-review__item').show();
+    });
+  }
   /* get load reviews by click end */
+
+
+  if ($('.catalog-items__catalog').length > 0) {
+    $(window).scroll(function () {
+      if ($(window).scrollTop() + $(window).height() + 250 >= $('.catalog-items__catalog').height()) {
+        $('.product-item').show();
+      }
+    });
+  }
 });

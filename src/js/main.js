@@ -264,11 +264,11 @@ $(document).ready(function () {
   /* accordion end*/
 
   // Toggle open and close nav styles on click
-  $('.nav-toggle').click(function() {
+  $('.nav-toggle').click(function () {
     $('.nav-item').slideToggle();
   });
   // Hamburger to X toggle
-  $('.nav-toggle').on('click', function() {
+  $('.nav-toggle').on('click', function () {
     this.classList.toggle('active');
     $(this).parent().toggleClass('active');
   });
@@ -285,8 +285,17 @@ $(document).ready(function () {
   /* show/hide catalog filters by click end */
 
   /* get load reviews by click */
-  $('.page-product-review__get-more').click(function () {
-    $('.page-product-review__item').show();
-  });
+  if ($('.page-product-review__get-more').length > 0) {
+    $('.page-product-review__get-more').click(function () {
+      $('.page-product-review__item').show();
+    });
+  }
   /* get load reviews by click end */
+  if ($('.catalog-items__catalog').length > 0) {
+    $(window).scroll(function () {
+      if ((($(window).scrollTop() + $(window).height()) + 250) >= $('.catalog-items__catalog').height()) {
+        $('.product-item').show();
+      }
+    });
+  }
 });

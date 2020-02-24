@@ -47,6 +47,9 @@
         &:hover .product-add-favorites {
           opacity: 1;
           visibility: visible;
+          @include adapt_to('desktop') {
+            top: 0;
+          }
         }
         @include adapt_to('desktop') {
           flex-basis: 50%;
@@ -141,5 +144,19 @@
   }
   &:hover, &.active {
     fill: #DBB7A6;
+  }
+}
+
+@include adapt_to('desktop') {
+  .catalog-items .catalog-items__body .catalog-items__catalog {
+    .product-item {
+      display: none;
+      &:nth-child(-n + 4) {
+        display: block;
+      }
+    }
+    .catalog-items__pagination {
+      display: none;
+    }
   }
 }
