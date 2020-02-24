@@ -20,4 +20,21 @@
   &__img {
     flex: 0 0 auto;
   }
+  @include adapt_to('desktop') {
+    margin-top: 0;
+    flex-direction: column-reverse;
+    &__img {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    h4 {
+      font-size: 20px;
+      line-height: 23px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 35px;
+    }
+  }
 }

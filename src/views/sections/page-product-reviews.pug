@@ -43,7 +43,7 @@
         p Proin ac ex maximus.
     .page-product-review__get-more Просмотреть больше отзывов
   .page-product-review__form
-    form(action='#')
+    form(action='#').hide-mobile
       .page-product-review__form--top
         h5 Оставить отзыв
         .page-product-review__form--check
@@ -62,3 +62,5 @@
         input(type='text' placeholder='E-mail').form-control
         textarea(placeholder='Отзыв' rows='12').form-control
         button(type='submit').leave-feedback Оставить отзыв
+    .hide-desktop
+      .gold-btn.get-review.buy-click(data-target="add-reviews") Оставить отзыв

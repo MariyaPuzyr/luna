@@ -116,6 +116,9 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
+    &-reviews {
+      margin-bottom: 15px;
+    }
     &__title {
       text-transform: uppercase;
       font: normal 18px/21px $font-regular;
@@ -123,6 +126,11 @@
       width: 100%;
       max-width: 234px;
       text-align: center;
+      &.get-reviews-title {
+        font-size: 16px;
+        line-height: 19px;
+        font-family: $font;
+      }
       @include adapt_to('desktop') {
         text-align: left;
         font-size: 20px;

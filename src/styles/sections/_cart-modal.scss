@@ -104,10 +104,10 @@
       @include adapt_to('desktop') {
         width: calc(100% - 350px);
         margin-right: 0;
+        margin-top: 0;
       }
       @include adapt_to('large-phone') {
         width: calc(100% - 90px);
-        margin-right: 0;
       }
     }
   }

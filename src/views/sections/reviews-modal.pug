@@ -1,0 +1,28 @@
+.cart-modal(data-id='add-reviews')
+  .cart-overlay
+  .cart-modal__item
+    .hide-desktop
+      .cart-top.cart-top-reviews
+        .cart-top__title.get-reviews-title Оставить отзыв
+    .close
+      +sprite('icon', 'close-ico')
+    .cart-modal__item--body
+      .page-product-review__form
+        form(action='#')
+          .page-product-review__form--top
+            .page-product-review__form--check
+              input#new-star-5.star.star-5(type='radio', name='star')
+              label.star.star-5(for='new-star-5')
+              input#new-star-4.star.star-4(type='radio', name='star')
+              label.star.star-4(for='new-star-4')
+              input#new-star-3.star.star-3(type='radio', name='star')
+              label.star.star-3(for='new-star-3')
+              input#new-star-2.star.star-2(type='radio', name='star')
+              label.star.star-2(for='new-star-2')
+              input#new-star-1.star.star-1(type='radio', name='star')
+              label.star.star-1(for='new-star-1')
+          .page-product-review__leave-feedback
+            input(type='text' placeholder='Имя, фамилия').form-control
+            input(type='text' placeholder='E-mail').form-control
+            textarea(placeholder='Отзыв' rows='12').form-control
+            button(type='submit').leave-feedback Оставить отзыв

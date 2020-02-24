@@ -283,4 +283,10 @@ $(document).ready(function () {
     });
   }
   /* show/hide catalog filters by click end */
+
+  /* get load reviews by click */
+  $('.page-product-review__get-more').click(function () {
+    $('.page-product-review__item').show();
+  });
+  /* get load reviews by click end */
 });

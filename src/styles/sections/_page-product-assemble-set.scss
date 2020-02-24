@@ -16,4 +16,17 @@
     margin-left: -20px;
     margin-right: -20px;
   }
+  @include adapt_to('desktop') {
+    h2 {
+      margin-top: 30px;
+    }
+    &__slider {
+      margin: 0;
+      .product-name__link {
+        font-size: 20px;
+        line-height: 23px;
+        margin-top: 10px;
+      }
+    }
+  }
 }

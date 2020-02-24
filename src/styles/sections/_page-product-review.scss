@@ -107,7 +107,9 @@
     &--check {
       display: flex;
       flex-direction: row-reverse;
-      input.star { display: none; }
+      input.star {
+        display: none;
+      }
 
       label.star::before {
         content: '';
@@ -153,5 +155,79 @@
     margin-bottom: 18px;
     resize: none;
     padding: 12px 10px;
+  }
+  @include adapt_to('desktop') {
+    flex-direction: column;
+    margin-bottom: 30px;
+    &__item {
+      display: none;
+      padding: 15px 0;
+      &:nth-child(1) {
+        display: block;
+      }
+      &--top {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      &--raiting span {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    &__items {
+      margin-right: 0;
+    }
+    h2 {
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    &__get-more {
+      width: 100%;
+      background: #fff;
+      border: 1px solid #DBB7A6;
+      color: #DBB7A6;
+      font: normal 18px/21px $font;
+      padding: 16px 10px;
+      text-decoration: none;
+      justify-content: center;
+      transition: .3s;
+      margin-bottom: 15px;
+      &::after {
+        display: none;
+      }
+      &:hover {
+        background: $color_white;
+        color: $color_dark;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    .review-name {
+      font-size: 16px;
+      line-height: 19px;
+    }
+    .review-date {
+      font-size: 12px;
+      line-height: 14px;
+    }
+    &__form--check label.star::before {
+      width: 28px;
+      height: 26px;
+      margin-left: 0;
+      margin-right: 10px;
+    }
+    &__leave-feedback {
+      .form-control {
+        margin-bottom: 20px;
+        font-size: 15px;
+        line-height: 18px;
+      }
+      .leave-feedback {
+        padding: 13px 10px;
+      }
+    }
   }
 }

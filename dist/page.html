@@ -640,7 +640,7 @@
             <div class="page-product-review__get-more">Просмотреть больше отзывов</div>
           </div>
           <div class="page-product-review__form">
-            <form action="#">
+            <form class="hide-mobile" action="#">
               <div class="page-product-review__form--top">
                 <h5>Оставить отзыв</h5>
                 <div class="page-product-review__form--check">
@@ -663,6 +663,9 @@
                 <button class="leave-feedback" type="submit">Оставить отзыв</button>
               </div>
             </form>
+            <div class="hide-desktop">
+              <div class="gold-btn get-review buy-click" data-target="add-reviews">Оставить отзыв</div>
+            </div>
           </div>
         </div>
         <div class="page-product-assemble-set">
@@ -1649,6 +1652,47 @@
                 <div class="cart-total-cost__price">700 ₴</div>
               </div><a class="dark-btn" href="#">В КОРЗИНУ</a>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cart-modal" data-id="add-reviews">
+      <div class="cart-overlay"></div>
+      <div class="cart-modal__item">
+        <div class="hide-desktop">
+          <div class="cart-top cart-top-reviews">
+            <div class="cart-top__title get-reviews-title">Оставить отзыв</div>
+          </div>
+        </div>
+        <div class="close">
+          <svg class="icon">
+            <use xlink:href="./img/svg/symbol/sprite.svg#close-ico"></use>
+          </svg>
+        </div>
+        <div class="cart-modal__item--body">
+          <div class="page-product-review__form">
+            <form action="#">
+              <div class="page-product-review__form--top">
+                <div class="page-product-review__form--check">
+                  <input class="star star-5" id="new-star-5" type="radio" name="star">
+                  <label class="star star-5" for="new-star-5"></label>
+                  <input class="star star-4" id="new-star-4" type="radio" name="star">
+                  <label class="star star-4" for="new-star-4"></label>
+                  <input class="star star-3" id="new-star-3" type="radio" name="star">
+                  <label class="star star-3" for="new-star-3"></label>
+                  <input class="star star-2" id="new-star-2" type="radio" name="star">
+                  <label class="star star-2" for="new-star-2"></label>
+                  <input class="star star-1" id="new-star-1" type="radio" name="star">
+                  <label class="star star-1" for="new-star-1"></label>
+                </div>
+              </div>
+              <div class="page-product-review__leave-feedback">
+                <input class="form-control" type="text" placeholder="Имя, фамилия">
+                <input class="form-control" type="text" placeholder="E-mail">
+                <textarea class="form-control" placeholder="Отзыв" rows="12"></textarea>
+                <button class="leave-feedback" type="submit">Оставить отзыв</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
