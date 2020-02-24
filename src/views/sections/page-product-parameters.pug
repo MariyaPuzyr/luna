@@ -1,62 +1,63 @@
-.page-product-parameters
-  form(action='#')
-    .product-parameters__list
-      .product-parameters__title Цвет:
-        span Бордо
-      .product-parameters__color-list.catalog-filter
-        .catalog-filter__position
-          input#black(type='radio' name='color').catalog-filter__position__check
-          label(for='black')
-            .color(style='background: black;')
-        .catalog-filter__position
-          input#chocolate(type='radio' name='color').catalog-filter__position__check
-          label(for='chocolate')
-            .color(style='background: chocolate;')
-        .catalog-filter__position
-          input#bordeaux(type='radio' name='color').catalog-filter__position__check
-          label(for='bordeaux')
-            .color(style='background: darkred;')
-        .catalog-filter__position
-          input#blue(type='radio' name='color').catalog-filter__position__check
-          label(for='blue')
-            .color(style='background: blue;')
-        .catalog-filter__position
-          input#white(type='radio' name='color').catalog-filter__position__check
-          label(for='white')
-            .color(style='background: white;')
-        .catalog-filter__position
-          input#pearl(type='radio' name='color').catalog-filter__position__check
-          label(for='pearl')
-            .color(style='background: pearl;')
-        .catalog-filter__position
-          input#beige(type='radio' name='color').catalog-filter__position__check
-          label(for='beige')
-            .color(style='background: beige;')
-        .catalog-filter__position
-          input#powder(type='radio' name='color').catalog-filter__position__check
-          label(for='powder')
-            .color(style='background: powder;')
-    .product-parameters__list
-      .product-parameters__title Размер:
-      .product-parameters__size-list.catalog-filter
-        .dropdown-list
-          select
-            option 95
-            option 95
-            option 105
-            option 95
-            option 95
-            option 95
-            option 95
-        .dropdown-list
-          select
-            option A
-            option B
-            option C
-            option D
-            option E
-            option F
-        a(href='size-page.html').product-parameters__choose-size Подобрать размер
-    .product-parameters__btns
-      button(type='submit').buy.dark-btn КУПИТЬ
-      .buy-click.gold-btn(data-target="buy-one-click") КУПИТЬ В 1 КЛИК
+.d-block
+  .masonry-layout.page-product-parameters
+    form(action='#')
+      .product-parameters__list
+        .product-parameters__title Цвет:
+          span Бордо
+        .product-parameters__color-list.catalog-filter
+          .catalog-filter__position
+            input#black(type='radio' name='color').catalog-filter__position__check
+            label(for='black')
+              .color(style='background: black;')
+          .catalog-filter__position
+            input#chocolate(type='radio' name='color').catalog-filter__position__check
+            label(for='chocolate')
+              .color(style='background: chocolate;')
+          .catalog-filter__position
+            input#bordeaux(type='radio' name='color').catalog-filter__position__check
+            label(for='bordeaux')
+              .color(style='background: darkred;')
+          .catalog-filter__position
+            input#blue(type='radio' name='color').catalog-filter__position__check
+            label(for='blue')
+              .color(style='background: blue;')
+          .catalog-filter__position
+            input#white(type='radio' name='color').catalog-filter__position__check
+            label(for='white')
+              .color(style='background: white;')
+          .catalog-filter__position
+            input#pearl(type='radio' name='color').catalog-filter__position__check
+            label(for='pearl')
+              .color(style='background: pearl;')
+          .catalog-filter__position
+            input#beige(type='radio' name='color').catalog-filter__position__check
+            label(for='beige')
+              .color(style='background: beige;')
+          .catalog-filter__position
+            input#powder(type='radio' name='color').catalog-filter__position__check
+            label(for='powder')
+              .color(style='background: powder;')
+      .product-parameters__list
+        .product-parameters__title Размер:
+        .product-parameters__size-list.catalog-filter
+          .dropdown-list
+            select
+              option 95
+              option 95
+              option 105
+              option 95
+              option 95
+              option 95
+              option 95
+          .dropdown-list
+            select
+              option A
+              option B
+              option C
+              option D
+              option E
+              option F
+          a(href='size-page.html').product-parameters__choose-size Подобрать размер
+      .product-parameters__btns
+        button(type='submit').buy.dark-btn КУПИТЬ
+        .buy-click.gold-btn(data-target="buy-one-click") КУПИТЬ В 1 КЛИК

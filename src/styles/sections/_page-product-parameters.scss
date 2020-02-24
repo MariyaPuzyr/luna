@@ -6,6 +6,14 @@
     border: 1px solid #E7E7E7;
     padding: 20px;
     color: $color_dark;
+    &.masonry-layout {
+      max-width: 425px;
+      margin-left: 75px;
+      width: 100%;
+      @media (min-width: 993px) and (max-width: 1400px) {
+        margin-left: 25px;
+      }
+    }
   }
   .product-parameters {
     &__title {

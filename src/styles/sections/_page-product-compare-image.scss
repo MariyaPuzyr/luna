@@ -1,4 +1,12 @@
 .page-product-compare-image {
+  &.masonry-layout {
+    max-width: 425px;
+    margin-left: 75px;
+    width: 100%;
+    @media (min-width: 993px) and (max-width: 1400px) {
+      margin-left: 25px;
+    }
+  }
   h3 {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -35,7 +43,7 @@
       font: normal 18px/21px $font-bold;
       color: #DBB7A6;
     }
-    .product-price_old{
+    .product-price_old {
       color: #BDBDBD;
     }
     &__slider {

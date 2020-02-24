@@ -1,6 +1,10 @@
 .page-product__slider-info {
-  display: inline-flex;
-  width: 100%;
+  display: flex;
+  //width: 100%;
+  width: 685px;
+  @media (min-width: 993px) and (max-width: 1400px) {
+    width: 100%;
+  }
   .slider-nav {
     margin-right: 40px;
     width: 97px;
@@ -12,12 +16,15 @@
       max-height: 100%;
       object-fit: cover;
     }
+    @include adapt_to('desktop') {
+      display: none;
+    }
   }
   .slider-for {
-    width: 100%;
-    max-width: 544px;
+    width: calc(100% - 137px);
     img {
       height: 740px;
+      max-width: 100%;
       margin: auto;
       object-fit: cover;
     }

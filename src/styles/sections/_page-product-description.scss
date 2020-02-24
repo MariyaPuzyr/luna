@@ -1,4 +1,11 @@
 .page-product-description {
+  &.masonry-layout {
+    width: 685px;
+    display: table;
+    @media (min-width: 993px) and (max-width: 1400px) {
+      width: 100%;
+    }
+  }
   input {
     position: absolute;
     left: -9999px;
