@@ -5,6 +5,21 @@
     @media (min-width: 993px) and (max-width: 1400px) {
       width: 100%;
     }
+    @include adapt_to('desktop') {
+      display: flex;
+      flex-flow: row wrap;
+      width: 100%;
+      .tab-description:not(:checked) + label,
+      .tab-description:checked + label {
+        font-size: 16px;
+        line-height: 19px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 0;
+      }
+    }
   }
   input {
     position: absolute;

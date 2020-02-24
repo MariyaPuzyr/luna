@@ -13,6 +13,14 @@
       @media (min-width: 993px) and (max-width: 1400px) {
         margin-left: 25px;
       }
+      @include adapt_to('desktop') {
+        max-width: 100%;
+        margin-left: 0;
+        border-left: none;
+        border-right: none;
+        padding-left: 0;
+        padding-right: 0;
+      }
     }
   }
   .product-parameters {

@@ -42,7 +42,8 @@
   transition: .3s;
   &::before {
     content: '';
-    mask: url('../img/svg/arrow.svg') no-repeat left;
+    mask: url('../img/svg/arrow.svg') no-repeat center;
+    mask-size: contain;
     width: 15px;
     height: 20px;
     background: $color_dark;

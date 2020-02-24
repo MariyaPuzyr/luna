@@ -5,6 +5,10 @@
   @media (min-width: 993px) and (max-width: 1400px) {
     width: 100%;
   }
+  @include adapt_to('desktop') {
+    width: 100%;
+    order: -10;
+  }
   .slider-nav {
     margin-right: 40px;
     width: 97px;
@@ -28,6 +32,34 @@
       margin: auto;
       object-fit: cover;
     }
+    @include adapt_to('desktop') {
+      width: 100%;
+      img {
+        height: 455px;
+      }
+      .slick-dots {
+        li {
+          width: 8px;
+          height: 8px;
+          button {
+            width: 8px;
+            height: 8px;
+            &::before {
+              content: '';
+              width: 8px;
+              height: 8px;
+              background: #DBB7A6;
+              border-radius: 50%;
+              opacity: 1;
+            }
+          }
+          &.slick-active button:before {
+            background: #000000;
+            opacity: 1;
+          }
+        }
+      }
+    }
     .slick-prev {
       left: 0;
       top: 50%;
@@ -36,7 +68,7 @@
       right: 0;
       top: 50%;
     }
-    .slick-slide:hover .product-add-favorites{
+    .slick-slide:hover .product-add-favorites {
       opacity: 1;
       visibility: visible;
     }
@@ -48,6 +80,10 @@
       .icon {
         width: 36px;
         height: 32px;
+      }
+      @include adapt_to('desktop') {
+        top: 15px;
+        right: 10px;
       }
     }
   }
