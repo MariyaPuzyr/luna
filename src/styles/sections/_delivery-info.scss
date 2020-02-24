@@ -88,7 +88,7 @@
     justify-content: center;
   }
   @include adapt_to('large-phone') {
-    margin-top: 15px;
+    margin-top: 65px;
     h2 {
       font-size: 20px;
       line-height: 23px;
@@ -108,5 +108,30 @@
       font-size: 16px;
       line-height: 19px;
     }
+  }
+}
+
+@include adapt_to('desktop') {
+  .page-product-assemble-set h2 {
+    font-family: $font;
+    margin-top: 0;
+  }
+  .action-slider {
+    .promo {
+      width: 50%;
+      display: none;
+      &:nth-child(-n+4) {
+        display: block;
+      }
+    }
+    &.catalog-items__catalog .product-item:hover .product-add-favorites {
+      top: 22px;
+    }
+  }
+  .get-action-product {
+    padding: 13px 10px;
+    text-align: center;
+    background: #ffffff;
+    color: #dbb7a6;
   }
 }

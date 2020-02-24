@@ -68,6 +68,20 @@ $(document).ready(function () {
       }]
     });
   }
+  if ($('.action-slider').length > 0) {
+    $('.action-slider').slick({
+      dots: false,
+      arrow: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      responsive: [{
+        breakpoint: 992,
+        settings: "unslick"
+      }]
+    });
+  }
 
   /* show all text on seo */
   if ($('.offer-description__link').length > 0) {
@@ -298,4 +312,12 @@ $(document).ready(function () {
       }
     });
   }
+
+  /* get load promo product on actions page */
+  if ($('.get-action-product').length > 0) {
+    $('.get-action-product').click(function () {
+      $('.promo').show();
+    });
+  }
+  /* get load promo product on actions page end */
 });

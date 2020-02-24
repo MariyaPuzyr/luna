@@ -42,18 +42,20 @@ block content
               +sprite('icon', 'instagram')
     .page-product-assemble-set
       h2 АКЦИОННЫЕ ТОВАРЫ
-      .slider.page-product-assemble-set__slider.catalog-items__catalog
-        div
+      .slider.catalog-items__catalog.action-slider
+        div.promo
           +catalog-position
-        div
+        div.promo
           +catalog-position
-        div
+        div.promo
           +catalog-position__new
-        div
+        div.promo
           +catalog-position__new
-        div
+        div.promo
           +catalog-position
-        div
+        div.promo
           +catalog-position__new
+      .hide-desktop
+        .get-action-product.leave-feedback Показать еще
   include ../includes/footer
   include ../sections/cart
