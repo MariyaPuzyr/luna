@@ -33,6 +33,19 @@
     margin-top: 40px;
     margin-left: -20px;
     margin-right: -20px;
+    @include adapt_to('large-phone') {
+      margin-left: -5px;
+      margin-right: -5px;
+      .slick-prev {
+        left: 5px;
+      }
+      .slick-next {
+        right: 5px;
+      }
+      .product-item {
+        margin: 0 5px;
+      }
+    }
   }
 }
 
