@@ -182,11 +182,11 @@ $(document).ready(function () {
 
   if ($('.catalog-filter--title').length > 0) {
     $('.catalog-filter--title').click(function () {
-      $('.catalog-filter--title').removeClass('open');
       $(this).toggleClass('open');
       $(this).next('.catalog-filter__list').slideToggle();
     });
     $('.catalog-filter--title.open').click(function () {
+      $(this).removeClass('open');
       $(this).next('.catalog-filter__list').slideUp();
     });
   }
